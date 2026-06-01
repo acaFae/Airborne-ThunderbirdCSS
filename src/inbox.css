@@ -35,8 +35,14 @@
         }
         /* individual selection */
         & .container {
+            font-size: 1.1em !important;
             border-color: transparent !important;
+            padding-top: 2px !important;
+            padding-bottom: 2px !important;
             margin: 1px 0px !important;
+            & * {
+                font-weight: 400 !important;
+            }
         }
     }
 }
