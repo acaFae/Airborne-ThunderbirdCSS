@@ -1,0 +1,148 @@
+:root {
+    --button-border-radius: 8px !important;
+    --listbox-border-radius: 8px !important;
+}
+
+/* window layout */
+#paneLayout {
+    background-color: light-dark(#e4e4e8,#0f0f0f) !important;
+
+    & > #folderPane,
+    & > #threadPane,
+    & > #messagePane {
+        margin: 4px;
+        border: none;
+        border-radius: 16px;
+    }
+    & > #folderPaneSplitter,
+    & > #messagePaneSplitter {
+        border-color: light-dark(var(--color-gray-30), var(--color-gray-80)) !important;
+    }
+}
+
+/* list of inboxes */
+#folderPane {
+    background: transparent !important;
+
+    /* pane header */
+    & > #folderPaneHeaderBar {
+        background-color: transparent !important;
+    }
+    /* list of folder lists */
+    & > #folderTree {
+        &::before, &::after {
+            display: none !important;
+        }
+        /* individual selection */
+        & .container {
+            border-color: transparent !important;
+            margin: 1px 0px !important;
+        }
+    }
+}
+
+/* list of emails */
+#threadPane {
+
+    /* header bar */
+    & #threadPaneHeaderBar {
+        border-block-end: none !important;
+
+        /* left side of header */
+        & > .list-header-bar-container-start {
+            padding: 3px 8px 3px 10px !important;
+        }
+        & > .list-header-bar-container-end {
+            padding: 6px 3px 6px 3px !important;
+        }
+    }
+    /* list of emails */
+    & #threadTree {
+        background-color: var(--layout-background-1) !important;
+        
+        /* individual email threads */
+        & .card-layout {
+            height: 70px !important;
+
+            & > td {
+                padding: 1px 8px !important;
+
+                /* individual email cards */
+                & .card-container:not(:hover) {
+                    background-color: var(--layout-background-0) !important;
+                }
+                & .card-container {
+                    border-color: light-dark(var(--color-gray-30), transparent) !important;
+                    
+                    & .thread-card-column {
+                        margin-top: 11px;
+                    }
+
+                    & .thread-card-row {
+                        color: var(--color-gray-50);
+                        & * {
+                            font-weight: 400 !important;
+                            font-size: 0.8em !important;
+                        }
+                    }
+                    & .thread-card-dynamic-row {
+                        display: flex !important;
+                        flex-flow: row nowrap !important;
+
+                        & .thread-card-subject-container {
+                            order: 2;
+                            flex-grow: 1 !important;
+                        }
+                        & .thread-card-icon-info {
+                            order: 1;
+                            flex-grow: 0 !important;
+                            flex-direction: row-reverse;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* email container */
+#messagepanebox {
+    background-color: var(--layout-background-0) !important;
+
+    /* header above email */
+    & #singleMessage {
+        padding: 8px;
+        margin: 6px 6px 0px 6px !important;
+        border: 1px solid light-dark(var(--color-gray-30), var(--layout-background-1));
+        border-radius: 11px;
+        background-color: var(--layout-background-1) !important;
+        
+        & #messageHeader {
+            gap: 0px !important;
+
+            /* email links */
+            & .header-recipient {
+                padding: 0px 8px !important;
+                &[data-header-name="from"] {
+                    padding: 4px 8px !important;
+                }
+            }
+            /* subject header */
+            & #headerSubjectSecurityContainer {
+                margin: 8px 0px 4px !important;
+            }
+            /* tags */
+            & .tag {
+                padding: 1px 6px !important;
+                border-radius: 16px !important;
+            }
+        }
+    }
+    & #mail-notification-top {
+        border-block-end: none !important;
+    }
+    /* email content */
+    & #messagepane {
+        margin: 0px 24px !important;
+    }
+}
