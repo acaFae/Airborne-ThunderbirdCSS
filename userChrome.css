@@ -1,5 +1,27 @@
+
+/* IMPORTS */
 @import 'src/global.css';
 @import 'src/tablist-smooth.css';
 @import 'src/tablist-clear.css';
 @import 'src/inboxes-clean.css';
 @import 'src/rounded-panes.css';
+
+/* VARIABLES */
+:root {
+    --fallback-font: 'sans-serif';
+    --base-font: 'Be Vietnam Pro';
+    --folder-font: 'Be Vietnam Pro';
+    --subject-font: 'Be Vietnam Pro';
+
+    --button-rounding: 8px;
+    --listbox-rounding: 8px;
+    --pane-rounding: 16px;
+
+    --foldertree-folder-font-size: 1.1em;
+    --foldertree-folder-padding: 2px;
+    --threadtree-thread-margin: 2px 8px;
+    --threadtree-card-height: 70px;
+    --message-header-margin: 4px;
+
+    --box-shadow-subtle: 0px 0px 4px #00000033;
+}

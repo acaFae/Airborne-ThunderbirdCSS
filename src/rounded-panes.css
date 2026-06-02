@@ -1,11 +1,10 @@
 /* window layout */
 #paneLayout {
-    & > #folderPane,
     & > #threadPane,
     & > #messagePane {
         margin: 4px;
         border: none;
-        border-radius: 16px;
+        border-radius: var(--pane-rounding);
     }
     & > #folderPaneSplitter,
     & > #messagePaneSplitter {
