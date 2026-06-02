@@ -21,14 +21,14 @@
     --folderpane-margin: 4px;
     --folderpane-folder-font-size: 1.1em;
     --folderpane-folder-padding: 2px;
-    --threadpane-margin: 8px;
+    --threadpane-margin: 8px 2px;
     --threadpane-thread-margin: 2px 8px;
-    --messagepane-margin: 8px;
+    --messagepane-margin: 8px 2px;
     --messagepane-header-margin: 6px;
 
     --bg-main-color: light-dark(var(--color-gray-30),var(--color-gray-100));
     --bg-accent-color: light-dark(var(--color-gray-20),var(--color-gray-80));
-    --pane-splitter-color: light-dark(var(--color-gray-20), var(--color-gray-90));
+    --pane-splitter-color: transparent;
     --border-main-color: light-dark(var(--color-gray-30), transparent);
     --box-shadow-subtle: 0px 0px 4px light-dark(#00000011,#00000033);
 }
