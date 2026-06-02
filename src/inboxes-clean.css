@@ -64,7 +64,6 @@
         
         /* individual email threads */
         & .card-layout {
-            height: var(--threadpane-card-height) !important;
 
             & > td {
                 padding: var(--threadpane-thread-margin) !important;
@@ -79,7 +78,7 @@
                     }
 
                     & .thread-card-column {
-                        margin-top: calc((var(--threadpane-card-height) - 49px) / 2);
+                        margin-top: 10px;
                     }
 
                     & .thread-card-row {
