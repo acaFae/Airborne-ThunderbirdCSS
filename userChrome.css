@@ -21,11 +21,11 @@
     --folderpane-margin: 4px;
     --folderpane-folder-font-size: 1.1em;
     --folderpane-folder-padding: 2px;
-    --threadpane-margin: 8px 2px;
+    --threadpane-margin: 8px 4px;
     --threadpane-thread-margin: 2px 8px;
-    --messagepane-margin: 8px 8px 8px 2px;
+    --messagepane-margin: 8px 8px 8px 4px;
     --messagepane-header-margin: 6px;
-    --accountpane-margin: 8px 8px 8px 2px;
+    --accountpane-margin: 8px 8px 8px 4px;
 
     --bg-main-color: light-dark(var(--color-gray-30),var(--color-gray-100));
     --bg-accent-color: light-dark(var(--color-gray-20),var(--color-gray-80));
