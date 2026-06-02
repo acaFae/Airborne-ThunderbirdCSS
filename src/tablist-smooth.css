@@ -25,13 +25,3 @@
         }
     }
 }
-
-/* tab windows rounded with margins */
-#tabpanelcontainer {
-    & > vbox {
-        margin: 0px;
-        border: none;
-        border-radius: 0px;
-        overflow: hidden;
-    }
-}

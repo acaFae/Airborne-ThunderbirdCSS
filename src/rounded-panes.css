@@ -1,0 +1,14 @@
+/* window layout */
+#paneLayout {
+    & > #folderPane,
+    & > #threadPane,
+    & > #messagePane {
+        margin: 4px;
+        border: none;
+        border-radius: 16px;
+    }
+    & > #folderPaneSplitter,
+    & > #messagePaneSplitter {
+        border-color: light-dark(var(--color-gray-30), var(--color-gray-80)) !important;
+    }
+}

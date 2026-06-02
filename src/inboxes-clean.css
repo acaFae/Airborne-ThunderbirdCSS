@@ -6,23 +6,12 @@
 /* window layout */
 #paneLayout {
     background-color: light-dark(#e4e4e8,#0f0f0f) !important;
-
-    & > #folderPane,
-    & > #threadPane,
-    & > #messagePane {
-        margin: 4px;
-        border: none;
-        border-radius: 16px;
-    }
-    & > #folderPaneSplitter,
-    & > #messagePaneSplitter {
-        border-color: light-dark(var(--color-gray-30), var(--color-gray-80)) !important;
-    }
 }
 
 /* list of inboxes */
 #folderPane {
     background: transparent !important;
+    margin: 4px;
 
     /* pane header */
     & > #folderPaneHeaderBar {

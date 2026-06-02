@@ -1,3 +1,5 @@
 @import 'src/global.css';
-@import 'src/tabs.css';
-@import 'src/inbox.css';
+@import 'src/tablist-smooth.css';
+@import 'src/tablist-clear.css';
+@import 'src/inboxes-clean.css';
+@import 'src/rounded-panes.css';
