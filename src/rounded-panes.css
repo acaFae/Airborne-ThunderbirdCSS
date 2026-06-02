@@ -10,4 +10,9 @@
         border: none;
         border-radius: var(--pane-rounding);
     }
+    & > #accountCentralBrowser {
+        margin: var(--accountpane-margin);
+        border: none;
+        border-radius: var(--pane-rounding);
+    }
 }
