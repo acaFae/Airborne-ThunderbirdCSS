@@ -47,6 +47,7 @@
 
     /* header bar */
     & #threadPaneHeaderBar {
+        background-color: var(--bg-accent-color) !important;
         border-block-end: none !important;
 
         /* left side of header */
@@ -59,7 +60,7 @@
     }
     /* list of emails */
     & #threadTree {
-        background-color: var(--layout-background-1) !important;
+        background-color: var(--bg-accent-color) !important;
         
         /* individual email threads */
         & .card-layout {
@@ -69,12 +70,13 @@
                 padding: var(--threadpane-thread-margin) !important;
 
                 /* individual email cards */
-                & .card-container:not(:hover) {
-                    background-color: var(--layout-background-0) !important;
-                }
                 & .card-container {
                     border-color: var(--border-main-color) !important;
                     box-shadow: var(--box-shadow-subtle);
+
+                    &:not(:hover) {
+                        background-color: var(--layout-background-0) !important;
+                    }
 
                     & .thread-card-column {
                         margin-top: calc((var(--threadpane-card-height) - 49px) / 2);
@@ -118,7 +120,7 @@
         margin-bottom: 0px !important;
         border: 1px solid var(--border-main-color);
         border-radius: calc(var(--pane-rounding) - var(--messagepane-header-margin) + 1px);
-        background-color: var(--layout-background-1) !important;
+        background-color: var(--bg-accent-color) !important;
         box-shadow: var(--box-shadow-subtle);
         z-index: 1;
 

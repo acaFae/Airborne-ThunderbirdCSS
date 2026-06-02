@@ -2,8 +2,8 @@
 /* IMPORTS */
 @import 'src/global.css';
 @import 'src/tablist-smooth.css';
-@import 'src/inboxes-clean.css';
 @import 'src/tablist-clear.css';
+@import 'src/inboxes-clean.css';
 @import 'src/rounded-panes.css';
 
 /* VARIABLES */
@@ -26,8 +26,9 @@
     --messagepane-margin: 8px;
     --messagepane-header-margin: 6px;
 
-    --bg-main-color: light-dark(#e4e4e8,#0f0f0f);
+    --bg-main-color: light-dark(var(--color-gray-30),var(--color-gray-100));
+    --bg-accent-color: light-dark(var(--color-gray-20),var(--color-gray-80));
     --pane-splitter-color: light-dark(var(--color-gray-30), var(--color-gray-90));
-    --border-main-color: light-dark(var(--color-gray-30), var(--color-gray-80));
+    --border-main-color: light-dark(var(--color-gray-30), transparent);
     --box-shadow-subtle: 0px 0px 4px light-dark(#00000011,#00000033);
 }
