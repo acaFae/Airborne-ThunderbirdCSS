@@ -11,7 +11,7 @@
 /* list of inboxes */
 #folderPane {
     background: transparent !important;
-    margin: 4px;
+    margin: var(--folderpane-margin);
 
     /* pane header */
     & > #folderPaneHeaderBar {
@@ -24,10 +24,10 @@
         }
         /* individual selection */
         & .container {
-            font-size: var(--foldertree-folder-font-size) !important;
+            font-size: var(--folderpane-folder-font-size) !important;
             border-color: transparent !important;
-            padding-top: var(--foldertree-folder-padding) !important;
-            padding-bottom: var(--foldertree-folder-padding) !important;
+            padding-top: var(--folderpane-folder-padding) !important;
+            padding-bottom: var(--folderpane-folder-padding) !important;
             margin: 1px 0px !important;
             & * {
                 font-family: var(--folder-font), var(--base-font), var(--fallback-font);
@@ -58,10 +58,10 @@
         
         /* individual email threads */
         & .card-layout {
-            height: var(--threadtree-card-height) !important;
+            height: var(--threadpane-card-height) !important;
 
             & > td {
-                padding: var(--threadtree-thread-margin) !important;
+                padding: var(--threadpane-thread-margin) !important;
 
                 /* individual email cards */
                 & .card-container:not(:hover) {
@@ -72,7 +72,7 @@
                     box-shadow: var(--box-shadow-subtle);
 
                     & .thread-card-column {
-                        margin-top: calc((var(--threadtree-card-height) - 49px) / 2);
+                        margin-top: calc((var(--threadpane-card-height) - 49px) / 2);
                     }
 
                     & .thread-card-row {
@@ -109,10 +109,10 @@
     /* header above email */
     & #singleMessage {
         padding: 8px;
-        margin: var(--message-header-margin) !important;
+        margin: var(--messagepane-header-margin) !important;
         margin-bottom: 0px !important;
         border: 1px solid light-dark(var(--color-gray-30), var(--layout-background-1));
-        border-radius: calc(var(--pane-rounding) - var(--message-header-margin) + 1px);
+        border-radius: calc(var(--pane-rounding) - var(--messagepane-header-margin) + 1px);
         background-color: var(--layout-background-1) !important;
         box-shadow: 0px 0px 4px #00000033;
         z-index: 1;

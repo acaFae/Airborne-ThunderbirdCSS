@@ -1,8 +1,12 @@
 /* window layout */
 #paneLayout {
-    & > #threadPane,
+    & > #threadPane {
+        margin: var(--threadpane-margin);
+        border: none;
+        border-radius: var(--pane-rounding);
+    }
     & > #messagePane {
-        margin: 4px;
+        margin: var(--messagepane-margin);
         border: none;
         border-radius: var(--pane-rounding);
     }

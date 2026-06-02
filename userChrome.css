@@ -2,8 +2,8 @@
 /* IMPORTS */
 @import 'src/global.css';
 @import 'src/tablist-smooth.css';
-@import 'src/tablist-clear.css';
 @import 'src/inboxes-clean.css';
+@import 'src/tablist-clear.css';
 @import 'src/rounded-panes.css';
 
 /* VARIABLES */
@@ -16,12 +16,15 @@
     --button-rounding: 8px;
     --listbox-rounding: 8px;
     --pane-rounding: 16px;
-
-    --foldertree-folder-font-size: 1.1em;
-    --foldertree-folder-padding: 2px;
-    --threadtree-thread-margin: 2px 8px;
-    --threadtree-card-height: 70px;
-    --message-header-margin: 4px;
+    
+    --folderpane-margin: 4px;
+    --folderpane-folder-font-size: 1.1em;
+    --folderpane-folder-padding: 2px;
+    --threadpane-margin: 8px;
+    --threadpane-thread-margin: 2px 8px;
+    --threadpane-card-height: 70px;
+    --messagepane-margin: 8px;
+    --messagepane-header-margin: 6px;
 
     --box-shadow-subtle: 0px 0px 4px #00000033;
 }
