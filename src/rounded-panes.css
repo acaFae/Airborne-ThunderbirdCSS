@@ -10,8 +10,4 @@
         border: none;
         border-radius: var(--pane-rounding);
     }
-    & > #folderPaneSplitter,
-    & > #messagePaneSplitter {
-        border-color: light-dark(var(--color-gray-30), var(--color-gray-90)) !important;
-    }
 }

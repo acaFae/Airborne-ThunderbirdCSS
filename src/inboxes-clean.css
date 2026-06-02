@@ -5,7 +5,12 @@
 
 /* window layout */
 #paneLayout {
-    background-color: light-dark(#e4e4e8,#0f0f0f) !important;
+    background-color: var(--bg-main-color) !important;
+
+    & > #folderPaneSplitter,
+    & > #messagePaneSplitter {
+        border-color: var(--pane-splitter-color) !important;
+    }
 }
 
 /* list of inboxes */
@@ -68,7 +73,7 @@
                     background-color: var(--layout-background-0) !important;
                 }
                 & .card-container {
-                    border-color: light-dark(var(--color-gray-30), transparent) !important;
+                    border-color: var(--border-main-color) !important;
                     box-shadow: var(--box-shadow-subtle);
 
                     & .thread-card-column {
@@ -111,10 +116,10 @@
         padding: 8px;
         margin: var(--messagepane-header-margin) !important;
         margin-bottom: 0px !important;
-        border: 1px solid light-dark(var(--color-gray-30), var(--layout-background-1));
+        border: 1px solid var(--border-main-color);
         border-radius: calc(var(--pane-rounding) - var(--messagepane-header-margin) + 1px);
         background-color: var(--layout-background-1) !important;
-        box-shadow: 0px 0px 4px #00000033;
+        box-shadow: var(--box-shadow-subtle);
         z-index: 1;
 
         & #messageHeader {
