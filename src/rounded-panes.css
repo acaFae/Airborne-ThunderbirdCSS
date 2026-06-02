@@ -9,6 +9,6 @@
     }
     & > #folderPaneSplitter,
     & > #messagePaneSplitter {
-        border-color: light-dark(var(--color-gray-30), var(--color-gray-80)) !important;
+        border-color: light-dark(var(--color-gray-30), var(--color-gray-90)) !important;
     }
 }
