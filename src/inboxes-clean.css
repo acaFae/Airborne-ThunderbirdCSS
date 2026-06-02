@@ -60,7 +60,7 @@
             height: 70px !important;
 
             & > td {
-                padding: 1px 8px !important;
+                padding: 2px 8px !important;
 
                 /* individual email cards */
                 & .card-container:not(:hover) {
@@ -68,7 +68,8 @@
                 }
                 & .card-container {
                     border-color: light-dark(var(--color-gray-30), transparent) !important;
-                    
+                    box-shadow: 0px 0px 4px #00000033;
+
                     & .thread-card-column {
                         margin-top: 11px;
                     }
@@ -111,7 +112,9 @@
         border: 1px solid light-dark(var(--color-gray-30), var(--layout-background-1));
         border-radius: 11px;
         background-color: var(--layout-background-1) !important;
-        
+        box-shadow: 0px 0px 4px #00000033;
+        z-index: 1;
+
         & #messageHeader {
             gap: 0px !important;
 
@@ -133,6 +136,7 @@
             }
         }
     }
+    /* popup notification for email */
     & #mail-notification-top {
         border-block-end: none !important;
     }
