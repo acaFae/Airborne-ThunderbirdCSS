@@ -1,11 +1,15 @@
 
 /* IMPORTS */
 /* comment out imports to your desire */
+/* some may be commented out by default */
 @import 'src/global.css';
 @import 'src/tablist-smooth.css';
 @import 'src/tablist-clear.css';
 @import 'src/mail-clean.css';
 @import 'src/rounded-panes.css';
+/* @import 'src/gradient-bg.css'; */
+
+
 
 /* VARIABLES */
 :root {
@@ -27,8 +31,15 @@
     --messagepane-header-margin: 6px;
     --accountpane-margin: 16px 16px 16px 4px;
 
-    --bg-main-color: light-dark(var(--color-gray-30),var(--color-gray-100));
-    --bg-accent-color: light-dark(var(--color-gray-20),var(--color-gray-80));
+    --theme-main-color: var(--selected-item-color);
+    --theme-light-color: hsl(from var(--theme-main-color) calc(h - 0) calc(s + 40) calc(l + 20));
+    --theme-dark-color: hsl(from var(--theme-main-color) calc(h + 0) calc(s - 30) calc(l - 50));
+    --theme-flex-color: light-dark(var(--theme-light-color), var(--theme-dark-color));
+
+    --bg-main-plain-color: light-dark(var(--color-gray-30),var(--color-gray-90));
+    --bg-main-color: var(--bg-main-plain-color);
+    --bg-accent-plain-color: light-dark(var(--color-gray-20),var(--color-gray-80));
+    --bg-accent-color: var(--bg-accent-plain-color);
     --pane-splitter-color: transparent;
     --border-main-color: light-dark(var(--color-gray-30), transparent);
     --border-select-color: light-dark(var(--color-gray-80), var(--color-gray-30));

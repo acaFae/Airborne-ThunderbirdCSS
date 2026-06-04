@@ -5,7 +5,7 @@
 
 /* window layout */
 #paneLayout {
-    background-color: var(--bg-main-color) !important;
+    background: var(--bg-main-color) !important;
 
     & > #folderPaneSplitter,
     & > #messagePaneSplitter {
