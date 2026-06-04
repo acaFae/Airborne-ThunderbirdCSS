@@ -2,15 +2,16 @@
     --button-border-radius: var(--button-rounding) !important;
     --listbox-border-radius: var(--listbox-rounding) !important;
 }
-
 body {
     background: var(--bg-main-color) !important;
 }
 
 /* list of inboxes */
 #folderPane {
+
     /* list of folder lists */
     & > .sidebar-panel-scroll {
+        
         /* individual selection */
         & .container {
             font-size: var(--folderpane-folder-font-size) !important;

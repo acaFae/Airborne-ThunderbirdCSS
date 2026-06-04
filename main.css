@@ -45,7 +45,7 @@
     --theme-flex-color: light-dark(var(--theme-light-color), var(--theme-dark-color));
 
     /* background colors */
-    --bg-main-plain-color: light-dark(var(--color-gray-30),var(--color-gray-90));
+    --bg-main-plain-color: light-dark(var(--color-gray-30),var(--color-gray-100));
     --bg-main-color: var(--bg-main-plain-color);
     --bg-accent-plain-color: light-dark(var(--color-gray-20),var(--color-gray-80));
     --bg-accent-color: var(--bg-accent-plain-color);
