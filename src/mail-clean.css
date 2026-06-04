@@ -3,30 +3,14 @@
     --listbox-border-radius: var(--listbox-rounding) !important;
 }
 
-/* window layout */
-#paneLayout {
+body {
     background: var(--bg-main-color) !important;
-
-    & > #folderPaneSplitter,
-    & > #messagePaneSplitter {
-        border-color: var(--pane-splitter-color) !important;
-    }
 }
 
 /* list of inboxes */
 #folderPane {
-    background: transparent !important;
-    margin: var(--left-pane-margin);
-
-    /* pane header */
-    & > .sidebar-panel-header {
-        background-color: transparent !important;
-    }
     /* list of folder lists */
-    & > #folderTree {
-        &::before, &::after {
-            display: none !important;
-        }
+    & > .sidebar-panel-scroll {
         /* individual selection */
         & .container {
             font-size: var(--folderpane-folder-font-size) !important;

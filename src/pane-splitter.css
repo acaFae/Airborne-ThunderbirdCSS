@@ -1,0 +1,3 @@
+hr[is="pane-splitter"] {
+    border-color: var(--pane-splitter-color) !important;
+}

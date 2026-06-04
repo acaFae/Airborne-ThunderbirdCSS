@@ -1,0 +1,16 @@
+#folderPane,
+#booksPane {
+    background: transparent !important;
+    margin: var(--left-pane-margin);
+
+    /* pane header */
+    & > .sidebar-panel-header {
+        background-color: transparent !important;
+    }
+
+    & > .sidebar-panel-scroll {
+        &::before, &::after {
+            display: none !important;
+        }
+    }
+}

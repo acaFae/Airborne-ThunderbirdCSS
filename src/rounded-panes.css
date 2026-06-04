@@ -1,16 +1,15 @@
-/* window layout */
-#paneLayout {
-    & > #threadPane {
-        margin: var(--centre-pane-margin);
-        border: none;
-        border-radius: var(--pane-rounding);
-        box-shadow: var(--box-shadow-subtle);
-    }
-    & > #messagePane,
-    & > #accountCentralBrowser {
-        margin: var(--big-pane-margin);
-        border: none;
-        border-radius: var(--pane-rounding);
-        box-shadow: var(--box-shadow-subtle);
-    }
+#threadPane,
+#cardsPane {
+    margin: var(--centre-pane-margin);
+    border: none;
+    border-radius: var(--pane-rounding);
+    box-shadow: var(--box-shadow-subtle);
+}
+#messagePane,
+#accountCentralBrowser,
+#detailsPane {
+    margin: var(--big-pane-margin);
+    border: none;
+    border-radius: var(--pane-rounding);
+    box-shadow: var(--box-shadow-subtle);
 }
