@@ -16,10 +16,10 @@
 /* list of inboxes */
 #folderPane {
     background: transparent !important;
-    margin: var(--folderpane-margin);
+    margin: var(--left-pane-margin);
 
     /* pane header */
-    & > #folderPaneHeaderBar {
+    & > .sidebar-panel-header {
         background-color: transparent !important;
     }
     /* list of folder lists */
