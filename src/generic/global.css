@@ -1,3 +1,7 @@
+:root {
+    background: var(--bg-main-color) !important;
+}
+
 * {
     font-family: var(--base-font), var(--fallback-font);
 }

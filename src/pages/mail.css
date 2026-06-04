@@ -2,9 +2,6 @@
     --button-border-radius: var(--button-rounding) !important;
     --listbox-border-radius: var(--listbox-rounding) !important;
 }
-body {
-    background: var(--bg-main-color) !important;
-}
 
 /* list of inboxes */
 #folderPane {
