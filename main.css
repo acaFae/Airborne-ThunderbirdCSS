@@ -2,18 +2,22 @@
 /* IMPORTS */
 /* comment out imports to your desire */
 /* some may be commented out by default */
-@import 'src/global.css';
-@import 'src/tablist-smooth.css';
-@import 'src/tablist-clear.css';
-@import 'src/mail.css';
-@import 'src/rounded-panes.css';
-/* @import 'src/gradient-bg.css'; */
-@import 'src/left-pane.css';
-@import 'src/pane-splitter.css';
+
+@import 'src/generic/global.css';
+@import 'src/generic/left-pane.css';
+@import 'src/generic/pane-splitter.css';
+@import 'src/generic/rounded-panes.css';
+/* @import 'src/generic/gradient-bg.css'; */
+
+@import 'src/tab-list/smooth.css';
+@import 'src/tab-list/clear.css';
+
+@import 'src/pages/mail.css';
 
 
 
 /* VARIABLES */
+
 :root {
 
     /* fonts */
