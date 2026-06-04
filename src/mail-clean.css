@@ -63,19 +63,18 @@
         background-color: var(--bg-accent-color) !important;
         
         /* individual email threads */
+        & .card-layout:not(.selected) .card-container:not(:hover) {
+            background-color: var(--layout-background-0) !important;
+        }
         & .card-layout {
-
+            
             & > td {
                 padding: var(--threadpane-thread-margin) !important;
-
+                
                 /* individual email cards */
-                & .card-container {
+                & > .card-container {
                     border-color: var(--border-main-color) !important;
                     box-shadow: var(--box-shadow-subtle);
-
-                    &:not(:hover) {
-                        background-color: var(--layout-background-0) !important;
-                    }
 
                     & .thread-card-column {
                         margin-top: 10px;

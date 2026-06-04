@@ -18,7 +18,7 @@
     --listbox-rounding: 8px;
     --pane-rounding: 16px;
     
-    --folderpane-margin: 4px;
+    --folderpane-margin: 4px 8px;
     --folderpane-folder-font-size: 1.1em;
     --folderpane-folder-padding: 2px;
     --threadpane-margin: 16px 4px;
@@ -31,5 +31,6 @@
     --bg-accent-color: light-dark(var(--color-gray-20),var(--color-gray-80));
     --pane-splitter-color: transparent;
     --border-main-color: light-dark(var(--color-gray-30), transparent);
+    --border-select-color: light-dark(var(--color-gray-80), var(--color-gray-30));
     --box-shadow-subtle: 0px 0px 4px light-dark(#00000011,#00000033);
 }
