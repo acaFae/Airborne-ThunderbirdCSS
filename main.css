@@ -22,14 +22,13 @@
     --listbox-rounding: 8px;
     --pane-rounding: 16px;
     
-    --folderpane-margin: 4px 8px;
+    --left-pane-margin: 8px 8px;
     --folderpane-folder-font-size: 1.1em;
     --folderpane-folder-padding: 2px;
-    --threadpane-margin: 16px 4px;
+    --centre-pane-margin: 16px 4px;
     --threadpane-thread-margin: 2px 8px;
-    --messagepane-margin: 16px 16px 16px 4px;
+    --big-pane-margin: 16px 16px 16px 4px;
     --messagepane-header-margin: 6px;
-    --accountpane-margin: 16px 16px 16px 4px;
 
     --theme-main-color: var(--selected-item-color);
     --theme-light-color: hsl(from var(--theme-main-color) calc(h - 0) calc(s + 40) calc(l + 20));
