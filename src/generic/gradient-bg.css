@@ -1,5 +1,5 @@
 :root {
     /* overwrites variables with colorful alternatives */
-    --bg-main-color: linear-gradient(to bottom,var(--bg-main-plain-color) 70%, var(--theme-flex-color) 200%) !important;
-    --bg-accent-color: color-mix(in srgb, var(--bg-accent-plain-color) 98%, var(--theme-flex-color) 2%);
+    --bg-main-color: linear-gradient(to bottom,var(--bg-main-base-color) 70%, var(--theme-flex-color) 100%) !important;
+    --bg-accent-color: color-mix(in srgb, var(--bg-accent-base-color) 98%, var(--theme-flex-color) 2%);
 }
