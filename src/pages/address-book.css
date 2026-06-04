@@ -1,0 +1,47 @@
+/* pane of contacts in book */
+#cardsPane {
+    background-color: var(--bg-accent-color) !important;
+
+    /* contacts header */
+    & > #cardsPaneHeader {
+        background-color: transparent !important;
+        
+        & > #searchInput {
+            --search-bar-border-color: var(--border-main-color) !important;
+        }
+    }
+
+    /* contacts list */
+    & > #cards {
+        border-block-start: none !important;
+        background-color: transparent !important;
+
+        /* individual email threads */
+        & .card-layout {
+            --tree-card-background: var(--layout-background-0) !important;
+            --tree-card-border: var(--border-main-color) !important;
+
+            &:hover {
+                --tree-card-border: var(--theme-highlight-color) !important;
+            }
+            &.selected, &:active {
+                --tree-card-background: var(--theme-faded-color) !important;
+                --tree-card-border: var(--theme-highlight-color) !important;
+            }
+            
+            & > td {
+                padding: var(--bookpane-contact-margin) !important;
+                
+                /* individual email cards */
+                & > .card-container {
+                    box-shadow: var(--box-shadow-subtle);
+                    border-width: 2px !important;
+                }
+            }
+        }
+    }
+}
+
+#detailsPane {
+    background-color: #88888822;
+}

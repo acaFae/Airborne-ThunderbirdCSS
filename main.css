@@ -13,6 +13,7 @@
 @import 'src/tab-list/clear.css';
 
 @import 'src/pages/mail.css';
+@import 'src/pages/address-book.css';
 
 
 
@@ -41,6 +42,7 @@
     --folderpane-folder-padding: 2px;
     --threadpane-thread-margin: 2px 8px;
     --messagepane-header-margin: 6px;
+    --bookpane-contact-margin: 2px 8px;
 
     /* default background colors */
     --bg-main-base-color: light-dark(var(--color-gray-30),var(--color-gray-100));
