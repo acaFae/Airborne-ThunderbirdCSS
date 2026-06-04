@@ -63,9 +63,13 @@
         background-color: var(--bg-accent-color) !important;
         
         /* individual email threads */
-        & .card-layout:not(.selected) .card-container:not(:hover) {
-            background-color: var(--layout-background-0) !important;
+        /* not selected and not hovered view */
+        & .card-layout:not(.selected) {
+            & .card-container:not(:hover) {
+                background-color: var(--layout-background-0) !important;
+            }
         }
+        /* base look */
         & .card-layout {
             
             & > td {
