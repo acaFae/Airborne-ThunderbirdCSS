@@ -3,6 +3,11 @@
     --listbox-border-radius: var(--listbox-rounding) !important;
 }
 
+#paneLayout {
+    background: var(--bg-main-color) !important;
+    background-attachment: fixed !important;
+}
+
 /* list of inboxes */
 #folderPane {
 

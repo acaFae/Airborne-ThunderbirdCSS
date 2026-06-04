@@ -1,3 +1,7 @@
+#navigation-toolbox {
+    background-color: var(--bg-main-base-color) !important;
+}
+
 #tabs-toolbar {
     background-image: none !important;
     background-color: transparent !important;
