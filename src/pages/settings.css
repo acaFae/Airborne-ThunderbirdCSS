@@ -1,14 +1,14 @@
 /* main settings page */
 #preferences-stack {
     & .sticky-container {
-        background: var(--bg-main-color) !important;
+        background: var(--bg-main-base-color) !important;
     }
 }
 
 /* addons and themes page */
 #full {
     & #page-header > .sticky-container {
-        background: var(--bg-main-color) !important;
+        background: var(--bg-main-base-color) !important;
 
         & > div {
             background: transparent !important;

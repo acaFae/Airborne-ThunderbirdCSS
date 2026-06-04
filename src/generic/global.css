@@ -1,5 +1,6 @@
 :root {
     background: var(--bg-main-color) !important;
+    background-attachment: fixed !important;
 }
 
 * {
