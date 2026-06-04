@@ -1,0 +1,17 @@
+/* main settings page */
+#preferences-stack {
+    & .sticky-container {
+        background: var(--bg-main-color) !important;
+    }
+}
+
+/* addons and themes page */
+#full {
+    & #page-header > .sticky-container {
+        background: var(--bg-main-color) !important;
+
+        & > div {
+            background: transparent !important;
+        }
+    }
+}
