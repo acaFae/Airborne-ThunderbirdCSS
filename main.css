@@ -47,10 +47,13 @@
     --bg-accent-base-color: light-dark(var(--color-gray-20),var(--color-gray-80));
 
     /* theme colors */
-    --theme-main-color: var(--selected-item-color);
-    --theme-light-color: color-mix(in srgb, var(--bg-main-base-color) 75%, var(--theme-main-color) 25%);
-    --theme-dark-color: color-mix(in srgb, var(--bg-main-base-color) 95%, var(--theme-main-color) 5%);
-    --theme-flex-color: light-dark(var(--theme-light-color), var(--theme-dark-color));
+    --theme-base-color: var(--selected-item-color);
+    --theme-faded-light-color: color-mix(in srgb, #f0f0f0 90%, var(--theme-base-color) 10%);
+    --theme-faded-dark-color: color-mix(in srgb, #101010 90%, var(--theme-base-color) 10%);
+    --theme-faded-color: light-dark(var(--theme-faded-light-color), var(--theme-faded-dark-color));
+    --theme-highlight-light-color: color-mix(in srgb, #f0f0f0 50%, var(--theme-base-color) 50%);
+    --theme-highlight-dark-color: color-mix(in srgb, #101010 50%, var(--theme-base-color) 50%);
+    --theme-highlight-color: light-dark(var(--theme-highlight-light-color), var(--theme-highlight-dark-color));
 
     /* background colors */
     --bg-main-color: var(--bg-main-base-color);

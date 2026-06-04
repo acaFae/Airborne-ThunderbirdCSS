@@ -49,20 +49,29 @@ body {
         
         /* individual email threads */
         /* not selected and not hovered view */
-        & .card-layout:not(.selected) {
+        /* & .card-layout:not(.selected) {
             & .card-container:not(:hover) {
                 background-color: var(--layout-background-0) !important;
             }
-        }
+        } */
         /* base look */
         & .card-layout {
+            --tree-card-background: var(--layout-background-0) !important;
+            --tree-card-border: var(--border-main-color) !important;
+
+            &:hover {
+                --tree-card-border: var(--theme-highlight-color) !important;
+            }
+            &.selected {
+                --tree-card-background: var(--theme-faded-color) !important;
+                --tree-card-border: var(--theme-highlight-color) !important;
+            }
             
             & > td {
                 padding: var(--threadpane-thread-margin) !important;
                 
                 /* individual email cards */
                 & > .card-container {
-                    border-color: var(--border-main-color) !important;
                     box-shadow: var(--box-shadow-subtle);
 
                     & .thread-card-column {
