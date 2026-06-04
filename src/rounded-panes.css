@@ -4,15 +4,18 @@
         margin: var(--threadpane-margin);
         border: none;
         border-radius: var(--pane-rounding);
+        box-shadow: var(--box-shadow-subtle);
     }
     & > #messagePane {
         margin: var(--messagepane-margin);
         border: none;
         border-radius: var(--pane-rounding);
+        box-shadow: var(--box-shadow-subtle);
     }
     & > #accountCentralBrowser {
         margin: var(--accountpane-margin);
         border: none;
         border-radius: var(--pane-rounding);
+        box-shadow: var(--box-shadow-subtle);
     }
 }
