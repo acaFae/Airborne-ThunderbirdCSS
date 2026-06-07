@@ -7,22 +7,35 @@
 #tabmail-container {
     background: var(--bg-main-color) !important;
     background-attachment: fixed !important;
+    & #today-pane-panel {
+        overflow: hidden;
+    }
 }
 
-#today-pane-panel {
-    overflow: hidden;
-}
-
+/* left-hand button bars */
 .minimonth-nav-section  {
     overflow: hidden;
 }
 
+/* calendar week grid */
 .multiday-grid {
     --viewBackground: var(--bg-main-base-color);
     --viewOffTimeBackground: var(--bg-main-base-color)
     --viewBorderColor: var(--bg-accent-color);
 }
 
-#calendar-task-tree {
-    background: var(--bg-main-base-color) !important;
+/* calendar tree of tasks */
+#calendar-task-box {
+    & #task-addition-box {
+        border: none !important;
+    }
+    & #calendar-task-tree {
+        background: var(--bg-main-base-color) !important;
+
+        & treecols {
+            & treecol {
+                box-shadow: none !important;
+            }
+        }
+    }
 }
