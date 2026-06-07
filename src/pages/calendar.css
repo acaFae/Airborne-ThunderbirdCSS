@@ -1,0 +1,28 @@
+/* background for calendar panes */
+#calendarContent {
+    background: var(--bg-main-color) !important;
+    background-attachment: fixed !important;
+}
+/* background for dynamic task/agenda pane */
+#tabmail-container {
+    background: var(--bg-main-color) !important;
+    background-attachment: fixed !important;
+}
+
+#today-pane-panel {
+    overflow: hidden;
+}
+
+.minimonth-nav-section  {
+    overflow: hidden;
+}
+
+.multiday-grid {
+    --viewBackground: var(--bg-main-base-color);
+    --viewOffTimeBackground: var(--bg-main-base-color)
+    --viewBorderColor: var(--bg-accent-color);
+}
+
+#calendar-task-tree {
+    background: var(--bg-main-base-color) !important;
+}

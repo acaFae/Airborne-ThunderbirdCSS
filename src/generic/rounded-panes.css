@@ -16,3 +16,25 @@
     border-radius: var(--pane-rounding);
     box-shadow: var(--box-shadow-subtle);
 }
+#calSidebar {
+    margin: var(--secondary-pane-margin);
+    margin-right: var(--between-panes-margin);
+    border: none;
+    border-radius: var(--pane-rounding);
+    box-shadow: var(--box-shadow-subtle);
+}
+#calendarDisplayBox {
+    margin: var(--big-pane-margin);
+    margin-left: var(--between-panes-margin);
+    margin-right: var(--between-panes-margin);
+    border: none;
+    border-radius: var(--pane-rounding);
+    /* box-shadow: var(--box-shadow-subtle); */
+}
+#today-pane-panel {
+    margin: var(--secondary-pane-margin);
+    margin-left: var(--between-panes-margin);
+    border: none;
+    border-radius: var(--pane-rounding);
+    box-shadow: var(--box-shadow-subtle);
+}

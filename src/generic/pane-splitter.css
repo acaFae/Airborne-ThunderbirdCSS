@@ -1,3 +1,5 @@
-hr[is="pane-splitter"] {
+hr[is="pane-splitter"],
+.calendar-sidebar-splitter,
+.calendar-splitter {
     border-color: var(--pane-splitter-color) !important;
 }

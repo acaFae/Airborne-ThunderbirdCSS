@@ -12,8 +12,9 @@
 @import 'src/tab-list/smooth.css';
 @import 'src/tab-list/clear.css';
 
-@import 'src/pages/mail.css';
 @import 'src/pages/address-book.css';
+@import 'src/pages/calendar.css';
+@import 'src/pages/mail.css';
 @import 'src/pages/settings.css';
 
 
