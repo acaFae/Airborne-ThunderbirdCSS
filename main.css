@@ -34,9 +34,10 @@
     --pane-rounding: 16px;
     
     /* pane margins (when 'rounded-panes.css' is enabled) */
-    --left-pane-margin: 8px 8px;
-    --centre-pane-margin: 16px 4px;
-    --big-pane-margin: 16px 16px 16px 4px;
+    --left-pane-margin: 8px;
+    --secondary-pane-margin: 16px;
+    --big-pane-margin: 16px;
+    --between-panes-margin: 4px;
 
     /* specific scenario variables */
     --folderpane-folder-font-size: 1.1em;
