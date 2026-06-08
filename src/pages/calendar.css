@@ -29,7 +29,7 @@
         /* individual mini calendar day */
         & .minimonth-day,
         & .minimonth-week {
-            padding: 8px 4px !important;
+            padding: 8px 4px 7px !important;
 
             &[selected] {
                 background: var(--theme-faded-color) !important;
@@ -46,13 +46,26 @@
 
     /* calendar weekly or monthly grid */
     & #calendar-view-box {
-        & .multiday-grid * {
+        /* all calendar boxes colors */
+        & #day-view,
+        & #week-view,
+        & #multiweek-view,
+        & #month-view {
+            /* default bg */
             --viewBackground: var(--bg-primary-base-color);
-            --viewTodayBackground: color-mix(in srgb, var(--bg-tertiary-color), var(--theme-highlight-color));
-            --viewWeekendBackground: var(--bg-tertiary-color);
             --viewOffTimeBackground: var(--bg-primary-base-color);
-            --viewBorderColor: var(--bg-secondary-color);
+            /* selected day */
             --viewDayBoxSelectedBackground: var(--theme-faded-color);
+            /* today */
+            --viewTodayBackground: color-mix(in srgb, var(--theme-base-color) 5%, var(--bg-primary-base-color));
+            --viewTodayOffBackground: color-mix(in srgb, var(--viewTodayBackground) 90%, black);
+            /* weekend */
+            --viewWeekendBackground: color-mix(in srgb, var(--viewBackground) 90%, var(--bg-tertiary-color));
+            --viewMonthDayOffLabelBackground: color-mix(in srgb, var(--viewWeekendBackground) 90%, black);
+            /* out of month */
+            --viewMonthDayOtherBackground: color-mix(in srgb, var(--bg-primary-base-color) 90%, black);
+            /* border */
+            --viewBorderColor: var(--bg-secondary-color);
         }
     }
     /* calendar tree of tasks */
