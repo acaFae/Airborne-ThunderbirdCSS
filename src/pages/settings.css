@@ -1,20 +1,20 @@
 /* main settings page */
 #preferences-stack {
-    background: var(--bg-main-color) !important;
+    background: var(--bg-primary-color) !important;
     background-attachment: fixed !important;
 
     & .sticky-container {
-        background: var(--bg-main-base-color) !important;
+        background: var(--bg-primary-base-color) !important;
     }
 }
 
 /* addons and themes page */
 #full {
-    background: var(--bg-main-color) !important;
+    background: var(--bg-primary-color) !important;
     background-attachment: fixed !important;
     
     & #page-header > .sticky-container {
-        background: var(--bg-main-base-color) !important;
+        background: var(--bg-primary-base-color) !important;
 
         & > div {
             background: transparent !important;

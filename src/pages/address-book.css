@@ -1,11 +1,11 @@
 body.all-ab-selected {
-    background: var(--bg-main-color) !important;
+    background: var(--bg-primary-color) !important;
     background-attachment: fixed !important;
 }
 
 /* pane of contacts in book */
 #cardsPane {
-    background-color: var(--bg-accent-color) !important;
+    background-color: var(--bg-secondary-color) !important;
 
     /* contacts header */
     & > #cardsPaneHeader {

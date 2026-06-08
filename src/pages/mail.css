@@ -4,7 +4,7 @@
 }
 
 #paneLayout {
-    background: var(--bg-main-color) !important;
+    background: var(--bg-primary-color) !important;
     background-attachment: fixed !important;
 }
 
@@ -34,7 +34,7 @@
 
     /* header bar */
     & #threadPaneHeaderBar {
-        background-color: var(--bg-accent-color) !important;
+        background-color: var(--bg-secondary-color) !important;
         border-block-end: none !important;
 
         /* left side of header */
@@ -47,7 +47,7 @@
     }
     /* list of emails */
     & #threadTree {
-        background-color: var(--bg-accent-color) !important;
+        background-color: var(--bg-secondary-color) !important;
         
         /* individual email threads */
         & .card-layout {
@@ -112,7 +112,7 @@
         margin-bottom: 0px !important;
         border: 1px solid var(--border-main-color);
         border-radius: calc(var(--pane-rounding) - var(--messagepane-header-margin) + 1px);
-        background-color: var(--bg-accent-color) !important;
+        background-color: var(--bg-secondary-color) !important;
         box-shadow: var(--box-shadow-subtle);
         z-index: 1;
 

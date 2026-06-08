@@ -48,8 +48,9 @@
     --bookpane-contact-margin: 2px 8px;
 
     /* default background colors */
-    --bg-main-base-color: light-dark(var(--color-gray-30),var(--color-gray-100));
-    --bg-accent-base-color: light-dark(var(--color-gray-20),var(--color-gray-80));
+    --bg-primary-base-color: light-dark(var(--color-gray-30),var(--color-gray-100));
+    --bg-secondary-base-color: light-dark(var(--color-gray-20),var(--color-gray-80));
+    --bg-tertiary-base-color: light-dark(var(--color-gray-10),var(--color-gray-70));
 
     /* theme colors */
     --theme-base-color: var(--selected-item-color);
@@ -61,8 +62,9 @@
     --theme-highlight-color: light-dark(var(--theme-highlight-light-color), var(--theme-highlight-dark-color));
 
     /* background colors */
-    --bg-main-color: var(--bg-main-base-color);
-    --bg-accent-color: var(--bg-accent-base-color);
+    --bg-primary-color: var(--bg-primary-base-color);
+    --bg-secondary-color: var(--bg-secondary-base-color);
+    --bg-tertiary-color: var(--bg-tertiary-base-color);
 
     /* other colors */
     --pane-splitter-color: transparent;

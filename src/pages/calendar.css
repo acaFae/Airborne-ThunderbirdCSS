@@ -1,11 +1,11 @@
 /* background for calendar panes */
 #calendarContent {
-    background: var(--bg-main-color) !important;
+    background: var(--bg-primary-color) !important;
     background-attachment: fixed !important;
 }
 /* background for dynamic task/agenda pane */
 #tabmail-container {
-    background: var(--bg-main-color) !important;
+    background: var(--bg-primary-color) !important;
     background-attachment: fixed !important;
     & #today-pane-panel {
         overflow: hidden;
@@ -47,9 +47,11 @@
     /* calendar weekly or monthly grid */
     & #calendar-view-box {
         & .multiday-grid * {
-            --viewBackground: var(--bg-main-base-color);
-            --viewOffTimeBackground: var(--bg-main-base-color);
-            --viewBorderColor: var(--bg-accent-color);
+            --viewBackground: var(--bg-primary-base-color);
+            --viewTodayBackground: color-mix(in srgb, var(--bg-tertiary-color), var(--theme-highlight-color));
+            --viewWeekendBackground: var(--bg-tertiary-color);
+            --viewOffTimeBackground: var(--bg-primary-base-color);
+            --viewBorderColor: var(--bg-secondary-color);
             --viewDayBoxSelectedBackground: var(--theme-faded-color);
         }
     }
@@ -64,7 +66,7 @@
 
         /* calendar task table */
         & #calendar-task-tree {
-            background: var(--bg-main-base-color) !important;
+            background: var(--bg-primary-base-color) !important;
 
             & treecols {
                 & treecol {
