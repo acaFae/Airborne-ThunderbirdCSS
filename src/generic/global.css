@@ -1,3 +1,8 @@
+:root {
+    --button-border-radius: var(--button-rounding) !important;
+    --listbox-border-radius: var(--listbox-rounding) !important;
+}
+
 body {
     font-family: var(--base-font), var(--fallback-font);
 }
