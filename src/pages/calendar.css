@@ -45,27 +45,27 @@
 #calendarDisplayBox {
 
     /* calendar weekly or monthly grid */
-    & #calendar-view-box {
+    & #view-box {
         /* all calendar boxes colors */
         & #day-view,
         & #week-view,
         & #multiweek-view,
         & #month-view {
-            /* default bg */
-            --viewBackground: var(--bg-primary-base-color);
-            --viewOffTimeBackground: var(--bg-primary-base-color);
             /* selected day */
             --viewDayBoxSelectedBackground: var(--theme-faded-color);
+            /* default bg */
+            --viewBackground: var(--bg-primary-base-color);
+            --viewOffTimeBackground: color-mix(in srgb, var(--viewBackground) 90%, black);
             /* today */
-            --viewTodayBackground: color-mix(in srgb, var(--theme-base-color) 5%, var(--bg-primary-base-color));
+            --viewTodayBackground: color-mix(in srgb, var(--theme-base-color) 10%, var(--bg-primary-base-color));
             --viewTodayOffBackground: color-mix(in srgb, var(--viewTodayBackground) 90%, black);
             /* weekend */
-            --viewWeekendBackground: color-mix(in srgb, var(--viewBackground) 90%, var(--bg-tertiary-color));
-            --viewMonthDayOffLabelBackground: color-mix(in srgb, var(--viewWeekendBackground) 90%, black);
+            --viewWeekendBackground: color-mix(in srgb, var(--viewBackground) 90%, black);
+            --viewMonthDayOffLabelBackground: color-mix(in srgb, var(--viewWeekendBackground) 95%, black);
             /* out of month */
             --viewMonthDayOtherBackground: color-mix(in srgb, var(--bg-primary-base-color) 90%, black);
             /* border */
-            --viewBorderColor: var(--bg-secondary-color);
+            --viewBorderColor: light-dark(var(--color-gray-40), var(--color-gray-80));
         }
     }
     /* calendar tree of tasks */
