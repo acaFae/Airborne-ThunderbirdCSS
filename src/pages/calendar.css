@@ -12,29 +12,64 @@
     }
 }
 
-/* left-hand button bars */
-.minimonth-nav-section  {
-    overflow: hidden;
-}
 
-/* calendar week grid */
-.multiday-grid {
-    --viewBackground: var(--bg-main-base-color);
-    --viewOffTimeBackground: var(--bg-main-base-color)
-    --viewBorderColor: var(--bg-accent-color);
-}
 
-/* calendar tree of tasks */
-#calendar-task-box {
-    & #task-addition-box {
-        border: none !important;
+/* left-hand sidebar */
+#calSidebar {
+    /* mini calendar view (includes buttons) */
+    & #calMinimonthBox {
+
+        /* mini calendar header */
+        & .minimonth-header {
+            & .minimonth-nav-section  {
+                overflow: hidden;
+            }
+        }
+
+        /* individual mini calendar day */
+        & .minimonth-day,
+        & .minimonth-week {
+            padding: 8px 4px !important;
+
+            &[selected] {
+                background: var(--theme-faded-color) !important;
+            }
+            &::after {
+                display: none !important;
+            }
+        }
     }
-    & #calendar-task-tree {
-        background: var(--bg-main-base-color) !important;
+}
 
-        & treecols {
-            & treecol {
-                box-shadow: none !important;
+/* entire large calendar pane */
+#calendarDisplayBox {
+
+    /* calendar weekly or monthly grid */
+    & #calendar-view-box {
+        & .multiday-grid * {
+            --viewBackground: var(--bg-main-base-color);
+            --viewOffTimeBackground: var(--bg-main-base-color);
+            --viewBorderColor: var(--bg-accent-color);
+            --viewDayBoxSelectedBackground: var(--theme-faded-color);
+        }
+    }
+    /* calendar tree of tasks */
+    & #calendar-task-box {
+
+
+        /* task table menu, above header */
+        & #task-addition-box {
+            border: none !important;
+        }
+
+        /* calendar task table */
+        & #calendar-task-tree {
+            background: var(--bg-main-base-color) !important;
+
+            & treecols {
+                & treecol {
+                    box-shadow: none !important;
+                }
             }
         }
     }
