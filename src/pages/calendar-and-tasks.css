@@ -19,24 +19,40 @@
     /* mini calendar view (includes buttons) */
     & #calMinimonthBox {
 
-        /* mini calendar header */
-        & .minimonth-header {
-            & .minimonth-nav-section  {
-                overflow: hidden;
+        & #calMinimonth {
+            --mmMainBorderColor: transparent !important;
+            --mmMainBorderRadius: calc(var(--button-border-radius) + 2px) !important;
+
+            /* mini calendar header */
+            & .minimonth-header {
+                & .minimonth-nav-section  {
+                    overflow: hidden;
+                }
             }
         }
-
+        
         /* individual mini calendar day */
         & .minimonth-day,
         & .minimonth-week {
-            padding: 8px 4px 7px !important;
+            --mmDayBorderRadius: 8px;
+            --mmHighlightBorderColor: var(--theme-base-color);
+            --mmDaySelectedBackground: var(--theme-faded-color);
+            --mmDaySelectedBorderColor: var(--theme-base-color);
+            padding: 8px 0px 7px !important;
+            margin: 2px !important;
 
             &[selected] {
-                background: var(--theme-faded-color) !important;
+                /* background: var(--theme-faded-color) !important; */
             }
             &::after {
                 display: none !important;
             }
+        }
+    }
+
+    & #calendar-list {
+        & > li {
+            border-radius: var(--button-border-radius) !important;
         }
     }
 }
@@ -51,20 +67,24 @@
         & #week-view,
         & #multiweek-view,
         & #month-view {
-            /* selected day */
-            --viewDayBoxSelectedBackground: var(--theme-faded-color);
+
             /* default bg */
             --viewBackground: var(--bg-primary-base-color);
-            --viewOffTimeBackground: color-mix(in srgb, var(--viewBackground) 85%, var(--color-gray-80));
-            /* today */
+            --viewOffTimeBackground: color-mix(in srgb, var(--viewBackground) 85%, black);
+
+            /* selected day */
+            --viewDayBoxSelectedBackground: var(--theme-faded-color);
+            /* today (day-hours and off-hours) */
             --viewTodayBackground: color-mix(in srgb, var(--theme-base-color) 10%, var(--bg-primary-base-color));
-            --viewTodayOffBackground: color-mix(in srgb, var(--viewTodayBackground) 85%, var(--color-gray-80));
-            /* weekend */
-            --viewWeekendBackground: color-mix(in srgb, var(--viewBackground) 85%, var(--color-gray-80));
-            --viewMonthDayOffLabelBackground: color-mix(in srgb, var(--viewWeekendBackground) 90%, var(--color-gray-80));
-            /* out of month */
-            --viewMonthDayOtherBackground: color-mix(in srgb, var(--bg-primary-base-color) 85%, var(--color-gray-80));
-            /* border */
+            --viewTodayOffBackground: color-mix(in srgb, var(--viewTodayBackground) 85%, black);
+
+            /* weekend (day-hours and off-hours */
+            --viewWeekendBackground: color-mix(in srgb, var(--viewBackground) 85%, black);
+            --viewMonthDayOffLabelBackground: color-mix(in srgb, var(--viewWeekendBackground) 90%, black);
+            /* out of month (multiweek and monthly view) */
+            --viewMonthDayOtherBackground: color-mix(in srgb, var(--bg-primary-base-color) 85%, black);
+            
+            /* table borders */
             --viewBorderColor: light-dark(var(--color-gray-40), var(--color-gray-80));
         }
     }
@@ -86,6 +106,45 @@
                     box-shadow: none !important;
                 }
             }
+        }
+    }
+}
+
+/* right-hand sidebar */
+#today-pane-panel {
+    /* header */
+    & .sidebar-header {
+        padding: 0px 8px;
+    }
+
+    /* task list/tree */
+    & #unifinder-todo-tree {
+        padding: 0px 8px;
+
+        & treecols {
+            & > * {
+                box-shadow: none !important;
+            }
+            & > treecolpicker {
+                border-inline-start: none !important;
+                & > * {
+                    box-shadow: none !important;
+                }
+            }
+        }
+    }
+
+    /* new-task input bar */
+    & #unifinder-task-edit-field {
+        margin: 8px 16px !important;
+    }
+
+    & #mini-day-box {
+        & #datevalue-label {
+            margin: 0px 8px !important;
+        }
+        & #monthNameContainer {
+            margin-bottom: 2px !important;
         }
     }
 }
