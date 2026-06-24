@@ -54,11 +54,11 @@
 
     /* theme colors */
     --theme-base-color: var(--selected-item-color);
-    --theme-faded-light-color: color-mix(in srgb, #f0f0f0 90%, var(--theme-base-color) 10%);
-    --theme-faded-dark-color: color-mix(in srgb, #101010 90%, var(--theme-base-color) 10%);
+    --theme-faded-light-color: color-mix(in srgb, #f0f0f0 85%, var(--theme-base-color));
+    --theme-faded-dark-color: color-mix(in srgb, #101010 90%, var(--theme-base-color));
     --theme-faded-color: light-dark(var(--theme-faded-light-color), var(--theme-faded-dark-color));
-    --theme-highlight-light-color: color-mix(in srgb, #f0f0f0 50%, var(--theme-base-color) 50%);
-    --theme-highlight-dark-color: color-mix(in srgb, #101010 50%, var(--theme-base-color) 50%);
+    --theme-highlight-light-color: color-mix(in srgb, #f0f0f0 50%, var(--theme-base-color));
+    --theme-highlight-dark-color: color-mix(in srgb, #101010 50%, var(--theme-base-color));
     --theme-highlight-color: light-dark(var(--theme-highlight-light-color), var(--theme-highlight-dark-color));
 
     /* background colors */

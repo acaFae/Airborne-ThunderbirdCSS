@@ -1,11 +1,11 @@
-/* background for calendar panes */
+/* background behind panes */
 #calendarContent {
-    background: var(--bg-primary-color) !important;
+    background: var(--bg-primary-base-color) !important;
     background-attachment: fixed !important;
 }
-/* background for dynamic task/agenda pane */
+/* background behind specifically dynamic task/agenda pane */
 #tabmail-container {
-    background: var(--bg-primary-color) !important;
+    background: var(--bg-primary-base-color) !important;
     background-attachment: fixed !important;
     & #today-pane-panel {
         overflow: hidden;
@@ -55,15 +55,15 @@
             --viewDayBoxSelectedBackground: var(--theme-faded-color);
             /* default bg */
             --viewBackground: var(--bg-primary-base-color);
-            --viewOffTimeBackground: color-mix(in srgb, var(--viewBackground) 90%, black);
+            --viewOffTimeBackground: color-mix(in srgb, var(--viewBackground) 85%, var(--color-gray-80));
             /* today */
             --viewTodayBackground: color-mix(in srgb, var(--theme-base-color) 10%, var(--bg-primary-base-color));
-            --viewTodayOffBackground: color-mix(in srgb, var(--viewTodayBackground) 90%, black);
+            --viewTodayOffBackground: color-mix(in srgb, var(--viewTodayBackground) 85%, var(--color-gray-80));
             /* weekend */
-            --viewWeekendBackground: color-mix(in srgb, var(--viewBackground) 90%, black);
-            --viewMonthDayOffLabelBackground: color-mix(in srgb, var(--viewWeekendBackground) 95%, black);
+            --viewWeekendBackground: color-mix(in srgb, var(--viewBackground) 85%, var(--color-gray-80));
+            --viewMonthDayOffLabelBackground: color-mix(in srgb, var(--viewWeekendBackground) 90%, var(--color-gray-80));
             /* out of month */
-            --viewMonthDayOtherBackground: color-mix(in srgb, var(--bg-primary-base-color) 90%, black);
+            --viewMonthDayOtherBackground: color-mix(in srgb, var(--bg-primary-base-color) 85%, var(--color-gray-80));
             /* border */
             --viewBorderColor: light-dark(var(--color-gray-40), var(--color-gray-80));
         }

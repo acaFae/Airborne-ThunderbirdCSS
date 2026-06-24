@@ -1,5 +1,5 @@
 :root {
     /* overwrites variables with colorful alternatives */
-    --bg-primary-color: linear-gradient(to bottom,var(--bg-primary-base-color) 70%, var(--theme-faded-color) 100%) !important;
+    --bg-primary-color: linear-gradient(to bottom,var(--bg-primary-base-color) 80%, var(--theme-faded-color) 100%) !important;
     --bg-secondary-color: color-mix(in srgb, var(--bg-secondary-base-color) 98%, var(--theme-faded-color) 2%);
 }
