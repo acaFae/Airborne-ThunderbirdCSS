@@ -16,12 +16,17 @@
 
 /* left-hand sidebar */
 #calSidebar {
-    /* mini calendar view (includes buttons) */
+    /* mini calendar container  */
     & #calMinimonthBox {
-
+        
+        /* mini calendar box (includes buttons) */
         & #calMinimonth {
             --mmMainBorderColor: transparent !important;
             --mmMainBorderRadius: calc(var(--button-border-radius) + 2px) !important;
+
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
 
             /* mini calendar header */
             & .minimonth-header {
@@ -31,22 +36,63 @@
             }
         }
         
-        /* individual mini calendar day */
+        /* every cell in calendar grid */
+        & .minimonth-row-header,
         & .minimonth-day,
         & .minimonth-week {
-            --mmDayBorderRadius: 8px;
-            --mmHighlightBorderColor: var(--theme-base-color);
+            /* default day */
+            --mmDayPadding: 0px;
+            --mmDayBorderRadius: 32px;
+            --mmDayColor: inherit;
+            --mmDayBackground: transparent;
+            --mmDayBorderColor: transparent;
+            /* on click */
+            --mmHighlightColor: var(--mmDayColor);
+            --mmHighlightBackground: var(--mmDayBackground);
+            /* on hover */
+            --mmHighlightBorderColor: var(--mmDayBorderColor);
+            /* selected day */
+            --mmDaySelectedColor: var(--theme-base-color);
             --mmDaySelectedBackground: var(--theme-faded-color);
-            --mmDaySelectedBorderColor: var(--theme-base-color);
-            padding: 8px 0px 7px !important;
-            margin: 2px !important;
+            --mmDaySelectedBorderColor: transparent;
+            /* today day */
+            --mmDayTodayBackground: inherit;
+            --mmDayTodayBorderColor: inherit;
+            /* selected and today day */
+            --mmDaySelectedTodayBackground: color-mix(in srgb, var(--theme-faded-color) 85%, #888888);
+            --mmDaySelectedTodayBorderColor: transparent;
 
-            &[selected] {
-                /* background: var(--theme-faded-color) !important; */
-            }
+            border-width: 0px !important;
+            vertical-align: middle !important;
+            text-align: center !important;
+            padding-top: 1px !important;
+            box-sizing: border-box !important;
+            height: 2.5em !important;
+            width: 2.5em !important;
+
+        }
+
+        /* specifically clickable day cells */
+        & .minimonth-day[interactive] {
+            position: relative !important;
+
+            /* events on day dot indicator */
             &::after {
-                display: none !important;
+                --mmDayBusyColor: inherit;
+                --mmDayBusyIndicatorSize: 4px;
+                display: block;
+                position: absolute;
+                width: var(--mmDayBusyIndicatorSize);
+                height: var(--mmDayBusyIndicatorSize);
+                left: 50%;
+                bottom: 0.2em;
+                /* for centering */
+                transform: translateX(-50%); 
             }
+        }
+        /* specifically week number labels */
+        & .minimonth-week {
+            padding-right: 0.5em !important;
         }
     }
 
