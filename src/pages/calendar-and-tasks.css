@@ -16,6 +16,7 @@
 
 /* left-hand sidebar */
 #calSidebar {
+    background: var(--bg-secondary-base-color) !important;
         
     /* mini calendar box (includes buttons) */
     & #calMinimonth {
@@ -106,9 +107,14 @@
 
 /* entire large calendar pane */
 #calendarDisplayBox {
+    background: var(--layout-background-0) !important;
 
     /* calendar weekly or monthly grid */
     & #view-box {
+        border: 2px solid light-dark(var(--color-gray-20), var(--color-gray-80)) !important;
+        border-radius: calc(var(--pane-rounding) - 8px) !important;
+        overflow: hidden !important;
+        margin: 8px;
         background: transparent !important;
 
         /* all calendar boxes colors */
@@ -118,23 +124,25 @@
         & #month-view {
 
             /* default bg */
-            --viewBackground: var(--bg-primary-base-color);
-            --viewOffTimeBackground: color-mix(in srgb, var(--viewBackground) 85%, black);
+            --viewBackground: var(--layout-background-0);
+            --viewOffTimeBackground: color-mix(in srgb, var(--viewBackground) 95%, black);
 
             /* selected day */
             --viewDayBoxSelectedBackground: var(--theme-faded-color);
+
             /* today (day-hours and off-hours) */
-            --viewTodayBackground: color-mix(in srgb, var(--theme-base-color) 10%, var(--bg-primary-base-color));
-            --viewTodayOffBackground: color-mix(in srgb, var(--viewTodayBackground) 85%, black);
+            --viewTodayBackground: inherit;
+            --viewTodayOffBackground: inherit;
 
             /* weekend (day-hours and off-hours */
-            --viewWeekendBackground: color-mix(in srgb, var(--viewBackground) 85%, black);
-            --viewMonthDayOffLabelBackground: color-mix(in srgb, var(--viewWeekendBackground) 90%, black);
+            --viewWeekendBackground: color-mix(in srgb, var(--viewBackground) 95%, black);
+            --viewMonthDayOffLabelBackground: color-mix(in srgb, var(--viewWeekendBackground) 98%, black);
+
             /* out of month (multiweek and monthly view) */
-            --viewMonthDayOtherBackground: color-mix(in srgb, var(--bg-primary-base-color) 85%, black);
+            --viewMonthDayOtherBackground: color-mix(in srgb, var(--bg-primary-base-color) 95%, black);
             
             /* table borders */
-            --viewBorderColor: light-dark(var(--color-gray-40), var(--color-gray-80));
+            --viewBorderColor: light-dark(var(--color-gray-20), var(--color-gray-80));
         }
 
         /* other calendar styles */
@@ -142,11 +150,18 @@
         & #week-view,
         & #multiweek-view,
         & #month-view {
+            padding: 0px !important;
+
+            & .multiday-hour-box {
+                border-inline-end: 1px solid transparent;
+            }
+            /* right side column */
             & .multiday-header-corner,
             & .multiday-timebar  {
                 border-inline-end: none !important;
                 border-block-end: none !important;
             }
+            /* events in calendar */
             & .multiday-events-list {
                 margin: 0px 2px !important;
 
@@ -157,6 +172,36 @@
                     & .gripbar-start,
                     & .gripbar-end {
                         opacity: 0%;
+                    }
+                }
+            }
+            & calendar-month-day-box-item {
+                border: none;
+                border-radius: 8px !important;
+            }
+            /* right-side border */
+            & .multiday-end-border {
+                display: none !important;
+            }
+            /* week view day header */
+            & .day-column-heading {
+                border-block-start: none !important;
+            }
+            & .monthtable {
+                border-inline-end: none !important;
+                border-block-end: none !important;
+
+                /* multiweek and month day label */
+                & th > calendar-day-label {
+                    border-block-start: none !important;
+                }
+                & th:first-child > calendar-day-label {
+                    border-inline-start: none !important;
+                }
+                & .monthbody {
+                    /* first day of each week on month calendar */
+                    & tr > td:first-child > calendar-month-day-box {
+                        border-inline-start: none !important
                     }
                 }
             }
@@ -186,8 +231,11 @@
 
 /* right-hand sidebar */
 #today-pane-panel {
+    background: var(--bg-secondary-base-color) !important;
+
     /* header */
     & .sidebar-header {
+        background: var(--bg-tertiary-base-color) !important;
         padding: 0px 8px;
     }
 
@@ -210,6 +258,7 @@
 
     /* new-task input bar */
     & #unifinder-task-edit-field {
+        background: var(--bg-primary-base-color) !important;
         margin: 8px 16px !important;
     }
 
