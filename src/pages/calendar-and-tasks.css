@@ -109,6 +109,8 @@
 
     /* calendar weekly or monthly grid */
     & #view-box {
+        background: transparent !important;
+
         /* all calendar boxes colors */
         & #day-view,
         & #week-view,
@@ -133,6 +135,31 @@
             
             /* table borders */
             --viewBorderColor: light-dark(var(--color-gray-40), var(--color-gray-80));
+        }
+
+        /* other calendar styles */
+        & #day-view,
+        & #week-view,
+        & #multiweek-view,
+        & #month-view {
+            & .multiday-header-corner,
+            & .multiday-timebar  {
+                border-inline-end: none !important;
+                border-block-end: none !important;
+            }
+            & .multiday-events-list {
+                margin: 0px 2px !important;
+
+                & calendar-event-box {
+                    border: none;
+                    border-radius: 8px !important;
+
+                    & .gripbar-start,
+                    & .gripbar-end {
+                        opacity: 0%;
+                    }
+                }
+            }
         }
     }
     /* calendar tree of tasks */
