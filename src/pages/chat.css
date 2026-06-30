@@ -1,0 +1,7 @@
+#tabpanelcontainer {
+    background: transparent !important;
+
+    & #chatTabPanel {
+        background: transparent !important;
+    }
+}
