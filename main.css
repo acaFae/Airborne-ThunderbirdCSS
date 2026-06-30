@@ -37,9 +37,8 @@
     
     /* pane margins (when 'rounded-panes.css' is enabled) */
     --left-pane-margin: 8px;
-    --secondary-pane-margin: 16px;
-    --big-pane-margin: 16px;
-    --between-panes-margin: 4px;
+    --secondary-pane-margin: 8px;
+    --big-pane-margin: 8px;
 
     /* specific scenario variables */
     --folderpane-folder-font-size: 1.1em;

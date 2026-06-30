@@ -1,15 +1,12 @@
 /* INBOX PAGE */
 #threadPane {
     margin: var(--secondary-pane-margin);
-    margin-left: var(--between-panes-margin);
-    margin-right: var(--between-panes-margin);
     border: none;
     border-radius: var(--pane-rounding);
     box-shadow: var(--box-shadow-subtle);
 }
 #messagePane {
     margin: var(--big-pane-margin);
-    margin-left: var(--between-panes-margin);
     border: none;
     border-radius: var(--pane-rounding);
     box-shadow: var(--box-shadow-subtle);
@@ -19,7 +16,6 @@
 /* INBOX PAGE: ACCOUNT PAGE */
 #accountCentralBrowser {
     margin: var(--big-pane-margin);
-    margin-left: var(--between-panes-margin);
     border: none;
     border-radius: var(--pane-rounding);
     box-shadow: var(--box-shadow-subtle);
@@ -29,15 +25,12 @@
 /* ADDRESS BOOK */
 #cardsPane {
     margin: var(--secondary-pane-margin);
-    margin-left: var(--between-panes-margin);
-    margin-right: var(--between-panes-margin);
     border: none;
     border-radius: var(--pane-rounding);
     box-shadow: var(--box-shadow-subtle);
 }
 #detailsPane {
     margin: var(--big-pane-margin);
-    margin-left: var(--between-panes-margin);
     border: none;
     border-radius: var(--pane-rounding);
     box-shadow: var(--box-shadow-subtle);
@@ -47,21 +40,18 @@
 /* CALENDAR AND TASKS PAGE */
 #calSidebar {
     margin: var(--secondary-pane-margin);
-    margin-right: var(--between-panes-margin);
     border: none;
     border-radius: var(--pane-rounding);
     box-shadow: var(--box-shadow-subtle);
 }
 #calendarDisplayBox {
     margin: var(--big-pane-margin);
-    margin-left: var(--between-panes-margin);
     border: none;
-    border-radius: var(--pane-rounding);
+    /* border-radius: var(--pane-rounding); */
     /* box-shadow: var(--box-shadow-subtle); */
 }
 #today-pane-panel {
     margin: var(--secondary-pane-margin);
-    margin-left: var(--between-panes-margin);
     border: none;
     border-radius: var(--pane-rounding);
     box-shadow: var(--box-shadow-subtle);
@@ -71,7 +61,6 @@
 /* CHAT PAGE */
 #chatTabPanel {
     margin: var(--big-pane-margin);
-    margin-right: var(--between-panes-margin);
     border: none;
     border-radius: var(--pane-rounding);
     box-shadow: var(--box-shadow-subtle);

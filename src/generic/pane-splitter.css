@@ -2,4 +2,10 @@ hr[is="pane-splitter"],
 .calendar-sidebar-splitter,
 .calendar-splitter {
     border-color: var(--pane-splitter-color) !important;
+    /* width: 0px !important;
+
+    &::after {
+        position: absolute;
+        width: 5px;
+    } */
 }
