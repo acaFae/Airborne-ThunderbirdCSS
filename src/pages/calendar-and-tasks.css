@@ -220,7 +220,7 @@
 
         /* calendar task table */
         & #calendar-task-tree {
-            background: var(--bg-primary-base-color) !important;
+            background: var(--layout-background-0) !important;
 
             & treecols {
                 & treecol {
