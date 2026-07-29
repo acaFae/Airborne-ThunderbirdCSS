@@ -10,3 +10,9 @@ body {
 form input[type="search"] {
     border: none !important;
 }
+
+.tag-icon,
+.icon,
+.toolbarbutton-icon {
+    fill: transparent !important;
+}
