@@ -96,6 +96,10 @@
     }
 }
 
+#messagePane {
+    background: var(--layout-background-0) !important;
+}
+
 /* email container */
 #messagepanebox {
     background-color: var(--layout-background-0) !important;
