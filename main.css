@@ -41,8 +41,8 @@
     --big-pane-margin: 8px;
 
     /* specific scenario variables */
-    --folderpane-folder-font-size: 1.1em;
-    --folderpane-folder-padding: 2px;
+    --folderpane-folder-font-size: 1.0em;
+    --folderpane-folder-padding: 0px;
     --threadpane-thread-margin: 2px 8px;
     --messagepane-header-margin: 6px;
     --bookpane-contact-margin: 2px 8px;
