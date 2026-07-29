@@ -10,7 +10,7 @@
     minmax(auto, calc(var(--messagePaneSplitter-width) + 2 * var(--big-pane-margin))) !important;
 
     &.account-central {
-        grid-template: "folders folderPaneSplitter account-central" auto / minmax(auto, var(--folderPaneSplitter-width)) min-content minmax(auto, 1fr)
+        grid-template: "folders folderPaneSplitter account-central" auto / minmax(auto, calc(var(--folderPaneSplitter-width) + 1 * var(--secondary-pane-margin))) min-content minmax(auto, 1fr) !important;
     }
 }
 
