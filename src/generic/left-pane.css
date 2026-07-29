@@ -2,7 +2,7 @@
 #booksPane {
     /* background: transparent !important;
     margin: var(--left-pane-margin); */
-    margin: var(--secondary-pane-margin);
+    margin: var(--left-pane-margin);
     margin-right: 0px;
     padding: 2px 8px;
     border: none;
