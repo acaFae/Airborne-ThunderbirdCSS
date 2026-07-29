@@ -33,6 +33,11 @@
             }
         }
     }
+
+    & #folderPaneWriteMessage {
+        width: 0px;
+        padding-right: 0px !important;
+    }
 }
 
 /* list of emails */
@@ -49,6 +54,14 @@
         }
         & > .list-header-bar-container-end {
             padding: 6px 3px 6px 3px !important;
+        }
+
+        & #threadPaneQuickFilterButton {
+            padding-right: 0px !important;
+
+            & > span {
+                display: none;
+            }
         }
     }
     /* list of emails */
