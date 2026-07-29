@@ -104,7 +104,8 @@
                 /* individual email cards */
                 & > .card-container {
                     /* box-shadow: var(--box-shadow-subtle); */
-                    border-width: 2px !important;
+                    border-radius: 12px !important;
+                    border-width: 0px 4px 0px 4px !important;
 
                     & .thread-card-column {
                         margin-top: 10px;
@@ -120,15 +121,29 @@
                     & .thread-card-dynamic-row {
                         display: flex !important;
                         flex-flow: row nowrap !important;
+                        padding-right: 4px !important;
 
                         & .thread-card-subject-container {
-                            order: 2;
+                            order: 1;
                             flex-grow: 1 !important;
                         }
                         & .thread-card-icon-info {
-                            order: 1;
+                            order: 2;
                             flex-grow: 0 !important;
-                            flex-direction: row-reverse;
+                            flex-direction: reverse;
+
+                            & > thread-card-tags {
+                                padding-top: 2px;
+                                transition: gap 0.5s cubic-bezier(0, 1, 0, 1);
+
+                                &:hover {
+                                    gap: 14px !important;
+                                }
+                            }
+
+                            & > .button-star[title="Message not starred"] {
+                                display: none !important;
+                            }
                         }
                     }
                 }
@@ -172,9 +187,13 @@
                 & * { font-family: var(--subject-font), var(--base-font), var(--fallback-font); }
             }
             /* tags */
-            & .tag {
-                padding: 1px 6px !important;
-                border-radius: 16px !important;
+            & #expandedtagsRow {
+                margin-bottom: 3px;
+
+                & .tag {
+                    padding: 1px 6px !important;
+                    border-radius: 16px !important;
+                }
             }
         }
     }
