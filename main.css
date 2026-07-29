@@ -26,9 +26,9 @@
 
     /* fonts */
     --fallback-font: 'sans-serif';
-    --base-font: 'Be Vietnam Pro';
-    --folder-font: 'Be Vietnam Pro';
-    --subject-font: 'Be Vietnam Pro';
+    --base-font: 'Inter';
+    --folder-font: 'Inter';
+    --subject-font: 'Inter';
 
     /* rounded elements */
     --button-rounding: 8px;
