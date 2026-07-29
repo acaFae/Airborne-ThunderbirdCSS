@@ -58,12 +58,29 @@
 
         & #threadPaneQuickFilterButton {
             padding-right: 0px !important;
-
+            box-shadow: none !important;
+            border: none !important;
+            
             & > span {
                 display: none;
             }
         }
+        
     }
+    
+    & #quick-filter-bar {
+        border-block-end: none !important;
+        
+        & #qfb-sticky {
+            border: none !important;
+            box-shadow: none !important;
+
+            &:not([aria-pressed="true"]):not(:hover) {
+                background-color: transparent !important;
+            }
+        }
+    }
+
     /* list of emails */
     & #threadTree {
         background-color: var(--bg-secondary-color) !important;

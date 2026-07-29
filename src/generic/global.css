@@ -6,3 +6,7 @@
 body {
     font-family: var(--base-font), var(--fallback-font);
 }
+
+form input[type="search"] {
+    border: none !important;
+}
