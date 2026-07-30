@@ -1,11 +1,8 @@
 hr[is="pane-splitter"],
 .calendar-sidebar-splitter,
 .calendar-splitter {
-    border-color: var(--pane-splitter-color) !important;
-    /* width: 0px !important;
-
-    &::after {
-        position: absolute;
-        width: 5px;
-    } */
+    border-width: 0px !important;
+    inline-size: 8px !important;
+    margin-inline-end: -8px !important;
+    margin-inline-start: 0px !important;
 }
