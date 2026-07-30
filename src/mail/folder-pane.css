@@ -1,0 +1,47 @@
+/* list of mail folders */
+#folderPane {
+    background-color: var(--bg-secondary-base-color) !important;
+
+    /* header */
+    & > #folderPaneHeaderBar {
+        background: transparent !important;
+
+        /* new message button */
+        & > #folderPaneWriteMessage {
+            width: 0px !important; /* cutoff text off right */
+            padding-right: 0px !important;
+        }
+    }
+
+    /* content */
+    & > #folderTree {
+
+        &::before, &::after {
+            display: none !important;
+        }
+
+        /* folder category */
+        & > li {
+            /* folder category header */
+            & > div.mode-container {
+                & > div.mode-name {
+                    font-size: 1.0em;
+                    color: var(--color-gray-50);
+                }
+            }
+            /* folder category content */
+            & > ul[role='group'] {
+                margin: 0px 4px !important;
+
+                /* folder item content */
+                & li div.container {
+                    border: none !important;
+                }
+                /* folder item children */
+                & li ul[role='group'] {
+                    
+                }
+            }
+        }
+    }
+}

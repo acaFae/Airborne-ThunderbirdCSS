@@ -1,0 +1,124 @@
+/* list of all emails in selected inbox */
+#threadPane {
+    background-color: var(--bg-secondary-base-color) !important;
+
+    /* main header */
+    & > #threadPaneHeaderBar {
+        padding: 0px !important;
+
+        background-color: transparent !important;
+        border: none !important;
+
+        & > div > #threadPaneFolderName {
+            padding-left: 8px !important;
+        }
+        & > div > #threadPaneQuickFilterButton {
+            width: 0px !important; /* cutoff text */
+            padding-right: 0px !important;
+
+            border: none !important;
+            box-shadow: none !important;
+        }
+    }
+
+    /* filter-emails header */
+    & > #quick-filter-bar {
+        padding: 0px 3px !important;
+ 
+        background-color: transparent !important;
+        border: none !important;
+
+        & > div > #qfb-sticky {
+            border: none !important;
+            box-shadow: none !important;
+
+            /* remove idle background, when not needed */
+            &:not([aria-pressed="true"]):not(:hover) {
+                background-color: transparent !important;
+            }
+        }
+    }
+
+    /* emails list */
+    & > #threadTree {
+        background-color: transparent !important;
+
+        /* emails list content */
+        & > table.tree-table > tbody[is="tree-view-table-body"] {
+            
+            /* email row (contains selection data) */
+            & > tr[is="thread-card"] {
+
+                /* card styling controlled from where the data is */
+                --email-bg-color: var(--bg-primary-base-color);
+                --email-border-color: var(--bg-primary-base-color);
+
+                &:hover {--email-border-color: var(--theme-highlight-color);}
+                &:active {--email-bg-color: var(--theme-faded-color);}
+                &.selected {--email-border-color: var(--theme-highlight-color);}
+
+                /* email table cell */
+                & > td {
+                    padding: 1px 4px !important;
+
+                    /* individual email card */
+                    & > div.card-container {
+                        background-color: var(--email-bg-color) !important;
+                        border-color: var(--email-border-color) !important;
+                        border-width: 2px 2px !important;
+                        border-radius: 16px !important;
+
+                        /* each email card column (left || main) */
+                        & > div.thread-card-column {
+                            display: flex !important;
+                            flex-flow: column nowrap;
+                            justify-content: center;
+
+                            /* email send details (sender || datetime) */
+                            & > div.thread-card-row {
+                                & > span {
+                                    color: var(--color-gray-50) !important;
+                                    font-weight: 400 !important;
+                                    font-size: 0.8em !important;
+                                }
+                            }
+
+                            /* email content details (subject || tags) */
+                            & > div.thread-card-dynamic-row {
+                                display: flex !important;
+                                flex-flow: row nowrap;
+
+                                /* email card subject line */
+                                & > .thread-card-subject-container {
+                                    flex: 1 0;
+                                }
+
+                                /* email cards tags */
+                                & > .thread-card-icon-info {
+                                    flex: 0 0;
+                                    padding-right: 4px;
+                                    display: flex;
+                                    flex-flow: row nowrap;
+                                    align-items: flex-start !important;
+
+                                    /* tags */
+                                    & > thread-card-tags {
+                                        gap: 16px !important;
+                                    }
+                                    /* star */
+                                    & > button.button-star {
+                                        margin: -3px -4px 0px 0px !important;
+
+                                        &[title="Message not starred"] {
+                                            display: none !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

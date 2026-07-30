@@ -3,7 +3,12 @@
 /* comment out imports to your desire */
 /* some may be commented out by default */
 
+@import url("./src/global.css");
 @import url("./src/layout.css");
+
+@import url("./src/mail/layout.css");
+@import url("./src/mail/folder-pane.css");
+@import url("./src/mail/thread-pane.css");
 
 @import 'src/generic/global.css';
 /* @import 'src/generic/left-pane.css'; */
@@ -16,7 +21,7 @@
 
 @import 'src/pages/address-book.css';
 @import 'src/pages/calendar-and-tasks.css';
-@import 'src/pages/mail.css';
+/* @import 'src/pages/mail.css'; */
 @import 'src/pages/settings.css';
 @import 'src/pages/chat.css';
 
