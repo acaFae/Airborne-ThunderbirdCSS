@@ -31,8 +31,8 @@
     --subject-font: 'Be Vietnam Pro';
 
     /* rounded elements */
-    --button-rounding: 8px;
-    --listbox-rounding: 8px;
+    --button-rounding: 16px;
+    --listbox-rounding: 16px;
     --pane-rounding: 16px;
     
     /* pane margins (when 'rounded-panes.css' is enabled) */
