@@ -1,0 +1,53 @@
+/* || ALL PANES */
+
+#folderPane,            /* inbox > folders-sidebar */
+#threadPane,            /* inbox > email-list */
+#messagePane,           /* inbox > email-viewer */
+#accountCentralBrowser, /* inbox > account-settings */
+#cardsPane,             /* contacts > address-books-sidebar */
+#booksPane,             /* contacts > book-contacts-list */
+#detailsPane,           /* contacts > contact-viewer */
+#calSidebar,            /* calendar > calendar-sidebar */
+#calendarDisplayBox,    /* calendar > calendar-center */
+#today-pane-panel,      /* calendar > today-right-sidebar */
+#chatTabPanel           /* chat > chat-pane */
+{
+    border: none;
+    border-radius: var(--pane-rounding);
+}
+
+/* || SMALL SIDEBAR PANE */
+
+#folderPane,
+#booksPane
+{
+    margin: var(--left-pane-margin);
+    margin-right: 0px;
+}
+
+/* || MAIN SIDEBAR PANE */
+
+#threadPane,
+#cardsPane,
+#calSidebar
+{
+    margin: var(--secondary-pane-margin);
+    margin-right: 0px;
+}
+
+/* || BIG PANE */
+
+#messagePane,
+#detailsPane,
+#calendarDisplayBox,
+#chatTabPanel
+{
+    margin: var(--big-pane-margin);
+}
+
+/* || RIGHT SIDEBAR PANE */
+
+#today-pane-panel
+{
+    margin: var(--secondary-pane-margin);
+}
