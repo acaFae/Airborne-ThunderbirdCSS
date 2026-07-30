@@ -36,6 +36,11 @@
                 /* folder item content */
                 & li div.container {
                     border: none !important;
+
+                    & > span.name {
+                        font-family: var(--folder-font), var(--base-font), var(--fallback-font);
+                        font-weight: 400 !important;
+                    }
                 }
                 /* folder item children */
                 & li ul[role='group'] {
