@@ -1,0 +1,126 @@
+/* pane container */
+#messagePane {
+    background-color: transparent !important;
+}
+
+/* sandboxed pane container */
+#messagepanebox {
+    background-color: var(--layout-background-0) !important;
+
+    /* email header and header notifications */
+    & > #singleMessage {
+
+        /* email details header box */
+        & > #msgHeaderView > #messageHeader {
+            display: flex;
+            flex-flow: column nowrap;
+
+            margin: 4px 4px 0px;
+            padding: 16px 20px !important;
+            gap: 0px !important;
+
+            background-color: var(--bg-secondary-base-color);
+            border: none;
+            border-radius: 12px;
+
+            /* each email detail row */
+            & > .message-header-row {
+
+                /* || EMAIL HEADER: ROW STYLING */
+
+                /* sender and toolbar row */
+                &#headerSenderToolbarContainer {
+                    align-items: flex-start !important;
+
+                    & > #expandedfromRow {
+                        margin-bottom: 8px;
+                    }
+                }
+
+                /* subject row */
+                &#headerSubjectSecurityContainer {
+                    order: 1001;
+
+                    margin-top: 16px !important;
+                    
+                    /* subject text */
+                    & > #expandedsubjectRow > #expandedsubjectBox {
+                        font-size: 1.5em !important;
+                    }
+                }
+
+                /* tags row */
+                &#expandedtagsRow {
+                    order: 1002;
+                    
+                    margin-top: 2px !important;
+
+                    /* individual tags  elements */
+                    & > #expandedtagsBox > ol.tags-list > li.tag {
+                        font-size: 1em !important;
+                        padding: 0px 8px !important;
+                    }
+                }
+
+                /* EMAIL HEADER: ELEMENT STYLING */
+
+                /* all row key elements */
+                & .row-heading {
+                    padding: 0px !important;
+                }
+
+                /* email address containers */
+                & .header-recipient {
+                    --recipient-avatar-size: 36px;
+
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+
+                    color: inherit !important;
+                    background: transparent !important;
+                    border: transparent !important;
+                    padding: 0px 4px !important;
+
+                    /* "add to address book" button */
+                    & .recipient-address-book-button {
+                        display: none !important;
+                    }
+                    
+                    /* multi-line email container */
+                    & > .recipient-multi-line {
+                        & > .recipient-multi-line-address {
+                            color: var(--color-gray-50);
+                        }
+                    }
+
+                    &:hover {
+
+                        /* single-line email container */
+                        & > .recipient-single-line {
+                            text-decoration: currentColor underline;
+                        }
+    
+                        /* multi-line email container */
+                        & > .recipient-multi-line {
+                            & > .recipient-multi-line-name {
+                                text-decoration: currentColor underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* email notification */
+    & > #mail-notification-top {
+        border: none !important;
+        border-radius: 16px;
+    }
+
+    /* email content box */
+    & > #messagepane {
+        margin: 0px 32px;
+    }
+}

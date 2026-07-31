@@ -9,6 +9,7 @@
 @import url("./src/mail/layout.css");
 @import url("./src/mail/folder-pane.css");
 @import url("./src/mail/thread-pane.css");
+@import url("./src/mail/message-pane.css");
 
 @import 'src/generic/global.css';
 /* @import 'src/generic/left-pane.css'; */
@@ -44,8 +45,8 @@
     
     /* pane margins (when 'rounded-panes.css' is enabled) */
     --left-pane-margin: 8px;
-    --secondary-pane-margin: 10px;
-    --big-pane-margin: 10px;
+    --secondary-pane-margin: 8px;
+    --big-pane-margin: 8px;
 
     /* specific scenario variables */
     --folderpane-folder-font-size: 1.0em;
