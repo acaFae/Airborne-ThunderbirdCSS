@@ -11,16 +11,14 @@
 @import url("./src/mail/thread-pane.css");
 @import url("./src/mail/message-pane.css");
 
-/* @import 'src/generic/global.css'; */
-/* @import 'src/generic/left-pane.css'; */
-/* @import 'src/generic/pane-splitter.css'; */
-/* @import 'src/generic/floating-panes.css'; */
-/* @import 'src/generic/gradient-bg.css'; */
+@import url("./src/contacts/layout.css");
+@import url("./src/contacts/books-pane.css");
+@import url("./src/contacts/cards-pane.css");
 
 @import 'src/tab-list/smooth.css';
 @import 'src/tab-list/clear.css';
 
-@import 'src/pages/address-book.css';
+/* @import 'src/pages/address-book.css'; */
 @import 'src/pages/calendar-and-tasks.css';
 /* @import 'src/pages/mail.css'; */
 @import 'src/pages/settings.css';
