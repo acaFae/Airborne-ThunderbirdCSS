@@ -101,7 +101,7 @@
                     color: inherit !important;
                     background: transparent !important;
                     border: transparent !important;
-                    padding: 0px 4px !important;
+                    padding: 0px 0px !important;
 
                     /* "add to address book" button */
                     & .recipient-address-book-button {
