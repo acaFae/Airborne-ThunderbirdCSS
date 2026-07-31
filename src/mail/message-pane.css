@@ -32,8 +32,18 @@
                 &#headerSenderToolbarContainer {
                     align-items: flex-start !important;
 
+                    /* sender section */
                     & > #expandedfromRow {
                         margin-bottom: 8px;
+                    }
+
+                    /* toolbar section > toolbar container */
+                    & > #header-view-toolbox > #header-view-toolbar {
+
+                        /* individual toolbar buttons */
+                        & toolbarbutton {
+                            border: none !important;
+                        }
                     }
                 }
 
