@@ -1,0 +1,28 @@
+/* || IN-BUILT VARIABLES */
+
+:root {
+    --button-border-radius: 16px !important;
+    --listbox-border-radius: 16px !important;
+}
+
+/* || GLOBAL TEXT STYLING */
+
+body {
+    font-family: var(--base-font), var(--fallback-font);
+}
+
+/* || INPUT FIELDS */
+
+form input[type="search"]
+{
+    border: none !important;
+}
+
+/* || BUTTONS */
+
+.tag-icon,
+.icon,
+.toolbarbutton-icon
+{
+    fill: transparent !important;
+}
