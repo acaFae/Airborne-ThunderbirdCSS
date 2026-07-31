@@ -6,6 +6,17 @@
 /* sandboxed pane container */
 #messagepanebox {
     background-color: var(--layout-background-0) !important;
+    
+    /* email content box */
+    & > #messagepane {
+        margin: 0px 32px;
+    }
+
+    /* email notification */
+    & > #mail-notification-top {
+        border: none !important;
+        border-radius: 16px;
+    }
 
     /* email header and header notifications */
     & > #singleMessage {
@@ -121,16 +132,5 @@
                 }
             }
         }
-    }
-
-    /* email notification */
-    & > #mail-notification-top {
-        border: none !important;
-        border-radius: 16px;
-    }
-
-    /* email content box */
-    & > #messagepane {
-        margin: 0px 32px;
     }
 }
