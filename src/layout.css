@@ -52,3 +52,15 @@
 {
     margin: var(--secondary-pane-margin);
 }
+
+/* || PANE SPLITTERS */
+
+hr[is="pane-splitter"],
+.calendar-sidebar-splitter,
+.calendar-splitter
+{
+    border-width: 0px !important;
+    inline-size: 8px !important;
+    margin-inline-end: -8px !important;
+    margin-inline-start: 0px !important;
+}
