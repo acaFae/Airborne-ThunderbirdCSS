@@ -83,6 +83,11 @@
                     }
                 }
 
+                /* all header text containers */
+                & .header-row {
+                    line-height: initial !important;
+                }
+
                 /* EMAIL HEADER: ELEMENT STYLING */
 
                 /* all row key elements */
