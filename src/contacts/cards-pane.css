@@ -1,5 +1,7 @@
 #cardsPane {
     background-color: var(--color-bg-2) !important;
+    border: 1px solid var(--color-border-2) !important;
+
 
     /* header */
     &>#cardsPaneHeader {
@@ -19,8 +21,8 @@
             &>tr[is="ab-card-row"] {
 
                 /* card styling controlled from data store */
-                --contact-bg-color: var(--color-bg-0);
-                --contact-border-color: var(--color-bg-0);
+                --contact-bg-color: light-dark(var(--color-gray-10), var(--color-gray-100));
+                --contact-border-color: var(--contact-bg-color);
 
                 &:hover {
                     --contact-border-color: var(--theme-highlight-color);
@@ -44,6 +46,7 @@
                         border-color: var(--contact-border-color) !important;
                         border-width: 2px 2px !important;
                         border-radius: 16px !important;
+                        outline: 1px solid var(--color-phase-30);
 
                         /* card content */
                         &>.ab-card-row-data {

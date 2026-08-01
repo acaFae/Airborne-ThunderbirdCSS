@@ -1,6 +1,7 @@
 /* list of all emails in selected inbox */
 #threadPane {
     background-color: var(--color-bg-2) !important;
+    border: 1px solid var(--color-border-2) !important;
 
     /* main header */
     &>#threadPaneHeaderBar {
@@ -52,8 +53,8 @@
             &>tr[is="thread-card"] {
 
                 /* card styling controlled from where the data is */
-                --email-bg-color: var(--color-bg-0);
-                --email-border-color: var(--color-bg-0);
+                --email-bg-color: light-dark(var(--color-gray-10), var(--color-gray-100));
+                --email-border-color: var(--email-bg-color);
 
                 &:hover {
                     --email-border-color: var(--theme-highlight-color);
@@ -69,7 +70,7 @@
 
                 /* email table cell */
                 &>td {
-                    padding: 1px 4px !important;
+                    padding: 2px 6px !important;
 
                     /* individual email card */
                     &>div.card-container {
@@ -77,6 +78,7 @@
                         border-color: var(--email-border-color) !important;
                         border-width: 2px 2px !important;
                         border-radius: 16px !important;
+                        outline: 1px solid var(--color-phase-30);
 
                         /* each email card column (left || main) */
                         &>div.thread-card-column {
