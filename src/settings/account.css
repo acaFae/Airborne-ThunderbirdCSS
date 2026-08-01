@@ -1,0 +1,13 @@
+/* accounts sidebar */
+#accountTreeBox {
+
+    /* list of accounts */
+    & > ol#accounttree {
+        padding: 0px 8px !important;
+
+        & li > div.container {
+            border: none !important;
+            padding-right: 16px;
+        }
+    }
+}

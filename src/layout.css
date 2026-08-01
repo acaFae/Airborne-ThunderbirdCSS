@@ -10,7 +10,10 @@
 #calSidebar,            /* calendar > calendar-sidebar */
 #calendarDisplayBox,    /* calendar > calendar-center */
 #today-pane-panel,      /* calendar > today-right-sidebar */
-#chatTabPanel           /* chat > chat-pane */
+#chatTabPanel,          /* chat > chat-pane */
+#pref-category-box,     /* settings > sidebar */
+#sidebar,               /* extension-settings > sidebar */
+#accountTreeBox         /* account-settings > sidebar */
 {
     border: none;
     border-radius: var(--pane-rounding);
@@ -51,6 +54,16 @@
 #today-pane-panel
 {
     margin: var(--secondary-pane-margin);
+}
+
+/* || SETTINGS SIDEBAR */
+
+#pref-category-box,
+#sidebar,
+#accountTreeBox
+{
+    margin: var(--left-pane-margin) !important;
+    height: calc(100dvh - 2 * var(--left-pane-margin)) !important;
 }
 
 /* || PANE SPLITTERS */

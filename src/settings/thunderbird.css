@@ -1,0 +1,36 @@
+/* overall settings */
+#prefBox {
+
+    /* settings sidebar */
+    & > #pref-category-box {
+
+        /* settings sections list */
+        & > #categories {
+
+            /* setting section item */
+            & > .category {
+                min-height: 2.5em !important;
+
+                border: none !important;
+                border-radius: var(--button-border-radius) !important;
+
+                &:active {
+                    color: initial !important;
+                }
+            }
+        }
+    }
+
+    /* settings content */
+    & > #preferencesContainer {
+
+        /* content container */
+        & > .paneDeckContainer {
+
+            /* sticky header bar */
+            & > .sticky-container {
+                background-color: transparent !important;
+            }
+        }
+    }
+}

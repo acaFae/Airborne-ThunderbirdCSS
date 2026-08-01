@@ -1,0 +1,27 @@
+/* overall extensions page */
+#full {
+
+    /* extensions page sidebar */
+    & > #sidebar {
+        & > categories-box > moz-page-nav > moz-page-nav-button {
+            --page-nav-button-height: 2.5em;
+        }
+    }
+
+    /* extensions page content */
+    & > #content {
+
+        /* content header */
+        & > #page-header {
+
+            /* sticky header bar */
+            & > .sticky-container {
+                background-color: transparent !important;
+
+                & > :is(.main-search, .main-heading) {
+                    background-color: transparent !important;
+                }
+            }
+        }
+    }
+}

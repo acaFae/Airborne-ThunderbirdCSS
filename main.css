@@ -6,6 +6,10 @@
 @import url("./src/global.css");
 @import url("./src/layout.css");
 
+@import url("./src/settings/thunderbird.css");
+@import url("./src/settings/extension.css");
+@import url("./src/settings/account.css");
+
 @import url("./src/mail/layout.css");
 @import url("./src/mail/folder-pane.css");
 @import url("./src/mail/thread-pane.css");
@@ -21,7 +25,7 @@
 /* @import 'src/pages/address-book.css'; */
 @import 'src/pages/calendar-and-tasks.css';
 /* @import 'src/pages/mail.css'; */
-@import 'src/pages/settings.css';
+/* @import 'src/pages/settings.css'; */
 @import 'src/pages/chat.css';
 
 
