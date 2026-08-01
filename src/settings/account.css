@@ -1,9 +1,21 @@
 /* accounts sidebar */
 #accountTreeBox {
 
+    background-color: var(--color-bg-2) !important;
+    outline: 1px solid var(--color-border-2) !important;
+
+    /* sidebar header */
+    & > #accountTreeHeaderBar {
+        background-color: transparent !important;
+    }
+
     /* list of accounts */
-    & > ol#accounttree {
+    & > ol#accounttree { 
         padding: 0px 8px !important;
+
+        &::before, &::after {
+            display: none !important;
+        }
 
         & li > div.container {
             border: none !important;

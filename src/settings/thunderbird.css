@@ -5,6 +5,9 @@
     &>#pref-category-box {
         inline-size: 18em !important;
 
+        background-color: var(--color-bg-2) !important;
+        outline: 1px solid var(--color-border-2) !important;
+
         /* settings sections list */
         &>#categories {
 
