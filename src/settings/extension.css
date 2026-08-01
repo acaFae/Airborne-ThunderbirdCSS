@@ -3,8 +3,15 @@
 
     /* extensions page sidebar */
     & > #sidebar {
-        & > categories-box > moz-page-nav > moz-page-nav-button {
-            --page-nav-button-height: 2.5em;
+        inline-size: 18em !important;
+
+        & > categories-box > moz-page-nav {
+            box-sizing: border-box;
+            block-size: calc(100vh - 2 * var(--left-pane-margin)) !important;
+
+            & > moz-page-nav-button {
+                --page-nav-button-height: 2.5rem;
+            }
         }
     }
 

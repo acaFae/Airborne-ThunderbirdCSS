@@ -3,6 +3,7 @@
 
     /* settings sidebar */
     & > #pref-category-box {
+        inline-size: 18em !important;
 
         /* settings sections list */
         & > #categories {
