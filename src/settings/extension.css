@@ -5,33 +5,33 @@
 
 
     /* extensions page sidebar */
-    & > #sidebar {
+    &>#sidebar {
         inline-size: 18em !important;
 
-        & > categories-box > moz-page-nav {
+        &>categories-box>moz-page-nav {
             box-sizing: border-box;
             block-size: calc(100vh - 2 * var(--left-pane-margin)) !important;
 
-            & > moz-page-nav-button {
+            &>moz-page-nav-button {
                 --page-nav-button-height: 2.5rem;
             }
         }
     }
 
     /* extensions page content */
-    & > #content {
+    &>#content {
         flex: 1 0;
         overflow: auto;
         block-size: 100vh;
 
         /* content header */
-        & > #page-header {
+        &>#page-header {
 
             /* sticky header bar */
-            & > .sticky-container {
-                background: var(--bg-primary-base-color) !important;
+            &>.sticky-container {
+                background: var(--color-bg-0) !important;
 
-                & > :is(.main-search, .main-heading) {
+                &> :is(.main-search, .main-heading) {
                     background-color: transparent !important;
                 }
             }
