@@ -44,7 +44,7 @@
 
             /* sticky header bar */
             & > .sticky-container {
-                background-color: transparent !important;
+                background: var(--bg-primary-base-color) !important;
             }
         }
     }
