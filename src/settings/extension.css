@@ -1,5 +1,8 @@
 /* overall extensions page */
 #full {
+    display: flex !important;
+    flex-flow: row nowrap;
+
 
     /* extensions page sidebar */
     & > #sidebar {
@@ -17,6 +20,9 @@
 
     /* extensions page content */
     & > #content {
+        flex: 1 0;
+        overflow: auto;
+        block-size: 100vh;
 
         /* content header */
         & > #page-header {
