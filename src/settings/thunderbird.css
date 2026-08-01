@@ -19,6 +19,20 @@
                 }
             }
         }
+
+        /* sidebar footer buttons list */
+        & > .sidebar-footer-list {
+
+            /* sidebar footer item (consistent with same on extensions, via different method) */
+            & > .sidebar-footer-link {
+                box-sizing: border-box;
+                block-size: 30px !important;
+
+                & > .sidebar-footer-icon {
+                    margin: 0px 8px 0px 12px !important;
+                }
+            }
+        }
     }
 
     /* settings content */
