@@ -14,7 +14,7 @@ body {
 /* || HTML ELEMENTS */
 
 html {
-    background-color: var(--bg-primary-base-color) !important;
+    background-color: var(--bg-primary-base-color, var(--color-gray-90)) !important;
 }
 
 /* || INPUT FIELDS */
