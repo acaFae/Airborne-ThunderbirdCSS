@@ -24,6 +24,15 @@ form input[type="search"]
     border: none !important;
 }
 
+input[type="number"] {
+    &::-moz-number-spin-up {
+        border-radius: 0px var(--button-border-radius) 0px 0px !important;
+    }
+    &::-moz-number-spin-down {
+        border-radius: 0px 0px var(--button-border-radius) 0px !important;
+    }
+}
+
 /* || BUTTONS */
 
 .tag-icon,
