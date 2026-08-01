@@ -11,6 +11,12 @@ body {
     font-family: var(--base-font), var(--fallback-font);
 }
 
+/* || HTML ELEMENTS */
+
+html {
+    background-color: var(--bg-primary-base-color) !important;
+}
+
 /* || INPUT FIELDS */
 
 form input[type="search"]
