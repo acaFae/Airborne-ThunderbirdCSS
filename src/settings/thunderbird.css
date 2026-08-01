@@ -10,7 +10,7 @@
 
             /* setting section item */
             & > .category {
-                min-height: 2.5em !important;
+                min-height: 2.5rem !important;
 
                 border: none !important;
                 border-radius: var(--button-border-radius) !important;
