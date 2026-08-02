@@ -24,15 +24,15 @@
                 --contact-border-color: var(--contact-bg-color);
 
                 &:hover {
-                    --contact-border-color: var(--theme-highlight-color);
+                    --contact-border-color: var(--color-theme-50);
                 }
 
                 &:active {
-                    --contact-bg-color: var(--theme-faded-color);
+                    --contact-bg-color: var(--color-theme-30);
                 }
 
                 &.selected {
-                    --contact-border-color: var(--theme-highlight-color);
+                    --contact-border-color: var(--color-theme-50);
                 }
 
                 /* contact table cell */

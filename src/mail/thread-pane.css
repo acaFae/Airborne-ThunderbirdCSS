@@ -58,15 +58,15 @@
                 --email-border-color: var(--email-bg-color);
 
                 &:hover {
-                    --email-border-color: var(--theme-highlight-color);
+                    --email-border-color: var(--color-theme-50);
                 }
 
                 &:active {
-                    --email-bg-color: var(--theme-faded-color);
+                    --email-bg-color: var(--color-theme-30);
                 }
 
                 &.selected {
-                    --email-border-color: var(--theme-highlight-color);
+                    --email-border-color: var(--color-theme-50);
                 }
 
                 /* email table cell */
