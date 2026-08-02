@@ -3,18 +3,18 @@
     outline: 1px solid var(--color-border-2) !important;
 
     /* header */
-    &>#booksPaneHeaderBar {
+    & > #booksPaneHeaderBar {
         background-color: transparent !important;
 
         /* new contact button */
-        &>#booksPaneCreateContact {
+        & > #booksPaneCreateContact {
             width: 0px !important;
             padding-right: 0px !important;
         }
     }
 
     /* list of address books */
-    &>ul#books {
+    & > ul#books {
         padding: 0px 8px !important;
 
         &::before,
@@ -23,11 +23,16 @@
         }
 
         /* book row */
-        &>.bookRow {
+        & > .bookRow {
 
             /* book listbox item */
-            &>.bookRow-container {
-                border: none !important;
+            & > .bookRow-container {
+                border: 1px solid transparent !important;
+            }
+
+            /* on selection */
+            &.selected > .bookRow-container {
+                border: 1px solid var(--color-phase-30) !important;
             }
         }
     }
