@@ -19,7 +19,7 @@
                 border: none !important;
                 border-radius: var(--button-border-radius) !important;
 
-                font-family: var(--font-listbox);
+                font-family: var(--font-family-listbox);
 
                 &:active {
                     color: initial !important;
@@ -43,7 +43,7 @@
                 box-sizing: border-box;
                 border: none !important;
 
-                font-family: var(--font-listbox);
+                font-family: var(--font-family-listbox);
 
                 &>.sidebar-footer-icon {
                     margin: 0px !important;

@@ -16,7 +16,7 @@
             block-size: calc(100vh - 2 * var(--pane-margin)) !important;
             
             &>moz-page-nav-button {
-                font-family: var(--font-listbox);
+                font-family: var(--font-family-listbox);
                 --page-nav-button-height: var(--settings-sidebar-category-height);
                 
                 &[slot="secondary-nav"] {

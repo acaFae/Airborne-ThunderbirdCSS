@@ -54,19 +54,15 @@
     --color-border-1: light-dark(var(--color-gray-30), var(--color-gray-90));
     --color-border-2: light-dark(var(--color-gray-30), var(--color-gray-80));
     --color-border-3: light-dark(var(--color-gray-30), var(--color-gray-70));
-
-    /* || SPECIFIC COLORS */
-
-    
     
     /* || FONTS FAMILIES */
 
-    --font-header: 'Be Vietnam Pro', var(--font-subheader);
-    --font-subheader: 'Be Vietnam Pro', var(--font-base);
-    --font-base: 'Be Vietnam Pro', var(--font-fallback);
-    --font-fallback: 'sans-serif';
+    --font-family-header: 'Be Vietnam Pro', var(--font-family-subheader);
+    --font-family-subheader: 'Be Vietnam Pro', var(--font-family-base);
+    --font-family-base: 'Be Vietnam Pro', var(--font-family-fallback);
+    --font-family-fallback: 'sans-serif';
 
-    --font-listbox: var(--font-subheader);
+    --font-family-listbox: var(--font-family-subheader);
     
     /* || PANES */
     
@@ -77,7 +73,7 @@
     
     /* || MAIL */
     
-    --mail-message-subject-font-family: var(--font-header);
+    --mail-message-subject-font-family: var(--font-family-header);
     --mail-message-subject-font-size: 1.5em;
     --mail-message-subject-margin-top: 16px;
     --mail-message-tags-margin-top: 4px;
