@@ -9,35 +9,50 @@
     background-color: var(--color-bg-1) !important;
 
     /* email content box */
-    &>#messagepane {
-        margin: 0px 32px;
+    & > #messagepane {
+        margin: var(--mail-message-content-margin);
     }
 
     /* email notification */
-    &>#mail-notification-top {
+    & > #mail-notification-top {
         border: none !important;
-        border-radius: 16px;
+
+        /* email notification background container */
+        & > .notificationbox-stack {
+            background-color: transparent !important;
+            
+            /* email notification content container */
+            & > notification-message {
+                margin: var(--mail-message-header-margin) !important;
+                margin-bottom: 0px !important;
+
+                border: none !important;
+                border-radius: calc(var(--pane-radius) - var(--mail-message-header-margin)) !important;
+                overflow: hidden !important;
+            }
+        }
     }
 
     /* email header and header notifications */
-    &>#singleMessage {
+    & > #singleMessage {
 
         /* email details header box */
-        &>#msgHeaderView>#messageHeader {
+        & > #msgHeaderView > #messageHeader {
             display: flex;
             flex-flow: column nowrap;
 
-            margin: 4px 4px 0px;
+            margin: var(--mail-message-header-margin);
+            margin-bottom: 0px;
             padding: 16px 16px !important;
             gap: 0px !important;
 
             background-color: var(--color-bg-2);
             border: none;
-            border-radius: 12px;
+            border-radius: calc(var(--pane-radius) - var(--mail-message-header-margin));
             border: 1px solid var(--color-border-2);
 
             /* each email detail row */
-            &>.message-header-row {
+            & > .message-header-row {
 
                 /* || EMAIL HEADER: ROW STYLING */
 
@@ -46,12 +61,12 @@
                     align-items: flex-start !important;
 
                     /* sender section */
-                    &>#expandedfromRow {
+                    & > #expandedfromRow {
                         margin-bottom: 8px;
                     }
 
                     /* toolbar section > toolbar container */
-                    &>#header-view-toolbox>#header-view-toolbar {
+                    & > #header-view-toolbox > #header-view-toolbar {
 
                         /* individual toolbar buttons */
                         & toolbarbutton {
@@ -73,7 +88,7 @@
                     margin-top: 16px !important;
 
                     /* subject text */
-                    &>#expandedsubjectRow>#expandedsubjectBox {
+                    & > #expandedsubjectRow > #expandedsubjectBox {
                         font-size: 1.5em !important;
                         font-family: var(--font-subject);
                     }
@@ -86,7 +101,7 @@
                     margin-top: 2px !important;
 
                     /* individual tags  elements */
-                    &>#expandedtagsBox>ol.tags-list>li.tag {
+                    & > #expandedtagsBox > ol.tags-list > li.tag {
                         font-size: 1em !important;
                         padding: 0px 8px !important;
                     }
@@ -123,7 +138,7 @@
                     }
 
                     /* multi-line email container */
-                    &>.recipient-multi-line {
+                    & > .recipient-multi-line {
                         &>.recipient-multi-line-address {
                             color: var(--color-gray-50);
                         }
@@ -132,13 +147,13 @@
                     &:hover {
 
                         /* single-line email container */
-                        &>.recipient-single-line {
+                        & > .recipient-single-line {
                             text-decoration: currentColor underline;
                         }
 
                         /* multi-line email container */
-                        &>.recipient-multi-line {
-                            &>.recipient-multi-line-name {
+                        & > .recipient-multi-line {
+                            & > .recipient-multi-line-name {
                                 text-decoration: currentColor underline;
                             }
                         }

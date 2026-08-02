@@ -78,6 +78,10 @@
 
     /* || SPECIFIC LENGTHS */
 
+    --mail-message-header-margin: 4px;
+    --mail-message-notification-margin: 0px;
+    --mail-message-content-margin: 0px 32px;
+
     --settings-sidebar-category-height: 40px;
     --settings-sidebar-footer-height: 30px;
 
