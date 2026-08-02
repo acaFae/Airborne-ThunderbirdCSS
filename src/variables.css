@@ -66,7 +66,7 @@
     --font-base: 'Be Vietnam Pro', var(--font-fallback);
     --font-fallback: 'sans-serif';
 
-    /* || USE-CASE FONTS */
+    /* || SPECIFIC FONTS */
 
     --font-listbox: var(--font-subheader);
     --font-subject: var(--font-header);
@@ -76,7 +76,7 @@
     --pane-margin: 8px;
     --pane-radius: 16px;
 
-    /* || SETTINGS */
+    /* || SPECIFIC LENGTHS */
 
     --settings-sidebar-category-height: 40px;
     --settings-sidebar-footer-height: 30px;
