@@ -1,13 +1,56 @@
 /* accounts sidebar */
 #accountTreeBox {
 
+    background-color: var(--color-bg-2) !important;
+    outline: 1px solid var(--color-border-2) !important;
+
+    /* sidebar header */
+    & > #accountTreeHeaderBar {
+        background-color: transparent !important;
+    }
+
     /* list of accounts */
-    & > ol#accounttree {
+    & > ol#accounttree { 
         padding: 0px 8px !important;
 
-        & li > div.container {
-            border: none !important;
-            padding-right: 16px;
+        &::before, &::after {
+            display: none !important;
+        }
+
+        & li {
+            & > div.container {
+                border: 1px solid transparent !important;
+                padding-right: 16px;
+
+                font-family: var(--font-listbox);
+            }
+            &.selected > div.container {
+                border: 1px solid var(--color-phase-30) !important;
+            }
         }
     }
+
+    /* sidebar footer buttons list */
+        & > .sidebar-footer-list {
+
+            /* sidebar footer item (consistent with same on extensions, via different method) */
+            & > .sidebar-footer-link {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+
+                height: var(--settings-sidebar-footer-height) !important;
+                padding-left: 12px;
+                gap: 8px;
+
+                box-sizing: border-box;
+                border: none !important;
+
+                font-family: var(--font-listbox);
+
+                & > .sidebar-footer-icon {
+                    margin: 0px !important;
+                }
+            }
+        }
 }

@@ -3,6 +3,7 @@
 /* comment out imports to your desire */
 /* some may be commented out by default */
 
+@import url("./src/variables.css");
 @import url("./src/global.css");
 @import url("./src/layout.css");
 

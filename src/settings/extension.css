@@ -5,33 +5,42 @@
 
 
     /* extensions page sidebar */
-    & > #sidebar {
+    &>#sidebar {
         inline-size: 18em !important;
 
-        & > categories-box > moz-page-nav {
-            box-sizing: border-box;
-            block-size: calc(100vh - 2 * var(--left-pane-margin)) !important;
+        background-color: var(--color-bg-2) !important;
+        outline: 1px solid var(--color-border-2) !important;
 
-            & > moz-page-nav-button {
-                --page-nav-button-height: 2.5rem;
+        &>categories-box>moz-page-nav {
+            box-sizing: border-box;
+            block-size: calc(100vh - 2 * var(--pane-margin)) !important;
+            
+            &>moz-page-nav-button {
+                font-family: var(--font-listbox);
+                --page-nav-button-height: var(--settings-sidebar-category-height);
+                
+                &[slot="secondary-nav"] {
+                    --page-nav-button-gap: 8px;
+                    --page-nav-button-height: var(--settings-sidebar-footer-height);
+                }
             }
         }
     }
 
     /* extensions page content */
-    & > #content {
+    &>#content {
         flex: 1 0;
         overflow: auto;
         block-size: 100vh;
 
         /* content header */
-        & > #page-header {
+        &>#page-header {
 
             /* sticky header bar */
-            & > .sticky-container {
-                background: var(--bg-primary-base-color) !important;
+            &>.sticky-container {
+                background: var(--color-bg-0) !important;
 
-                & > :is(.main-search, .main-heading) {
+                &> :is(.main-search, .main-heading) {
                     background-color: transparent !important;
                 }
             }

@@ -1,47 +1,57 @@
 #cardsPane {
-    background-color: var(--bg-secondary-base-color) !important;
+    background-color: var(--color-bg-2) !important;
+    outline: 1px solid var(--color-border-2) !important;
 
     /* header */
-    & > #cardsPaneHeader {
+    &>#cardsPaneHeader {
         background-color: transparent !important;
         border: none !important;
     }
 
     /* contacts content */
-    & > tree-view#cards {
+    &>tree-view#cards {
         background-color: transparent !important;
         border: none !important;
 
         /* contacts table */
-        & > table > tbody#cardsBody {
+        &>table>tbody#cardsBody {
 
             /* contact row */
-            & > tr[is="ab-card-row"] {
+            &>tr[is="ab-card-row"] {
 
                 /* card styling controlled from data store */
-                --contact-bg-color: var(--bg-primary-base-color);
-                --contact-border-color: var(--bg-primary-base-color);
+                --contact-bg-color: light-dark(var(--color-gray-10), var(--color-gray-100));
+                --contact-border-color: var(--contact-bg-color);
 
-                &:hover {--contact-border-color: var(--theme-highlight-color);}
-                &:active {--contact-bg-color: var(--theme-faded-color);}
-                &.selected {--contact-border-color: var(--theme-highlight-color);}
+                &:hover {
+                    --contact-border-color: var(--color-theme-50);
+                }
+
+                &:active {
+                    --contact-bg-color: var(--color-theme-30);
+                }
+
+                &.selected {
+                    --contact-border-color: var(--color-theme-50);
+                }
 
                 /* contact table cell */
-                & > td {
+                &>td {
                     padding: 1px 4px !important;
 
                     /* contact card */
-                    & > div.card-container {
+                    &>div.card-container {
                         background-color: var(--contact-bg-color) !important;
                         border-color: var(--contact-border-color) !important;
                         border-width: 2px 2px !important;
                         border-radius: 16px !important;
+                        outline: 1px solid var(--color-phase-30);
 
                         /* card content */
-                        & > .ab-card-row-data {
+                        &>.ab-card-row-data {
 
                             /* card bottom line */
-                            & > .ab-card-second-line {
+                            &>.ab-card-second-line {
                                 color: var(--color-gray-50);
                             }
                         }

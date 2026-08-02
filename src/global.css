@@ -14,13 +14,12 @@ body {
 /* || HTML ELEMENTS */
 
 html {
-    background-color: var(--bg-primary-base-color, var(--color-gray-90)) !important;
+    background-color: var(--color-bg-0, var(--color-gray-90)) !important;
 }
 
 /* || INPUT FIELDS */
 
-form input[type="search"]
-{
+form input[type="search"] {
     border: none !important;
 }
 
@@ -28,6 +27,7 @@ input[type="number"] {
     &::-moz-number-spin-up {
         border-radius: 0px var(--button-border-radius) 0px 0px !important;
     }
+
     &::-moz-number-spin-down {
         border-radius: 0px 0px var(--button-border-radius) 0px !important;
     }
@@ -37,7 +37,6 @@ input[type="number"] {
 
 .tag-icon,
 .icon,
-.toolbarbutton-icon
-{
+.toolbarbutton-icon {
     fill: transparent !important;
 }
