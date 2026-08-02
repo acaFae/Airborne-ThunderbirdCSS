@@ -1,7 +1,6 @@
 /* pane container */
 #messagePane {
     background-color: transparent !important;
-    outline: 1px solid var(--mail-message-pane-outline-color) !important;
 }
 
 /* sandboxed pane container */

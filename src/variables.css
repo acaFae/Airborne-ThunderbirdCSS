@@ -81,9 +81,7 @@
 
     --mail-message-pane-outline-color: transparent;
     --mail-message-header-margin: 4px;
-    --mail-message-header-radius: calc(var(--pane-border-radius) - var(--mail-message-header-margin));
-    --mail-message-content-margin: var(--mail-message-header-margin);
-    --mail-message-content-radius: var(--mail-message-header-radius);
+    --mail-message-content-margin: 0px 32px;
 
     --settings-sidebar-category-height: 40px;
     --settings-sidebar-footer-height: 30px;
