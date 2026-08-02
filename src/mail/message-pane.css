@@ -96,11 +96,11 @@
                 &#headerSubjectSecurityContainer {
                     order: 1001;
 
-                    margin-top: 16px !important;
+                    margin-top: var(--mail-message-subject-margin-top) !important;
 
                     /* subject text */
                     & > #expandedsubjectRow > #expandedsubjectBox {
-                        font-size: 1.5em !important;
+                        font-size: var(--fontsize-subject) !important;
                         font-family: var(--font-subject);
                     }
                 }
@@ -109,7 +109,7 @@
                 &#expandedtagsRow {
                     order: 1002;
 
-                    margin-top: 2px !important;
+                    margin-top: var(--mail-message-tags-margin-top) !important;
 
                     /* individual tags  elements */
                     & > #expandedtagsBox > ol.tags-list > li.tag {

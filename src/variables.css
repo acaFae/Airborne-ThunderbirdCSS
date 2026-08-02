@@ -59,17 +59,19 @@
 
     
     
-    /* || GENERIC FONTS */
+    /* || FONTS FAMILIES */
 
     --font-header: 'Be Vietnam Pro', var(--font-subheader);
     --font-subheader: 'Be Vietnam Pro', var(--font-base);
     --font-base: 'Be Vietnam Pro', var(--font-fallback);
     --font-fallback: 'sans-serif';
 
-    /* || SPECIFIC FONTS */
-
     --font-listbox: var(--font-subheader);
     --font-subject: var(--font-header);
+
+    /* || FONT SIZING */
+
+    --fontsize-subject: 1.5em;
 
     /* || PANES */
 
@@ -78,7 +80,12 @@
     --pane-border-width: 1px;
     --pane-border-color: var(--color-adapt-30);
 
-    /* || PAGES */
+    /* || MAIL */
+
+    --mail-message-subject-margin-top: 16px;
+    --mail-message-tags-margin-top: 4px;
+
+    /* || SETTINGS */
 
     --settings-sidebar-category-height: 40px;
     --settings-sidebar-footer-height: 30px;
