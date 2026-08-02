@@ -67,21 +67,18 @@
     --font-fallback: 'sans-serif';
 
     --font-listbox: var(--font-subheader);
-    --font-subject: var(--font-header);
-
-    /* || FONT SIZING */
-
-    --fontsize-subject: 1.5em;
-
+    
     /* || PANES */
-
+    
     --pane-margin: 8px;
     --pane-border-radius: 16px;
     --pane-border-width: 1px;
     --pane-border-color: var(--color-adapt-30);
-
+    
     /* || MAIL */
-
+    
+    --mail-message-subject-font-family: var(--font-header);
+    --mail-message-subject-font-size: 1.5em;
     --mail-message-subject-margin-top: 16px;
     --mail-message-tags-margin-top: 4px;
 
