@@ -13,7 +13,8 @@
 
             /* setting section item */
             &>.category {
-                min-height: 2.5rem !important;
+                min-height: 0px !important;
+                height: var(--settings-sidebar-category-height) !important;
 
                 border: none !important;
                 border-radius: var(--button-border-radius) !important;
@@ -35,7 +36,7 @@
                 flex-flow: row nowrap;
                 align-items: center;
 
-                height: 30px !important;
+                height: var(--settings-sidebar-footer-height) !important;
                 padding-left: 12px;
                 gap: 8px;
 

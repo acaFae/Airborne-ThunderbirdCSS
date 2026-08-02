@@ -17,10 +17,11 @@
             
             &>moz-page-nav-button {
                 font-family: var(--font-listbox);
-                --page-nav-button-height: 2.5rem;
-
+                --page-nav-button-height: var(--settings-sidebar-category-height);
+                
                 &[slot="secondary-nav"] {
                     --page-nav-button-gap: 8px;
+                    --page-nav-button-height: var(--settings-sidebar-footer-height);
                 }
             }
         }

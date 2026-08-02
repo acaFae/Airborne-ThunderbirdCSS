@@ -76,4 +76,9 @@
     --pane-margin: 8px;
     --pane-radius: 16px;
 
+    /* || SETTINGS */
+
+    --settings-sidebar-category-height: 40px;
+    --settings-sidebar-footer-height: 30px;
+
 }

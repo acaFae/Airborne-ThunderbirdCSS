@@ -34,7 +34,7 @@
                 flex-flow: row nowrap;
                 align-items: center;
 
-                height: 30px !important;
+                height: var(--settings-sidebar-footer-height) !important;
                 padding-left: 12px;
                 gap: 8px;
 
