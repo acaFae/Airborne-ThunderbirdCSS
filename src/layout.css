@@ -15,9 +15,9 @@
 #sidebar,               /* extension-settings > sidebar */
 #accountTreeBox         /* account-settings > sidebar */
 {
-    border: none;
+    box-sizing: border-box;
+    border: var(--pane-border-width) solid var(--pane-border-color);
     border-radius: var(--pane-border-radius);
-    outline: 1px solid var(--pane-outline-color);
 }
 
 /* || SMALL SIDEBAR PANE */

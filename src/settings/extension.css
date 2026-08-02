@@ -9,6 +9,7 @@
         inline-size: 18em !important;
 
         background-color: var(--color-bg-2) !important;
+        border: var(--pane-border-width) solid var(--pane-border-color) !important;
 
         &>categories-box>moz-page-nav {
             box-sizing: border-box;
