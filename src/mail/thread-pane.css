@@ -12,6 +12,7 @@
 
         &>div>#threadPaneFolderName {
             padding-left: 8px !important;
+            font-family: var(--font-header);
         }
 
         &>div>#threadPaneQuickFilterButton {

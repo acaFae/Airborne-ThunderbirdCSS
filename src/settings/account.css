@@ -41,6 +41,8 @@
                 box-sizing: border-box;
                 border: none !important;
 
+                font-family: var(--font-listbox);
+
                 & > .sidebar-footer-icon {
                     margin: 0px !important;
                 }

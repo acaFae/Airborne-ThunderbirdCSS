@@ -58,6 +58,18 @@
     /* || SPECIFIC COLORS */
 
     
+    
+    /* || GENERIC FONTS */
+
+    --font-header: 'Be Vietnam Pro', var(--font-subheader);
+    --font-subheader: 'Be Vietnam Pro', var(--font-base);
+    --font-base: 'Be Vietnam Pro', var(--font-fallback);
+    --font-fallback: 'sans-serif';
+
+    /* || USE-CASE FONTS */
+
+    --font-listbox: var(--font-subheader);
+    --font-subject: var(--font-header);
 
     /* || PANE LENGTHS */
 

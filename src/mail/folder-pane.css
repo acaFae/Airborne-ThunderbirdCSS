@@ -30,6 +30,7 @@
             &>div.mode-container {
                 &>div.mode-name {
                     font-size: 1.0em;
+                    font-family: var(--font-header);
                     color: var(--color-gray-50);
                 }
             }
@@ -45,7 +46,7 @@
                         border: 1px solid transparent !important;
 
                         &>span.name {
-                            font-family: var(--folder-font), var(--base-font), var(--fallback-font);
+                            font-family: var(--font-listbox);
                             font-weight: 400 !important;
                         }
                     }

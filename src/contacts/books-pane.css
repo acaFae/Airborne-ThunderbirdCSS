@@ -28,6 +28,7 @@
             /* book listbox item */
             & > .bookRow-container {
                 border: 1px solid transparent !important;
+                font-family: var(--font-listbox);
             }
 
             /* on selection */
