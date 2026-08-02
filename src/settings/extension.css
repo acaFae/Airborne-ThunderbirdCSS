@@ -9,7 +9,6 @@
         inline-size: 18em !important;
 
         background-color: var(--color-bg-2) !important;
-        outline: 1px solid var(--color-border-2) !important;
 
         &>categories-box>moz-page-nav {
             box-sizing: border-box;

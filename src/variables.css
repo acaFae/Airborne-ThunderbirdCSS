@@ -71,12 +71,13 @@
     --font-listbox: var(--font-subheader);
     --font-subject: var(--font-header);
 
-    /* || PANE LENGTHS */
+    /* || PANES */
 
     --pane-margin: 8px;
-    --pane-radius: 16px;
+    --pane-border-radius: 16px;
+    --pane-outline-color: var(--color-adapt-30);
 
-    /* || SPECIFIC LENGTHS */
+    /* || PAGES */
 
     --mail-message-header-margin: 4px;
     --mail-message-notification-margin: 0px;

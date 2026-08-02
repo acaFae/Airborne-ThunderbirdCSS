@@ -16,7 +16,8 @@
 #accountTreeBox         /* account-settings > sidebar */
 {
     border: none;
-    border-radius: var(--pane-radius);
+    border-radius: var(--pane-border-radius);
+    outline: 1px solid var(--pane-outline-color);
 }
 
 /* || SMALL SIDEBAR PANE */
