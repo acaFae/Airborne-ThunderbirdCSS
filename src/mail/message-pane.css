@@ -1,15 +1,26 @@
 /* pane container */
 #messagePane {
     background-color: transparent !important;
+    border: none !important;
+    border-radius: 0px !important;
 }
 
 /* sandboxed pane container */
 #messagepanebox {
-    background-color: var(--color-bg-1) !important;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 4px;
+
+    background-color: transparent !important;
 
     /* email content box */
     & > #messagepane {
         margin: var(--mail-message-content-margin);
+
+        border-style: solid;
+        border-width: var(--pane-border-width);
+        border-color: var(--pane-border-color);
+        border-radius: calc(var(--pane-border-radius) - var(--mail-message-content-margin)) !important;
     }
 
     /* email notification */
@@ -25,7 +36,9 @@
                 margin: var(--mail-message-header-margin) !important;
                 margin-bottom: 0px !important;
 
-                border: none !important;
+                border-style: solid;
+                border-width: var(--pane-border-width);
+                border-color: var(--pane-border-color);
                 border-radius: calc(var(--pane-border-radius) - var(--mail-message-header-margin)) !important;
                 overflow: hidden !important;
             }
@@ -46,8 +59,10 @@
             gap: 0px !important;
 
             background-color: var(--color-bg-2);
+            border-style: solid;
+            border-width: var(--pane-border-width);
+            border-color: var(--pane-border-color);
             border-radius: calc(var(--pane-border-radius) - var(--mail-message-header-margin));
-            border: 1px solid var(--color-border-2);
 
             /* each email detail row */
             & > .message-header-row {

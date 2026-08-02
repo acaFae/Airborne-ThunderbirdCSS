@@ -81,8 +81,8 @@
     /* || PAGES */
 
     --mail-message-pane-outline-color: transparent;
-    --mail-message-header-margin: 4px;
-    --mail-message-content-margin: 0px 32px;
+    --mail-message-header-margin: 0px;
+    --mail-message-content-margin: 0px;
 
     --settings-sidebar-category-height: 40px;
     --settings-sidebar-footer-height: 30px;
