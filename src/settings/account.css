@@ -17,11 +17,16 @@
             display: none !important;
         }
 
-        & li > div.container {
-            border: none !important;
-            padding-right: 16px;
+        & li {
+            & > div.container {
+                border: 1px solid transparent !important;
+                padding-right: 16px;
 
-            font-family: var(--font-listbox);
+                font-family: var(--font-listbox);
+            }
+            &.selected > div.container {
+                border: 1px solid var(--color-phase-30) !important;
+            }
         }
     }
 
