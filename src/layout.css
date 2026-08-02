@@ -16,7 +16,7 @@
 #accountTreeBox         /* account-settings > sidebar */
 {
     border: none;
-    border-radius: var(--pane-rounding);
+    border-radius: var(--pane-radius);
 }
 
 /* || SMALL SIDEBAR PANE */
@@ -24,7 +24,7 @@
 #folderPane,
 #booksPane
 {
-    margin: var(--left-pane-margin);
+    margin: var(--pane-margin);
     margin-right: 0px;
 }
 
@@ -34,7 +34,7 @@
 #cardsPane,
 #calSidebar
 {
-    margin: var(--secondary-pane-margin);
+    margin: var(--pane-margin);
     margin-right: 0px;
 }
 
@@ -46,14 +46,14 @@
 #calendarDisplayBox,
 #chatTabPanel
 {
-    margin: var(--big-pane-margin);
+    margin: var(--pane-margin);
 }
 
 /* || RIGHT SIDEBAR PANE */
 
 #today-pane-panel
 {
-    margin: var(--secondary-pane-margin);
+    margin: var(--pane-margin);
 }
 
 /* || SETTINGS SIDEBAR */
@@ -62,8 +62,8 @@
 #sidebar,
 #accountTreeBox
 {
-    margin: var(--left-pane-margin) !important;
-    height: calc(100dvh - 2 * var(--left-pane-margin)) !important;
+    margin: var(--pane-margin) !important;
+    height: calc(100dvh - 2 * var(--pane-margin)) !important;
 }
 
 /* || PANE SPLITTERS */
@@ -73,7 +73,7 @@ hr[is="pane-splitter"],
 .calendar-splitter
 {
     border-width: 0px !important;
-    inline-size: 8px !important;
-    margin-inline-end: -8px !important;
+    inline-size: var(--pane-margin) !important;
+    margin-inline-end: calc(0px - var(--pane-margin)) !important;
     margin-inline-start: 0px !important;
 }

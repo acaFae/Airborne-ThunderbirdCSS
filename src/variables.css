@@ -59,4 +59,9 @@
 
     
 
+    /* || PANE LENGTHS */
+
+    --pane-margin: 8px;
+    --pane-radius: 16px;
+
 }

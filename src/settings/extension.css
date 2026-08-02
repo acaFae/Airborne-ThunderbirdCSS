@@ -13,7 +13,7 @@
 
         &>categories-box>moz-page-nav {
             box-sizing: border-box;
-            block-size: calc(100vh - 2 * var(--left-pane-margin)) !important;
+            block-size: calc(100vh - 2 * var(--pane-margin)) !important;
 
             &>moz-page-nav-button {
                 --page-nav-button-height: 2.5rem;
