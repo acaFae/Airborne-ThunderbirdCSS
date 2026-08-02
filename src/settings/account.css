@@ -20,6 +20,30 @@
         & li > div.container {
             border: none !important;
             padding-right: 16px;
+
+            font-family: var(--font-listbox);
         }
     }
+
+    /* sidebar footer buttons list */
+        & > .sidebar-footer-list {
+
+            /* sidebar footer item (consistent with same on extensions, via different method) */
+            & > .sidebar-footer-link {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+
+                height: 30px !important;
+                padding-left: 12px;
+                gap: 8px;
+
+                box-sizing: border-box;
+                border: none !important;
+
+                & > .sidebar-footer-icon {
+                    margin: 0px !important;
+                }
+            }
+        }
 }

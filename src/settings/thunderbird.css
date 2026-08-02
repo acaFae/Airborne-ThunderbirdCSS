@@ -29,11 +29,19 @@
 
             /* sidebar footer item (consistent with same on extensions, via different method) */
             &>.sidebar-footer-link {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+
+                height: 30px !important;
+                padding-left: 12px;
+                gap: 8px;
+
                 box-sizing: border-box;
-                block-size: 30px !important;
+                border: none !important;
 
                 &>.sidebar-footer-icon {
-                    margin: 0px 8px 0px 12px !important;
+                    margin: 0px !important;
                 }
             }
         }
