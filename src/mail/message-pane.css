@@ -15,12 +15,12 @@
 
     /* email content box */
     & > #messagepane {
-        margin: var(--mail-message-content-margin);
+        margin: 0px;
 
         border-style: solid;
         border-width: var(--pane-border-width);
         border-color: var(--pane-border-color);
-        border-radius: calc(var(--pane-border-radius) - var(--mail-message-content-margin)) !important;
+        border-radius: var(--pane-border-radius) !important;
     }
 
     /* email notification */
@@ -33,13 +33,12 @@
             
             /* email notification content container */
             & > notification-message {
-                margin: var(--mail-message-header-margin) !important;
-                margin-bottom: 0px !important;
+                margin: 0px !important;
 
                 border-style: solid;
                 border-width: var(--pane-border-width);
                 border-color: var(--pane-border-color);
-                border-radius: calc(var(--pane-border-radius) - var(--mail-message-header-margin)) !important;
+                border-radius: var(--pane-border-radius) !important;
                 overflow: hidden !important;
             }
         }
@@ -53,8 +52,7 @@
             display: flex;
             flex-flow: column nowrap;
 
-            margin: var(--mail-message-header-margin);
-            margin-bottom: 0px;
+            margin: 0px;
             padding: 16px 16px !important;
             gap: 0px !important;
 
@@ -62,7 +60,7 @@
             border-style: solid;
             border-width: var(--pane-border-width);
             border-color: var(--pane-border-color);
-            border-radius: calc(var(--pane-border-radius) - var(--mail-message-header-margin));
+            border-radius: var(--pane-border-radius);
 
             /* each email detail row */
             & > .message-header-row {
