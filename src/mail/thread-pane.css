@@ -108,19 +108,23 @@
                                 /* email cards tags */
                                 &>.thread-card-icon-info {
                                     flex: 0 0;
-                                    padding-right: 4px;
+                                    
                                     display: flex;
                                     flex-flow: row nowrap;
-                                    align-items: flex-start !important;
+                                    align-items: center !important;
+                                    
+                                    margin-top: -3px;
+                                    padding-right: 4px;
 
                                     /* tags */
                                     &>thread-card-tags {
+                                        padding-top: 3px;
                                         gap: 16px !important;
                                     }
 
                                     /* star */
-                                    &>button.button-star {
-                                        margin: -3px -4px 0px 0px !important;
+                                    & > button:is(.button-star, .button-spam) {
+                                        margin-right: -4px !important;
 
                                         &[title="Message not starred"] {
                                             display: none !important;
