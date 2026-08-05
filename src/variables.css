@@ -70,6 +70,7 @@
     --pane-border-radius: 16px;
     --pane-border-width: 1px;
     --pane-border-color: var(--color-adapt-30);
+    --pane-box-shadow: none;
     
     /* || MAIL */
     

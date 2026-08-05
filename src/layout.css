@@ -18,6 +18,7 @@
     box-sizing: border-box !important;
     border: var(--pane-border-width) solid var(--pane-border-color);
     border-radius: var(--pane-border-radius);
+    box-shadow: var(--pane-box-shadow);
 }
 
 /* || SMALL SIDEBAR PANE */
@@ -27,6 +28,7 @@
 {
     margin: var(--pane-margin);
     margin-right: 0px;
+    z-index: 2;
 }
 
 /* || MAIN SIDEBAR PANE */
@@ -37,6 +39,7 @@
 {
     margin: var(--pane-margin);
     margin-right: 0px;
+    z-index: 1;
 }
 
 /* || BIG PANE */
@@ -48,6 +51,7 @@
 #chatTabPanel
 {
     margin: var(--pane-margin);
+    z-index: 0;
 }
 
 /* || RIGHT SIDEBAR PANE */
@@ -55,6 +59,7 @@
 #today-pane-panel
 {
     margin: var(--pane-margin);
+    z-index: 1;
 }
 
 /* || SETTINGS SIDEBAR */
@@ -65,6 +70,7 @@
 {
     margin: var(--pane-margin) !important;
     height: calc(100dvh - 2 * var(--pane-margin)) !important;
+    z-index: 1;
 }
 
 /* || PANE SPLITTERS */
