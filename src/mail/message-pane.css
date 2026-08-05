@@ -9,13 +9,13 @@
 #messagepanebox {
     display: flex;
     flex-flow: column nowrap;
-    gap: var(--pane-margin);
 
     background-color: transparent !important;
 
     /* email content box */
     & > #messagepane {
         margin: 0px;
+        margin-top: var(--pane-margin);
 
         border-style: solid;
         border-width: var(--pane-border-width);
@@ -27,36 +27,36 @@
     & > #mail-notification-top {
         border: none !important;
 
-        /* remove if no notifications */
-        &:not(:has(notification-message)) {
-            display: none !important;
-        }
-
         /* email notification background container */
         & > .notificationbox-stack {
             background-color: transparent !important;
+            margin: -4px;
+            margin-top: calc(var(--pane-margin) - 4px);
             
             /* email notification content container */
+            /* (notification dismiss works by setting margin-top: <height-of-.notificationbox-stack>) */
+            /* (this is also why the margin is included in .notificationbox-stack) */
             & > notification-message {
-                margin: 0px !important;
+                overflow: hidden !important;
 
                 border-style: solid;
                 border-width: var(--pane-border-width);
                 border-color: var(--pane-border-color);
                 border-radius: var(--pane-border-radius) !important;
-                overflow: hidden !important;
+
+                transition-duration: 1000ms !important;
             }
         }
     }
 
     /* email header and header notifications */
     & > #singleMessage {
-
+        
         /* email details header box */
         & > #msgHeaderView > #messageHeader {
             display: flex;
             flex-flow: column nowrap;
-
+            
             margin: 0px;
             padding: 16px 16px !important;
             gap: 0px !important;
