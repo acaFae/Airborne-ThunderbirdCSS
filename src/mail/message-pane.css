@@ -9,7 +9,7 @@
 #messagepanebox {
     display: flex;
     flex-flow: column nowrap;
-    gap: 4px;
+    gap: var(--pane-margin);
 
     background-color: transparent !important;
 
@@ -26,6 +26,11 @@
     /* email notification */
     & > #mail-notification-top {
         border: none !important;
+
+        /* remove if no notifications */
+        &:not(:has(notification-message)) {
+            display: none !important;
+        }
 
         /* email notification background container */
         & > .notificationbox-stack {
