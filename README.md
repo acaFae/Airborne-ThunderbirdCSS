@@ -9,13 +9,14 @@ This theme is compatible with native Thunderbird themes, in both light-mode and 
 
 ## Installation
 
-Download all the files in this repository, either through `git clone` or downloading directly from GitHub.
+1. Download all the files in this repository, either through using `git clone <URL>` in the terminal or by downloading directly from GitHub.
 
-Place the files from this repo inside the `chrome` folder of your Thunderbird profile: 
-`.../Thunderbird/Profiles/<PROFILE_NAME>/chrome/`
+2. Navigate to your Thunderbird `Root` profile folder.
+    - To find the profile folder, open Thunderbird and then: `☰ > Help > Troubleshooting Information > Application Basics > Profile Folder > Open Folder`
 
-If you're unsure where your profile folder is, you can find it inside Thunderbird: `Help > Troubleshooting Information > about:profiles > Open Folder`
+3. In the profile folder, create a `chrome` folder if one doesn't exist already.
 
-If there is no `chrome` folder here, you can create one.
+3. Place the files of this project inside the `chrome` folder.
+    - The `chrome` folder should directly contain `userChrome.css`, `userContent.css`, `main.css`, and a `src` folder.
 
-Afterwards, restart Thunderbird, and you should see the changes.
+5. Afterwards, close and reopen Thunderbird, and you should see the changes.
