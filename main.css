@@ -36,53 +36,53 @@
 :root {
 
     /* fonts */
-    --fallback-font: 'sans-serif';
+    /* --fallback-font: 'sans-serif';
     --base-font: 'Be Vietnam Pro';
     --folder-font: 'Be Vietnam Pro';
-    --subject-font: 'Be Vietnam Pro';
+    --subject-font: 'Be Vietnam Pro'; */
 
     /* rounded elements */
-    --button-rounding: 16px;
+    /* --button-rounding: 16px;
     --listbox-rounding: 16px;
-    --pane-rounding: 16px;
+    --pane-rounding: 16px; */
     
     /* pane margins (when 'rounded-panes.css' is enabled) */
-    --left-pane-margin: 8px;
+    /* --left-pane-margin: 8px;
     --secondary-pane-margin: 8px;
-    --big-pane-margin: 8px;
+    --big-pane-margin: 8px; */
 
     /* specific scenario variables */
-    --folderpane-folder-font-size: 1.0em;
+    /* --folderpane-folder-font-size: 1.0em;
     --folderpane-folder-padding: 0px;
     --threadpane-thread-margin: 2px 8px;
     --messagepane-header-margin: 6px;
-    --bookpane-contact-margin: 2px 8px;
+    --bookpane-contact-margin: 2px 8px; */
 
     /* default background colors */
-    --bg-primary-base-color: light-dark(var(--color-gray-30),var(--color-gray-100));
+    /* --bg-primary-base-color: light-dark(var(--color-gray-30),var(--color-gray-100));
     --bg-secondary-base-color: light-dark(var(--color-gray-20),var(--color-gray-80));
-    --bg-tertiary-base-color: light-dark(var(--color-gray-10),var(--color-gray-70));
+    --bg-tertiary-base-color: light-dark(var(--color-gray-10),var(--color-gray-70)); */
 
     /* theme colors */
-    --theme-base-color: var(--selected-item-color);
+    /* --theme-base-color: var(--selected-item-color);
     --theme-faded-light-color: color-mix(in srgb, #f0f0f0 85%, var(--theme-base-color));
     --theme-faded-dark-color: color-mix(in srgb, #101010 90%, var(--theme-base-color));
     --theme-faded-color: light-dark(var(--theme-faded-light-color), var(--theme-faded-dark-color));
     --theme-highlight-light-color: color-mix(in srgb, #f0f0f0 50%, var(--theme-base-color));
     --theme-highlight-dark-color: color-mix(in srgb, #101010 50%, var(--theme-base-color));
-    --theme-highlight-color: light-dark(var(--theme-highlight-light-color), var(--theme-highlight-dark-color));
+    --theme-highlight-color: light-dark(var(--theme-highlight-light-color), var(--theme-highlight-dark-color)); */
 
     /* background colors */
-    --bg-primary-color: var(--bg-primary-base-color);
+    /* --bg-primary-color: var(--bg-primary-base-color);
     --bg-secondary-color: var(--bg-secondary-base-color);
-    --bg-tertiary-color: var(--bg-tertiary-base-color);
+    --bg-tertiary-color: var(--bg-tertiary-base-color); */
 
     /* other colors */
-    --pane-splitter-color: transparent;
+    /* --pane-splitter-color: transparent;
     --border-main-color: light-dark(var(--color-gray-30), transparent);
-    --border-select-color: light-dark(var(--color-gray-80), var(--color-gray-30));
+    --border-select-color: light-dark(var(--color-gray-80), var(--color-gray-30)); */
 
     /* other attributes */
-    --box-shadow-subtle: 0px 0px 4px light-dark(#00000011,#00000033);
+    /* --box-shadow-subtle: 0px 0px 4px light-dark(#00000011,#00000033); */
 
 }
