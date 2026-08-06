@@ -8,7 +8,7 @@
 /* || GLOBAL TEXT STYLING */
 
 body {
-    font-family: var(--base-font), var(--fallback-font);
+    font-family: var(--font-family-base);
 }
 
 /* || HTML ELEMENTS */
