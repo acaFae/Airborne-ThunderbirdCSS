@@ -79,8 +79,10 @@ hr[is="pane-splitter"],
 .calendar-sidebar-splitter,
 .calendar-splitter
 {
-    border-width: 0px !important;
-    inline-size: var(--pane-margin) !important;
-    margin-inline-end: calc(0px - var(--pane-margin)) !important;
+    inline-size: var(--pane-splitter-width) !important;
+    margin-inline-end: calc(0px - var(--pane-splitter-width)) !important;
     margin-inline-start: 0px !important;
+
+    background: var(--pane-splitter-color) !important;
+    border-width: 0px !important;
 }
