@@ -1,0 +1,27 @@
+/* calendar sidebar overall container */
+#calSidebar {
+
+    /* header bar */
+    & > #primaryButtonSidePanel {
+
+    }
+
+    /* mini calendar month segment */
+    & > #minimonth-pane {
+
+    }
+
+    /* calendar selector segment */
+    & > #calendar-panel {
+        
+        /* tasks filter sub-segment (hidden in calendar view) */
+        & > #task-filter-pane {
+
+        }
+
+        /* list of calendars sub-segment */
+        & > #calendar-list-pane {
+
+        }
+    }
+}

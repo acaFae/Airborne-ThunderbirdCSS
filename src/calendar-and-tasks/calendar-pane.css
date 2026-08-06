@@ -1,0 +1,17 @@
+/* overall pane container */
+#calendarDisplayBox {
+
+    /* calendar view container (hidden in tasks view) */
+    & > #calendar-view-box {
+
+        /* header */
+        & > #calendarViewHeader {
+
+        }
+
+        /* calendar graph container */
+        & > #view-box {
+
+        }
+    }
+}

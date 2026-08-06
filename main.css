@@ -20,11 +20,15 @@
 @import url("./src/contacts/books-pane.css");
 @import url("./src/contacts/cards-pane.css");
 
+@import url("./src/calendar-and-tasks/calendar-sidebar.css");
+@import url("./src/calendar-and-tasks/calendar-pane.css");
+@import url("./src/calendar-and-tasks/tasks-pane.css");
+
 @import 'src/tab-list/smooth.css';
 @import 'src/tab-list/clear.css';
 
 /* @import 'src/pages/address-book.css'; */
-@import 'src/pages/calendar-and-tasks.css';
+/* @import 'src/pages/calendar-and-tasks.css'; */
 /* @import 'src/pages/mail.css'; */
 /* @import 'src/pages/settings.css'; */
 @import 'src/pages/chat.css';

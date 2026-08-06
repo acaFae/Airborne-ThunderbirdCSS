@@ -1,0 +1,25 @@
+/* overall calendar and tasks pane container */
+#calendarDisplayBox {
+
+    /* tasks view container (hidden in calendar view) */
+    & > #calendar-task-box {
+
+        /* header */
+        & > #task-addition-box {
+
+        }
+
+        /* tasks table container */
+        & > vbox > #calendar-task-tree {
+
+            /* contains .cakendar-task-treechildren in shadow DOM (see below) */
+        }
+
+    }
+}
+
+/* only method of selecting tasks table */
+/* referenced a few times throughout app */
+.calendar-task-treechildren {
+    /* uses ::-moz-tree-<child> pseudoelement */
+}
