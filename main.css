@@ -29,6 +29,8 @@
 @import url("./src/today-pane/agenda-panel.css");
 @import url("./src/today-pane/todo-tab-panel.css");
 
+@import url("./src/chat/layout.css");
+
 @import url("./src/titlebar/titlebar.css");
 
 /* @import 'src/tab-list/smooth.css'; */
