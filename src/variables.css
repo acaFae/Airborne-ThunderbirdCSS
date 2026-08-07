@@ -60,7 +60,7 @@
     --font-family-header: 'Be Vietnam Pro', var(--font-family-subheader);
     --font-family-subheader: 'Be Vietnam Pro', var(--font-family-base);
     --font-family-base: 'Be Vietnam Pro', var(--font-family-fallback);
-    --font-family-fallback: 'sans-serif';
+    --font-family-fallback: 'Inter', 'Arial', 'sans-serif';
 
     --font-family-listbox: var(--font-family-subheader);
     
