@@ -29,8 +29,10 @@
 @import url("./src/today-pane/agenda-panel.css");
 @import url("./src/today-pane/todo-tab-panel.css");
 
-@import 'src/tab-list/smooth.css';
-@import 'src/tab-list/clear.css';
+@import url("./src/titlebar/titlebar.css");
+
+/* @import 'src/tab-list/smooth.css'; */
+/* @import 'src/tab-list/clear.css'; */
 
 /* @import 'src/pages/address-book.css'; */
 /* @import 'src/pages/calendar-and-tasks.css'; */
