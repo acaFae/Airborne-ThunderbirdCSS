@@ -29,19 +29,25 @@
                 border-radius: var(--pane-border-radius) !important;
                 background: var(--color-bg-1) !important;
 
+                /* table header element */
                 & > treecols {
                     overflow: hidden;
                     border: var(--pane-border-width) solid var(--pane-border-color) !important;
                     border-radius: calc(var(--pane-border-radius) - 8px);
+
+                    /* individual header columns */
                     & * {
                         border-color: var(--pane-border-color) !important;
                         box-shadow: none !important;
                     }
                 }
+
+                /* table content */
                 & > treechildren {
                     overflow: hidden;
                     border-radius: calc(var(--pane-border-radius) - 8px);
 
+                    /* (uses legacy ::-moz pseudoelements) */
                     &::-moz-tree-row {
                         border-radius: calc(var(--pane-border-radius) - 8px);
                         margin-top: 4px;
@@ -49,7 +55,7 @@
                 }
             }
 
-            /* splitter */
+            /* task list and details splitter */
             & > #calendar-task-view-splitter {
                 width: 100% !important;
                 height: var(--pane-margin) !important;
@@ -66,13 +72,16 @@
                 border-radius: var(--pane-border-radius);
                 background: var(--color-bg-1) !important;
 
+                /* task actions and properties */
                 & > #calendar-task-details {
                     border: none !important;
                     background: var(--color-bg-3) !important;
 
+                    /* task actions */
                     & > #other-actions-box {
                         padding: 4px !important;
                     }
+                    /* task description */
                     & > #calendar-task-details-box {
                         padding: 0px 4px !important;
                     }
