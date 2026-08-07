@@ -27,6 +27,8 @@
 
             /* folder category header */
             &>div.mode-container {
+                border-color: var(--pane-border-color) !important;
+
                 &>div.mode-name {
                     font-size: 1.0em;
                     font-family: var(--font-family-header);
