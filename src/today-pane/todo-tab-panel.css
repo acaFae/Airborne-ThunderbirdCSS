@@ -1,0 +1,17 @@
+/* today pane container */
+#today-pane-panel {
+
+    /* panel container (collapsed when agenda shown) */
+    & > vbox > #todo-tab-panel {
+
+        /* task list container */
+        & > #calendar-task-tree-detail {
+            margin-bottom: 0px !important;
+
+            & > #unifinder-task-edit-field {
+                margin: 7px 8px 8px !important;
+            }
+        }
+    }
+    
+}

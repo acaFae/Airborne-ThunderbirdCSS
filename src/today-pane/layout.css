@@ -1,0 +1,21 @@
+/* today pane container */
+#today-pane-panel {
+    overflow: hidden;
+
+    /* header */
+    & > .sidebar-header {
+
+        /* header text */
+        & > #today-pane-header {
+            padding-inline-start: 8px !important;
+        }
+    }
+}
+
+/* splitter for today pane */
+#today-splitter {
+    margin-block: 16px !important; /* top and bottom margin */
+
+    border-left-width: 1px !important;
+    border-color: var(--pane-border-color) !important;
+}
