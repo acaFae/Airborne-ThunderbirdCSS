@@ -25,6 +25,10 @@
 @import url("./src/calendar-and-tasks/calendar-pane.css");
 @import url("./src/calendar-and-tasks/tasks-pane.css");
 
+@import url("./src/today-pane/layout.css");
+@import url("./src/today-pane/agenda-panel.css");
+@import url("./src/today-pane/todo-tab-panel.css");
+
 @import 'src/tab-list/smooth.css';
 @import 'src/tab-list/clear.css';
 
