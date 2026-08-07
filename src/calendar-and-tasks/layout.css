@@ -1,4 +1,10 @@
 /* container for all calendar and tasks panes */
 #calendarContent {
     background-color: transparent !important;
+
+    /* main pane (calendar/tasks) */
+    & > #calendarDisplayBox {
+        border: none !important;
+        background: transparent !important;
+    }
 }

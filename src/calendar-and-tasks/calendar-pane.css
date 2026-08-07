@@ -1,8 +1,6 @@
 /* overall pane container */
 #calendarDisplayBox {
-    border: none !important;
-    background: transparent !important;
-
+    
     /* calendar view container (hidden in tasks view) */
     & > #calendar-view-box {
         gap: var(--pane-margin);
