@@ -26,6 +26,17 @@
             border: var(--pane-border-width) solid var(--pane-border-color);
             border-radius: var(--pane-border-radius);
             background: var(--color-bg-2) !important;
+
+            & > #week-view {
+                & .multiday-events-list {
+                    margin: 0px !important;
+                }
+                & .multiday-event-listitem {
+                    & > .calendar-color-box {
+                        border-radius: 8px !important;
+                    }
+                }
+            }
         }
     }
 }
