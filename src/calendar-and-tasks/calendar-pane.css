@@ -1,17 +1,31 @@
 /* overall pane container */
 #calendarDisplayBox {
+    border: none !important;
+    background: transparent !important;
 
     /* calendar view container (hidden in tasks view) */
     & > #calendar-view-box {
+        gap: var(--pane-margin);
+
+        /* unknown notification element */
+        & > #calendar-deactivated-notification-location-events {
+            display: none;
+        }
 
         /* header */
         & > #calendarViewHeader {
-
+            border: var(--pane-border-width) solid var(--pane-border-color);
+            border-radius: var(--pane-border-radius);
+            background: var(--color-bg-2) !important;
         }
 
         /* calendar graph container */
         & > #view-box {
+            overflow: hidden;
 
+            border: var(--pane-border-width) solid var(--pane-border-color);
+            border-radius: var(--pane-border-radius);
+            background: var(--color-bg-2) !important;
         }
     }
 }
