@@ -64,6 +64,19 @@
                 
                 border: var(--pane-border-width) solid var(--pane-border-color) !important;
                 border-radius: var(--pane-border-radius);
+                background: var(--color-bg-1) !important;
+
+                & > #calendar-task-details {
+                    border: none !important;
+                    background: var(--color-bg-3) !important;
+
+                    & > #other-actions-box {
+                        padding: 4px !important;
+                    }
+                    & > #calendar-task-details-box {
+                        padding: 0px 4px !important;
+                    }
+                }
             }
         }
 
