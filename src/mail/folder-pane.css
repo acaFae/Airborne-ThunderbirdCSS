@@ -3,11 +3,11 @@
     background-color: var(--color-bg-2) !important;
 
     /* header */
-    &>#folderPaneHeaderBar {
+    & > #folderPaneHeaderBar {
         background: transparent !important;
 
         /* new message button */
-        &>#folderPaneWriteMessage {
+        & > #folderPaneWriteMessage {
             width: 0px !important;
             /* cutoff text off right */
             padding-right: 0px !important;
@@ -15,7 +15,7 @@
     }
 
     /* content */
-    &>#folderTree {
+    & > #folderTree {
 
         &::before,
         &::after {
@@ -23,13 +23,13 @@
         }
 
         /* folder category */
-        &>li {
+        & > li {
 
             /* folder category header */
-            &>div.mode-container {
+            & > div.mode-container {
                 border-color: var(--pane-border-color) !important;
 
-                &>div.mode-name {
+                & > div.mode-name {
                     font-size: 1.0em;
                     font-family: var(--font-family-header);
                     color: var(--color-gray-50);
@@ -37,7 +37,7 @@
             }
 
             /* folder category content */
-            &>ul[role='group'] {
+            & > ul[role='group'] {
                 margin: 0px 4px !important;
 
                 /* folder item content */
@@ -46,7 +46,7 @@
                     & > div.container {
                         border: 1px solid transparent !important;
 
-                        &>span.name {
+                        & > span.name {
                             font-family: var(--font-family-listbox);
                             font-weight: 400 !important;
                         }

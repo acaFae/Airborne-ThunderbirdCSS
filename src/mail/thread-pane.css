@@ -3,18 +3,18 @@
     background-color: var(--color-bg-2) !important;
 
     /* main header */
-    &>#threadPaneHeaderBar {
+    & > #threadPaneHeaderBar {
         padding: 0px !important;
 
         background-color: transparent !important;
         border: none !important;
 
-        &>div>#threadPaneFolderName {
+        & > div > #threadPaneFolderName {
             padding-left: 8px !important;
             font-family: var(--font-family-header);
         }
 
-        &>div>#threadPaneQuickFilterButton {
+        & > div > #threadPaneQuickFilterButton {
             width: 0px !important;
             /* cutoff text */
             padding-right: 0px !important;
@@ -25,13 +25,13 @@
     }
 
     /* filter-emails header */
-    &>#quick-filter-bar {
+    & > #quick-filter-bar {
         padding: 0px 3px !important;
 
         background-color: transparent !important;
         border: none !important;
 
-        &>div>#qfb-sticky {
+        & > div > #qfb-sticky {
             border: none !important;
             box-shadow: none !important;
 
@@ -43,14 +43,14 @@
     }
 
     /* emails list */
-    &>#threadTree {
+    & > #threadTree {
         background-color: transparent !important;
 
         /* emails list content */
-        &>table.tree-table>tbody[is="tree-view-table-body"] {
+        & > table.tree-table > tbody[is="tree-view-table-body"] {
 
             /* email row (contains selection data) */
-            &>tr[is="thread-card"] {
+            & > tr[is="thread-card"] {
 
                 /* card styling controlled from where the data is */
                 --email-bg-color: light-dark(var(--color-gray-10), var(--color-gray-100));
@@ -69,11 +69,11 @@
                 }
 
                 /* email table cell */
-                &>td {
+                & > td {
                     padding: 2px 6px !important;
 
                     /* individual email card */
-                    &>div.card-container {
+                    & > div.card-container {
                         background-color: var(--email-bg-color) !important;
                         border-color: var(--email-border-color) !important;
                         border-width: 2px 2px !important;
@@ -81,14 +81,14 @@
                         outline: 1px solid var(--color-phase-30);
 
                         /* each email card column (left || main) */
-                        &>div.thread-card-column {
+                        & > div.thread-card-column {
                             display: flex !important;
                             flex-flow: column nowrap;
                             justify-content: center;
 
                             /* email send details (sender || datetime) */
-                            &>div.thread-card-row {
-                                &>span {
+                            & > div.thread-card-row {
+                                & > span {
                                     color: var(--color-gray-50) !important;
                                     font-weight: 400 !important;
                                     font-size: 0.8em !important;
@@ -96,17 +96,17 @@
                             }
 
                             /* email content details (subject || tags) */
-                            &>div.thread-card-dynamic-row {
+                            & > div.thread-card-dynamic-row {
                                 display: flex !important;
                                 flex-flow: row nowrap;
 
                                 /* email card subject line */
-                                &>.thread-card-subject-container {
+                                & > .thread-card-subject-container {
                                     flex: 1 0;
                                 }
 
                                 /* email cards tags */
-                                &>.thread-card-icon-info {
+                                & > .thread-card-icon-info {
                                     flex: 0 0;
                                     
                                     display: flex;
@@ -117,7 +117,7 @@
                                     padding-right: 4px;
 
                                     /* tags */
-                                    &>thread-card-tags {
+                                    & > thread-card-tags {
                                         padding-top: 3px;
                                         gap: 16px !important;
                                     }

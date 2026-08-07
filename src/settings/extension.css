@@ -5,7 +5,7 @@
 
 
     /* extensions page sidebar */
-    &>#sidebar {
+    & > #sidebar {
         inline-size: 18em !important;
 
         background-color: var(--color-bg-2) !important;
@@ -32,19 +32,19 @@
     }
 
     /* extensions page content */
-    &>#content {
+    & > #content {
         flex: 1 0;
         overflow: auto;
         block-size: 100vh;
 
         /* content header */
-        &>#page-header {
+        & > #page-header {
 
             /* sticky header bar */
-            &>.sticky-container {
+            & > .sticky-container {
                 background: var(--color-bg-0) !important;
 
-                &> :is(.main-search, .main-heading) {
+                & > :is(.main-search, .main-heading) {
                     background-color: transparent !important;
                 }
             }
