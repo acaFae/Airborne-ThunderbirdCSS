@@ -14,6 +14,12 @@
             
             /* calendar visual box */
             & > #calMinimonth {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: flex-start;
+                align-items: center;
+
+                border-radius: calc(var(--button-border-radius) + 2px) !important;
                 background-color: var(--color-bg-2) !important;
 
                 /* mini-calendar header */
@@ -22,12 +28,15 @@
                     /* header sub-section */
                     & > .minimonth-nav-section {
                         overflow: hidden;
+                        border-radius: var(--button-border-radius);
                         background-color: var(--color-bg-3) !important;
 
+                        /* all header elements */
                         & > * {
                             border: none !important
                         }
 
+                        /* all header buttons */
                         & > button {
                             background-color: transparent !important;
 
@@ -40,10 +49,64 @@
 
                 /* mini-calendar grid */
                 & > .minimonth-calendar {
+                    /* misc calendar labels */
 
-                    /* calendar labels */
-                    & .minimonth-week {
-                        border-radius: var(--button-border-radius);
+                    & .minimonth-row-body {
+                        border: 1px solid var(--color-gray-50) !important;
+                    }
+
+                    & .minimonth-week,
+                    & .minimonth-day,
+                    & .minimonth-row-header {
+                        box-sizing: border-box;
+                        width: 2.5rem !important;
+                        height: 2.5rem !important;
+                        padding: 0em !important;
+                        
+                        vertical-align: middle !important;
+                        border-radius: var(--button-border-radius) !important;
+                        background-color: transparent !important;
+                    }
+
+                    & .minimonth-week,
+                    & .minimonth-row-header {
+                        font-size: 0.7em;
+                        color: var(--color-adapt-30) !important;
+
+                        &:hover {
+                            color: var(--color-adapt-50) !important;
+                        }
+                    }
+
+                    & .minimonth-day {
+                        font-size: 1.05em;
+                        font-weight: bold;
+                        position: relative;
+
+                        border-radius: 8px !important;
+
+                        /* events indicator */
+                        &::after {
+                            position: absolute;
+                            top: 75%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                        }
+                        
+                        /* interaction styles */
+                        &:hover {border-color: var(--color-theme-50) !important;}
+                        &:active {
+                            color: var(--color-theme-50) !important;
+                            background-color: var(--color-theme-30) !important;
+                        }
+
+                        /* various types of days (in order of style priority) */
+                        &[othermonth] {color: var(--color-adapt-40) !important;}
+                        &[today] {background-color: var(--color-adapt-30) !important;}
+                        &[selected] {
+                            color: var(--color-theme-50) !important;
+                            border-color: var(--color-theme-50) !important;
+                        }
                     }
                 }
             }
