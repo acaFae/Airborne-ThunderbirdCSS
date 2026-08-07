@@ -33,7 +33,8 @@
 
                         /* all header elements */
                         & > * {
-                            border: none !important
+                            border: none !important;
+                            border-radius: 4px !important;
                         }
 
                         /* all header buttons */
