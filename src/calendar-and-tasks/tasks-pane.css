@@ -3,14 +3,68 @@
 
     /* tasks view container (hidden in calendar view) */
     & > #calendar-task-box {
+        gap: var(--pane-margin);
+
+        /* unknown notification element */
+        & > #calendar-deactivated-notification-location-tasks {
+            display: none;
+        }
 
         /* header */
         & > #task-addition-box {
-
+            border: var(--pane-border-width) solid var(--pane-border-color) !important;
+            border-radius: var(--pane-border-radius);
+            background: var(--color-bg-2) !important;
         }
 
-        /* tasks table container */
-        & > vbox > #calendar-task-tree {
+        /* tasks table and details container */
+        & > vbox {
+
+            /* tasks table container */
+            & > #calendar-task-tree {
+                overflow: hidden;
+                padding: 8px;
+
+                border: var(--pane-border-width) solid var(--pane-border-color) !important;
+                border-radius: var(--pane-border-radius) !important;
+                background: var(--color-bg-1) !important;
+
+                & > treecols {
+                    overflow: hidden;
+                    border: var(--pane-border-width) solid var(--pane-border-color) !important;
+                    border-radius: calc(var(--pane-border-radius) - 8px);
+                    & * {
+                        border-color: var(--pane-border-color) !important;
+                        box-shadow: none !important;
+                    }
+                }
+                & > treechildren {
+                    overflow: hidden;
+                    border-radius: calc(var(--pane-border-radius) - 8px);
+
+                    &::-moz-tree-row {
+                        border-radius: calc(var(--pane-border-radius) - 8px);
+                        margin-top: 4px;
+                    }
+                }
+            }
+
+            /* splitter */
+            & > #calendar-task-view-splitter {
+                width: 100% !important;
+                height: var(--pane-margin) !important;
+                margin: 0px !important;
+                margin-bottom: calc(0px - var(--pane-margin)) !important;
+            }
+
+            /* task details container */
+            & > #calendar-task-details-container {
+                overflow: hidden;
+                margin-top: 8px;
+                
+                border: var(--pane-border-width) solid var(--pane-border-color) !important;
+                border-radius: var(--pane-border-radius);
+            }
 
             /* contains .cakendar-task-treechildren in shadow DOM (see below) */
         }
