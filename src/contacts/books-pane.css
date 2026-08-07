@@ -1,0 +1,39 @@
+#booksPane {
+    background-color: var(--color-bg-2) !important;
+
+    /* header */
+    & > #booksPaneHeaderBar {
+        background-color: transparent !important;
+
+        /* new contact button */
+        & > #booksPaneCreateContact {
+            width: 0px !important;
+            padding-right: 0px !important;
+        }
+    }
+
+    /* list of address books */
+    & > ul#books {
+        padding: 0px 8px !important;
+
+        &::before,
+        &::after {
+            display: none !important;
+        }
+
+        /* book row */
+        & > .bookRow {
+
+            /* book listbox item */
+            & > .bookRow-container {
+                border: 1px solid transparent !important;
+                font-family: var(--font-family-listbox);
+            }
+
+            /* on selection */
+            &.selected > .bookRow-container {
+                border: 1px solid var(--color-phase-30) !important;
+            }
+        }
+    }
+}

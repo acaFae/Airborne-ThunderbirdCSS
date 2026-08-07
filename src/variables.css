@@ -1,0 +1,90 @@
+:root {
+
+    /* || BASIC COLORS */
+
+    --color-blend: light-dark(#f0f0f0, #101010);
+    --color-contrast: light-dark(#101010, #f0f0f0);
+
+    /* || COLOR RANGES */
+    /* 00 blends in more. */
+    /* 90 contrasts more. */
+
+    --color-theme-10: color-mix(in srgb, var(--selected-item-color) 6%, var(--color-blend));
+    --color-theme-20: color-mix(in srgb, var(--selected-item-color) 12%, var(--color-blend));
+    --color-theme-30: color-mix(in srgb, var(--selected-item-color) 25%, var(--color-blend));
+    --color-theme-40: color-mix(in srgb, var(--selected-item-color) 50%, var(--color-blend));
+    --color-theme-50: var(--selected-item-color);
+    --color-theme-60: color-mix(in srgb, var(--selected-item-color) 50%, var(--color-contrast));
+    --color-theme-70: color-mix(in srgb, var(--selected-item-color) 25%, var(--color-contrast));
+    --color-theme-80: color-mix(in srgb, var(--selected-item-color) 10%, var(--color-contrast));
+    --color-theme-90: color-mix(in srgb, var(--selected-item-color) 5%, var(--color-contrast));
+
+    --color-adapt-00: light-dark(var(--color-gray-05), var(--color-gray-100));
+    --color-adapt-10: light-dark(var(--color-gray-10), var(--color-gray-90));
+    --color-adapt-20: light-dark(var(--color-gray-20), var(--color-gray-80));
+    --color-adapt-30: light-dark(var(--color-gray-30), var(--color-gray-70));
+    --color-adapt-40: light-dark(var(--color-gray-40), var(--color-gray-60));
+    --color-adapt-50: light-dark(var(--color-gray-50), var(--color-gray-50));
+    --color-adapt-60: light-dark(var(--color-gray-60), var(--color-gray-40));
+    --color-adapt-70: light-dark(var(--color-gray-70), var(--color-gray-30));
+    --color-adapt-80: light-dark(var(--color-gray-80), var(--color-gray-20));
+    --color-adapt-90: light-dark(var(--color-gray-90), var(--color-gray-10));
+    --color-adapt-100: light-dark(var(--color-gray-100), var(--color-gray-05));
+
+    --color-phase-00: light-dark(var(--color-gray-05), transparent);
+    --color-phase-10: light-dark(var(--color-gray-10), transparent);
+    --color-phase-20: light-dark(var(--color-gray-20), transparent);
+    --color-phase-30: light-dark(var(--color-gray-30), transparent);
+    --color-phase-40: light-dark(var(--color-gray-40), transparent);
+    --color-phase-50: light-dark(var(--color-gray-50), transparent);
+    --color-phase-60: light-dark(var(--color-gray-60), transparent);
+    --color-phase-70: light-dark(var(--color-gray-70), transparent);
+    --color-phase-80: light-dark(var(--color-gray-80), transparent);
+    --color-phase-90: light-dark(var(--color-gray-90), transparent);
+    --color-phase-100: light-dark(var(--color-gray-100), transparent);
+
+    /* || UTILITY COLORS */
+
+    --color-bg-0: light-dark(var(--color-gray-20), var(--color-gray-100));
+    --color-bg-1: light-dark(var(--color-gray-20), var(--color-gray-90));
+    --color-bg-2: light-dark(var(--color-gray-10), var(--color-gray-80));
+    --color-bg-3: light-dark(var(--color-gray-10), var(--color-gray-70));
+
+    --color-border-0: light-dark(var(--color-gray-30), var(--color-gray-100));
+    --color-border-1: light-dark(var(--color-gray-30), var(--color-gray-90));
+    --color-border-2: light-dark(var(--color-gray-30), var(--color-gray-80));
+    --color-border-3: light-dark(var(--color-gray-30), var(--color-gray-70));
+    
+    /* || FONTS FAMILIES */
+
+    --font-family-header: 'Be Vietnam Pro', var(--font-family-subheader);
+    --font-family-subheader: 'Be Vietnam Pro', var(--font-family-base);
+    --font-family-base: 'Be Vietnam Pro', var(--font-family-fallback);
+    --font-family-fallback: 'Inter', 'Arial', 'sans-serif';
+
+    --font-family-listbox: var(--font-family-subheader);
+    
+    /* || PANES */
+    
+    --pane-margin: 8px;
+    --pane-border-radius: 16px;
+    --pane-border-width: 1px;
+    --pane-border-color: var(--color-adapt-30);
+    --pane-box-shadow: none;
+
+    --pane-splitter-width: var(--pane-margin);
+    --pane-splitter-color: transparent;
+    
+    /* || MAIL */
+    
+    --mail-message-subject-font-family: var(--font-family-header);
+    --mail-message-subject-font-size: 1.5em;
+    --mail-message-subject-margin-top: 16px;
+    --mail-message-tags-margin-top: 4px;
+
+    /* || SETTINGS */
+
+    --settings-sidebar-category-height: 40px;
+    --settings-sidebar-footer-height: 30px;
+
+}

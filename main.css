@@ -1,77 +1,33 @@
-
 /* IMPORTS */
 /* comment out imports to your desire */
 /* some may be commented out by default */
 
-@import 'src/generic/global.css';
-@import 'src/generic/left-pane.css';
-@import 'src/generic/pane-splitter.css';
-@import 'src/generic/floating-panes.css';
-/* @import 'src/generic/gradient-bg.css'; */
+@import url("./src/variables.css");
+@import url("./src/global.css");
+@import url("./src/layout.css");
 
-@import 'src/tab-list/smooth.css';
-@import 'src/tab-list/clear.css';
+@import url("./src/settings/thunderbird.css");
+@import url("./src/settings/extension.css");
+@import url("./src/settings/account.css");
 
-@import 'src/pages/address-book.css';
-@import 'src/pages/calendar-and-tasks.css';
-@import 'src/pages/mail.css';
-@import 'src/pages/settings.css';
-@import 'src/pages/chat.css';
+@import url("./src/mail/layout.css");
+@import url("./src/mail/folder-pane.css");
+@import url("./src/mail/thread-pane.css");
+@import url("./src/mail/message-pane.css");
 
+@import url("./src/contacts/layout.css");
+@import url("./src/contacts/books-pane.css");
+@import url("./src/contacts/cards-pane.css");
 
+@import url("./src/calendar-and-tasks/layout.css");
+@import url("./src/calendar-and-tasks/sidebar.css");
+@import url("./src/calendar-and-tasks/calendar-pane.css");
+@import url("./src/calendar-and-tasks/tasks-pane.css");
 
-/* VARIABLES */
+@import url("./src/today-pane/layout.css");
+@import url("./src/today-pane/agenda-panel.css");
+@import url("./src/today-pane/todo-tab-panel.css");
 
-:root {
+@import url("./src/chat/layout.css");
 
-    /* fonts */
-    --fallback-font: 'sans-serif';
-    --base-font: 'Be Vietnam Pro';
-    --folder-font: 'Be Vietnam Pro';
-    --subject-font: 'Be Vietnam Pro';
-
-    /* rounded elements */
-    --button-rounding: 16px;
-    --listbox-rounding: 16px;
-    --pane-rounding: 16px;
-    
-    /* pane margins (when 'rounded-panes.css' is enabled) */
-    --left-pane-margin: 8px;
-    --secondary-pane-margin: 10px;
-    --big-pane-margin: 10px;
-
-    /* specific scenario variables */
-    --folderpane-folder-font-size: 1.0em;
-    --folderpane-folder-padding: 0px;
-    --threadpane-thread-margin: 2px 8px;
-    --messagepane-header-margin: 6px;
-    --bookpane-contact-margin: 2px 8px;
-
-    /* default background colors */
-    --bg-primary-base-color: light-dark(var(--color-gray-30),var(--color-gray-100));
-    --bg-secondary-base-color: light-dark(var(--color-gray-20),var(--color-gray-80));
-    --bg-tertiary-base-color: light-dark(var(--color-gray-10),var(--color-gray-70));
-
-    /* theme colors */
-    --theme-base-color: var(--selected-item-color);
-    --theme-faded-light-color: color-mix(in srgb, #f0f0f0 85%, var(--theme-base-color));
-    --theme-faded-dark-color: color-mix(in srgb, #101010 90%, var(--theme-base-color));
-    --theme-faded-color: light-dark(var(--theme-faded-light-color), var(--theme-faded-dark-color));
-    --theme-highlight-light-color: color-mix(in srgb, #f0f0f0 50%, var(--theme-base-color));
-    --theme-highlight-dark-color: color-mix(in srgb, #101010 50%, var(--theme-base-color));
-    --theme-highlight-color: light-dark(var(--theme-highlight-light-color), var(--theme-highlight-dark-color));
-
-    /* background colors */
-    --bg-primary-color: var(--bg-primary-base-color);
-    --bg-secondary-color: var(--bg-secondary-base-color);
-    --bg-tertiary-color: var(--bg-tertiary-base-color);
-
-    /* other colors */
-    --pane-splitter-color: transparent;
-    --border-main-color: light-dark(var(--color-gray-30), transparent);
-    --border-select-color: light-dark(var(--color-gray-80), var(--color-gray-30));
-
-    /* other attributes */
-    --box-shadow-subtle: 0px 0px 4px light-dark(#00000011,#00000033);
-
-}
+@import url("./src/titlebar/titlebar.css");

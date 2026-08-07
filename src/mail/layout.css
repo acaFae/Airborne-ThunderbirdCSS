@@ -1,0 +1,24 @@
+/* overall inbox tab container */
+#paneLayout
+{
+
+    /* default inbox layout */
+    grid-template:
+    "folders folderPaneSplitter threads messagePaneSplitter message" auto /
+    minmax(auto, calc(var(--folderPaneSplitter-width) + 1 * var(--pane-margin)))
+    min-content
+    minmax(auto, 1fr)
+    min-content
+    minmax(auto, calc(var(--messagePaneSplitter-width) + 2 * var(--pane-margin)))
+    !important;
+
+    /* inbox layout, account centre open */
+    &.account-central {
+        grid-template:
+        "folders folderPaneSplitter account-central" auto /
+        minmax(auto, calc(var(--folderPaneSplitter-width) + 1 * var(--pane-margin)))
+        min-content
+        minmax(auto, 1fr)
+        !important;
+    }
+}

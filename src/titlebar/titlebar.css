@@ -1,0 +1,34 @@
+/* entire titlebar container */
+#titlebar {
+
+    /* upper title bar */
+    & > .icons-beside-text {
+        border-block-end: none !important;
+    }
+
+    /* tabs bar */
+    & > #tabs-toolbar {
+        background-image: none !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        padding: 3px !important;
+
+        /* tabs flex container */
+        & > #tabmail-tabs > #tabmail-arrowscrollbox {
+
+            /* individual tabs */
+            & > .tabmail-tab {
+                border: var(--pane-border-width) solid transparent !important;
+                border-radius: var(--pane-border-radius) !important;
+                box-shadow: none !important;
+
+                &[selected] {
+                    border-color: var(--pane-border-color) !important;
+                }
+
+                /* hide tab decorative line */
+                & > .tab-stack > .tab-background > .tab-line {display: none !important;}
+            }
+        }
+    }
+}

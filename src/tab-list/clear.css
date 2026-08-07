@@ -1,9 +1,0 @@
-#navigation-toolbox {
-    background-color: var(--bg-primary-base-color) !important;
-}
-
-#tabs-toolbar {
-    background-image: none !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
-}

@@ -1,3 +1,4 @@
+/* not in shadow DOM so needs passthrough from tab container */
 #tabpanelcontainer {
     background: transparent !important;
 

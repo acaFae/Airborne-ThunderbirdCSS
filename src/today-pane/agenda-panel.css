@@ -1,0 +1,13 @@
+/* today pane container */
+#today-pane-panel {
+
+    /* panel container (collapsed when agenda shown) */
+    & > vbox > #agenda-panel {
+
+        /* date number */
+        & > #mini-day-box > #mini-day-image > #dateContainer #datevalue-label {
+            margin: 4px 8px !important;
+            width: max-content !important;
+        }
+    }
+}

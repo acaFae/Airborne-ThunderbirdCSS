@@ -1,0 +1,53 @@
+/* overall extensions page */
+#full {
+    display: flex !important;
+    flex-flow: row nowrap;
+
+
+    /* extensions page sidebar */
+    & > #sidebar {
+        inline-size: 18em !important;
+
+        background-color: var(--color-bg-2) !important;
+        border: var(--pane-border-width) solid var(--pane-border-color) !important;
+
+        & > categories-box {
+            block-size: 100% !important;
+
+            & > moz-page-nav {
+                box-sizing: border-box;
+                block-size: 100% !important;
+            
+                & > moz-page-nav-button {
+                    font-family: var(--font-family-listbox);
+                    --page-nav-button-height: var(--settings-sidebar-category-height);
+                    
+                    &[slot="secondary-nav"] {
+                        --page-nav-button-gap: 8px;
+                        --page-nav-button-height: var(--settings-sidebar-footer-height);
+                    }
+                }
+            }
+        }
+    }
+
+    /* extensions page content */
+    & > #content {
+        flex: 1 0;
+        overflow: auto;
+        block-size: 100vh;
+
+        /* content header */
+        & > #page-header {
+
+            /* sticky header bar */
+            & > .sticky-container {
+                background: var(--color-bg-0) !important;
+
+                & > :is(.main-search, .main-heading) {
+                    background-color: transparent !important;
+                }
+            }
+        }
+    }
+}

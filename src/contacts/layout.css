@@ -1,0 +1,12 @@
+/* overall address books container */
+body:has(#booksPane) {
+    
+    grid-template:
+    "books booksSplitter cards sharedSplitter details" minmax(auto, 1fr) /
+    minmax(var(--ab-pane-min-width), calc(var(--booksSplitter-width) + 1 * var(--pane-margin)))
+    min-content
+    minmax(var(--ab-cards-pane-min-width), calc(var(--sharedSplitter-width) + 1 * var(--pane-margin)))
+    min-content
+    minmax(var(--ab-details-pane-min-width), 1fr)
+    !important;
+}

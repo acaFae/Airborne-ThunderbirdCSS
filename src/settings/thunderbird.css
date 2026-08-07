@@ -1,0 +1,67 @@
+/* overall settings */
+#prefBox {
+
+    /* settings sidebar */
+    & > #pref-category-box {
+        inline-size: 18em !important;
+
+        background-color: var(--color-bg-2) !important;
+        border: var(--pane-border-width) solid var(--pane-border-color) !important;
+
+        /* settings sections list */
+        & > #categories {
+
+            /* setting section item */
+            & > .category {
+                min-height: 0px !important;
+                height: var(--settings-sidebar-category-height) !important;
+
+                border: none !important;
+                border-radius: var(--button-border-radius) !important;
+
+                font-family: var(--font-family-listbox);
+
+                &:active {
+                    color: initial !important;
+                }
+            }
+        }
+
+        /* sidebar footer buttons list */
+        & > .sidebar-footer-list {
+
+            /* sidebar footer item (consistent with same on extensions, via different method) */
+            & > .sidebar-footer-link {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+
+                height: var(--settings-sidebar-footer-height) !important;
+                padding-left: 12px;
+                gap: 8px;
+
+                box-sizing: border-box;
+                border: none !important;
+
+                font-family: var(--font-family-listbox);
+
+                & > .sidebar-footer-icon {
+                    margin: 0px !important;
+                }
+            }
+        }
+    }
+
+    /* settings content */
+    & > #preferencesContainer {
+
+        /* content container */
+        & > .paneDeckContainer {
+
+            /* sticky header bar */
+            & > .sticky-container {
+                background: var(--color-bg-0) !important;
+            }
+        }
+    }
+}

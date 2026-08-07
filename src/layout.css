@@ -1,0 +1,88 @@
+/* || ALL PANES */
+
+#folderPane,            /* inbox > folders-sidebar */
+#threadPane,            /* inbox > email-list */
+#messagePane,           /* inbox > email-viewer */
+#accountCentralBrowser, /* inbox > account-settings */
+#cardsPane,             /* contacts > address-books-sidebar */
+#booksPane,             /* contacts > book-contacts-list */
+#detailsPane,           /* contacts > contact-viewer */
+#calSidebar,            /* calendar > calendar-sidebar */
+#calendarDisplayBox,    /* calendar > calendar-center */
+#today-pane-panel,      /* calendar > today-right-sidebar */
+#chatTabPanel,          /* chat > chat-pane */
+#pref-category-box,     /* settings > sidebar */
+#sidebar,               /* extension-settings > sidebar */
+#accountTreeBox         /* account-settings > sidebar */
+{
+    box-sizing: border-box !important;
+    border: var(--pane-border-width) solid var(--pane-border-color);
+    border-radius: var(--pane-border-radius);
+    box-shadow: var(--pane-box-shadow);
+}
+
+/* || SMALL SIDEBAR PANE */
+
+#folderPane,
+#booksPane
+{
+    margin: var(--pane-margin);
+    margin-right: 0px;
+    z-index: 2;
+}
+
+/* || MAIN SIDEBAR PANE */
+
+#threadPane,
+#cardsPane,
+#calSidebar
+{
+    margin: var(--pane-margin);
+    margin-right: 0px;
+    z-index: 1;
+}
+
+/* || BIG PANE */
+
+#messagePane,
+#accountCentralBrowser,
+#detailsPane,
+#calendarDisplayBox,
+#chatTabPanel
+{
+    margin: var(--pane-margin);
+    z-index: 0;
+}
+
+/* || RIGHT SIDEBAR PANE */
+
+#today-pane-panel
+{
+    margin: var(--pane-margin);
+    z-index: 1;
+}
+
+/* || SETTINGS SIDEBAR */
+
+#pref-category-box,
+#sidebar,
+#accountTreeBox
+{
+    margin: var(--pane-margin) !important;
+    height: calc(100dvh - 2 * var(--pane-margin)) !important;
+    z-index: 1;
+}
+
+/* || PANE SPLITTERS */
+
+hr[is="pane-splitter"],
+.calendar-sidebar-splitter,
+.calendar-splitter
+{
+    inline-size: var(--pane-splitter-width) !important;
+    margin-inline-end: calc(0px - var(--pane-splitter-width)) !important;
+    margin-inline-start: 0px !important;
+
+    background: var(--pane-splitter-color) !important;
+    border-width: 0px !important;
+}
