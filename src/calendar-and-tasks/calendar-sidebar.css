@@ -115,15 +115,42 @@
 
     /* calendar selector segment */
     & > #calendar-panel {
+        position: relative !important;
+        padding: 0px !important;
+
+        /* all sub-segment headers */
+        & > * > .calendar-list-header {
+            background-color: transparent !important;
+            border-style: solid !important;
+            border-width: 1px 0px 0px 0px !important;
+            border-color: var(--pane-border-color) !important;
+            color: var(--color-gray-50) !important;
+            cursor: pointer;
+        }
+
+        & > * > calendar-modevbox {
+            margin-bottom: 8px;
+        }
         
         /* tasks filter sub-segment (hidden in calendar view) */
         & > #task-filter-pane {
 
+            & > #task-filtertree-pane > #task-tree-filtergroup {
+                & > radio > .radio-label-box {
+                    margin-left: 8px !important;
+                }
+            }
         }
 
         /* list of calendars sub-segment */
         & > #calendar-list-pane {
 
+            /* calendar list element */
+            & > #calendar-list-inner-pane > ol#calendar-list {
+                & > li {
+                    border-radius: var(--listbox-border-radius) !important;
+                }
+            }
         }
     }
 }
