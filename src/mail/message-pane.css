@@ -12,27 +12,27 @@
 
     background-color: transparent !important;
 
+    & > *:not(#mail-notification-top) {
+        overflow: hidden;
+        margin: 0px;
+
+        border: var(--pane-border-width) solid var(--pane-border-color) !important;
+        border-radius: var(--pane-border-radius) !important;
+
+        &:not(#singleMessage) {
+            margin-top: var(--pane-margin);
+        }
+    }
+
     /* email content box */
     & > #messagepane {
-        margin: 0px;
-        margin-top: var(--pane-margin);
 
-        border-style: solid;
-        border-width: var(--pane-border-width);
-        border-color: var(--pane-border-color);
-        border-radius: var(--pane-border-radius) !important;
     }
 
     /* email attachments content box */
     & > #attachmentView {
-        margin: 0px;
-        margin-top: var(--pane-margin);
 
-        border-style: solid;
-        border-width: var(--pane-border-width);
-        border-color: var(--pane-border-color);
-        border-radius: var(--pane-border-radius) !important;
-
+        /* list of attachments */
         & > #attachmentList {
             padding: 4px !important;
 
@@ -75,16 +75,11 @@
         & > #msgHeaderView > #messageHeader {
             display: flex;
             flex-flow: column nowrap;
-            
-            margin: 0px;
-            padding: 16px 16px !important;
             gap: 0px !important;
+            
+            padding: 16px 16px !important;
 
             background-color: var(--color-bg-2);
-            border-style: solid;
-            border-width: var(--pane-border-width);
-            border-color: var(--pane-border-color);
-            border-radius: var(--pane-border-radius);
 
             /* each email detail row */
             & > .message-header-row {
