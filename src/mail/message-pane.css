@@ -3,6 +3,14 @@
     background-color: transparent !important;
     border: none !important;
     border-radius: 0px !important;
+
+    /* all alternative views (except email viewer) */
+    & > *:not(#messageBrowser) {
+        overflow: hidden;
+
+        border: var(--pane-border-width) solid var(--pane-border-color) !important;
+        border-radius: var(--pane-border-radius) !important;
+    }
 }
 
 /* sandboxed pane container */
