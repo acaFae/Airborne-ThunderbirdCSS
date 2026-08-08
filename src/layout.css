@@ -16,9 +16,9 @@
 #accountTreeBox         /* account-settings > sidebar */
 {
     box-sizing: border-box !important;
-    border: var(--pane-border-width) solid var(--pane-border-color);
-    border-radius: var(--pane-border-radius);
-    box-shadow: var(--pane-box-shadow);
+    border: var(--pane-border-width) solid var(--pane-border-color) !important;
+    border-radius: var(--pane-border-radius) !important;
+    box-shadow: var(--pane-box-shadow) !important;
 }
 
 /* || SMALL SIDEBAR PANE */
