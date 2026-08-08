@@ -5,6 +5,15 @@
     & > #calendar-task-box {
         gap: var(--pane-margin);
 
+        /* style used children as boxes */
+        & > *:has(*) {
+            overflow: hidden;
+
+            border: var(--pane-border-width) solid var(--pane-border-color) !important;
+            border-radius: var(--pane-border-radius) !important;
+            background: var(--color-bg-2) !important;
+        }
+
         /* hide unused children (like notification bar) */
         & > *:not(:has(*)) {
             display: none !important;
@@ -12,9 +21,7 @@
 
         /* header */
         & > #task-addition-box {
-            border: var(--pane-border-width) solid var(--pane-border-color) !important;
-            border-radius: var(--pane-border-radius);
-            background: var(--color-bg-2) !important;
+            
         }
 
         /* tasks table and details container */
@@ -22,12 +29,7 @@
 
             /* tasks table container */
             & > #calendar-task-tree {
-                overflow: hidden;
                 padding: 8px;
-
-                border: var(--pane-border-width) solid var(--pane-border-color) !important;
-                border-radius: var(--pane-border-radius) !important;
-                background: var(--color-bg-1) !important;
 
                 /* table header element */
                 & > treecols {

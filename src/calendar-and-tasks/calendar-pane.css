@@ -5,6 +5,15 @@
     & > #calendar-view-box {
         gap: var(--pane-margin);
 
+        /* style used children as boxes */
+        & > *:has(*) {
+            overflow: hidden;
+
+            border: var(--pane-border-width) solid var(--pane-border-color) !important;
+            border-radius: var(--pane-border-radius) !important;
+            background: var(--color-bg-2) !important;
+        }
+
         /* hide unused children (like notification bar) */
         & > *:not(:has(*)) {
             display: none !important;
@@ -12,18 +21,11 @@
 
         /* header */
         & > #calendarViewHeader {
-            border: var(--pane-border-width) solid var(--pane-border-color);
-            border-radius: var(--pane-border-radius);
-            background: var(--color-bg-2) !important;
+
         }
 
         /* calendar graph container */
         & > #view-box {
-            overflow: hidden;
-
-            border: var(--pane-border-width) solid var(--pane-border-color);
-            border-radius: var(--pane-border-radius);
-            background: var(--color-bg-2) !important;
 
             & > #day-view,
             & > #week-view,
