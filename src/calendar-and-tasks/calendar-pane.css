@@ -5,9 +5,9 @@
     & > #calendar-view-box {
         gap: var(--pane-margin);
 
-        /* unknown notification element */
-        & > #calendar-deactivated-notification-location-events {
-            display: none;
+        /* hide unused children (like notification bar) */
+        & > *:not(:has(*)) {
+            display: none !important;
         }
 
         /* header */
