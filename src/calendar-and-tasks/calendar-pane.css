@@ -25,7 +25,18 @@
             border-radius: var(--pane-border-radius);
             background: var(--color-bg-2) !important;
 
-            & > #week-view {
+            & > #day-view,
+            & > #week-view,
+            & > #multiweek-view,
+            & > #month-view
+            {
+                padding: 0px !important;
+                margin: -1px !important;
+            }
+
+            & > #day-view,
+            & > #week-view
+            {
                 & .multiday-events-list {
                     margin: 0px !important;
                 }
