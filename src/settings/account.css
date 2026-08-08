@@ -31,26 +31,26 @@
     }
 
     /* sidebar footer buttons list */
-        & > .sidebar-footer-list {
+    & > .sidebar-footer-list {
 
-            /* sidebar footer item (consistent with same on extensions, via different method) */
-            & > .sidebar-footer-link {
-                display: flex;
-                flex-flow: row nowrap;
-                align-items: center;
+        /* sidebar footer item (consistent with same on extensions, via different method) */
+        & > .sidebar-footer-link {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
 
-                height: var(--settings-sidebar-footer-height) !important;
-                padding-left: 12px;
-                gap: 8px;
+            height: var(--settings-sidebar-footer-height) !important;
+            padding-left: 12px;
+            gap: 8px;
 
-                box-sizing: border-box;
-                border: none !important;
+            box-sizing: border-box;
+            border: none !important;
 
-                font-family: var(--font-family-listbox);
+            font-family: var(--font-family-listbox);
 
-                & > .sidebar-footer-icon {
-                    margin: 0px !important;
-                }
+            & > .sidebar-footer-icon {
+                margin: 0px !important;
             }
         }
+    }
 }
