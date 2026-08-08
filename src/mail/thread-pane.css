@@ -68,6 +68,11 @@
                     --email-border-color: var(--color-theme-50);
                 }
 
+                /* email table cell (thread child) */
+                &[data-properties~="thread-children"] > td {
+                    padding-left: calc(6px + 20px) !important;
+                }
+
                 /* email table cell */
                 & > td {
                     padding: 2px 6px !important;
