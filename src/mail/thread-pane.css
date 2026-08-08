@@ -127,13 +127,16 @@
                                         gap: 16px !important;
                                     }
 
-                                    /* star */
-                                    & > button:is(.button-star, .button-spam) {
+                                    /* star, spam, and attachment icons */
+                                    & > *:is(.button-star, .button-spam) {
                                         margin-right: -4px !important;
 
-                                        &[title="Message not starred"] {
+                                        &.button-star[title="Message not starred"] {
                                             display: none !important;
                                         }
+                                    }
+                                    & > *:is(.attachment-icon) {
+                                        margin-right: -8px !important;
                                     }
                                 }
                             }
