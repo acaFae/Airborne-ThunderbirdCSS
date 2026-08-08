@@ -23,6 +23,25 @@
         border-radius: var(--pane-border-radius) !important;
     }
 
+    /* email attachments content box */
+    & > #attachmentView {
+        margin: 0px;
+        margin-top: var(--pane-margin);
+
+        border-style: solid;
+        border-width: var(--pane-border-width);
+        border-color: var(--pane-border-color);
+        border-radius: var(--pane-border-radius) !important;
+
+        & > #attachmentList {
+            padding: 4px !important;
+
+            & > .attachmentItem {
+                border-radius: calc(var(--pane-border-radius) - 4px) !important;
+            }
+        }
+    }
+
     /* email notification */
     & > #mail-notification-top {
         border: none !important;
