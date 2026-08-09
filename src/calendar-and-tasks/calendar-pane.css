@@ -26,6 +26,7 @@
 
         /* calendar graph container */
         & > #view-box {
+            background: light-dark(var(--color-bg-2), var(--color-bg-1)) !important;
 
             & > #day-view,
             & > #week-view,
@@ -46,6 +47,17 @@
                     & > .calendar-color-box {
                         border-radius: 8px !important;
                     }
+                }
+            }
+
+            & > #multiweek-view,
+            & > #month-view
+            {
+                & .calendar-month-day-box-current-month {
+                    background: transparent !important;
+                }
+                & .calendar-month-day-box-other-month {
+                    background: #88888822 !important;
                 }
             }
         }
