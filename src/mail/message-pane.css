@@ -37,6 +37,11 @@
 
     }
 
+    /* splitter between email and attachments */
+    & > #attachment-splitter {
+        display: none !important;
+    }
+
     /* email attachments content box */
     & > #attachmentView {
 
