@@ -35,6 +35,10 @@
             {
                 padding: 0px !important;
                 margin: -1px !important;
+
+                & .calendar-color-box {
+                    border-radius: 8px !important;
+                }
             }
 
             & > #day-view,
@@ -42,11 +46,6 @@
             {
                 & .multiday-events-list {
                     margin: 0px !important;
-                }
-                & .multiday-event-listitem {
-                    & > .calendar-color-box {
-                        border-radius: 8px !important;
-                    }
                 }
             }
 
