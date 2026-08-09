@@ -6,7 +6,7 @@
         gap: var(--pane-margin);
 
         /* style used children as boxes */
-        & > *:has(*) {
+        & > *:not(vbox):has(*) {
             overflow: hidden;
 
             border: var(--pane-border-width) solid var(--pane-border-color) !important;
@@ -30,6 +30,10 @@
             /* tasks table container */
             & > #calendar-task-tree {
                 padding: 8px;
+
+                border: var(--pane-border-width) solid var(--pane-border-color) !important;
+                border-radius: var(--pane-border-radius) !important;
+                background: var(--color-bg-1) !important;
 
                 /* table header element */
                 & > treecols {
