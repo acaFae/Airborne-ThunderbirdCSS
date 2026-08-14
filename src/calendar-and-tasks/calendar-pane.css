@@ -28,6 +28,8 @@
             border: var(--pane-border-width) solid var(--pane-border-color) !important;
             border-radius: var(--pane-border-radius) !important;
             background: var(--pane-bg-color) !important;
+
+            margin-bottom: calc(0px - var(--pane-margin));
         }
 
         /* header */
