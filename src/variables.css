@@ -70,6 +70,7 @@
     --pane-border-radius: 16px;
     --pane-border-width: 1px;
     --pane-border-color: var(--color-adapt-30);
+    --pane-bg-color: light-dark(var(--color-gray-10), var(--color-gray-80));
     --pane-box-shadow: none;
 
     --pane-splitter-width: var(--pane-margin);
@@ -86,5 +87,9 @@
 
     --settings-sidebar-category-height: 40px;
     --settings-sidebar-footer-height: 30px;
+
+    /* || APP */
+
+    --app-bg-color: light-dark(var(--color-gray-20), var(--color-gray-100));
 
 }
