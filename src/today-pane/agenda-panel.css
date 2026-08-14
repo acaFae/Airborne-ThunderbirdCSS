@@ -4,10 +4,31 @@
     /* panel container (collapsed when agenda shown) */
     & > vbox > #agenda-panel {
 
-        /* date number */
-        & > #mini-day-box > #mini-day-image > #dateContainer #datevalue-label {
-            margin: 4px 8px !important;
-            width: max-content !important;
+        /* date box */
+        & > #mini-day-box {
+            overflow: hidden;
+
+            margin: 0px 4px !important;
+
+            border: none !important;
+            border-radius: var(--pane-border-radius);
+            
+            /* date number */
+            & > #mini-day-image > #dateContainer #datevalue-label {
+                margin: 4px 8px !important;
+                width: max-content !important;
+            }
+        }
+
+        /* list of events */
+        & > #agenda-container > ul#agenda {
+            border: none !important;
+
+            /* list items */
+            & > li > div.agenda-listitem-details {
+                margin-top: 4px;
+                border-radius: var(--listbox-border-radius) !important;
+            }
         }
     }
 }

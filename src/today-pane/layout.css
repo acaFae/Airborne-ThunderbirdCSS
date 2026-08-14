@@ -4,6 +4,7 @@
 
     /* header */
     & > .sidebar-header {
+        border: none !important;
 
         /* header text */
         & > #today-pane-header {
