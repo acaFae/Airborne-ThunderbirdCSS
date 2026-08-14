@@ -4,10 +4,47 @@
     /* panel container (collapsed when agenda shown) */
     & > vbox > #todo-tab-panel {
 
+        /* "show completed" checkbox box */
+        & > #show-completed-checkbox-box {
+            border: none !important;
+        }
+
         /* task list container */
         & > #calendar-task-tree-detail {
+            border: none !important;
             margin-bottom: 0px !important;
 
+            /* task list content */
+            & > #unifinder-todo-tree {
+                padding: 4px;
+
+                /* table header element */
+                & > treecols {
+                    overflow: hidden;
+                    border: var(--pane-border-width) solid var(--pane-border-color) !important;
+                    border-radius: calc(var(--pane-border-radius) - 8px);
+
+                    /* all contained header elements */
+                    & * {
+                        border-color: var(--pane-border-color) !important;
+                        box-shadow: none !important;
+                    }
+                }
+
+                /* table content */
+                & > treechildren {
+                    overflow: hidden;
+                    border-radius: calc(var(--pane-border-radius) - 8px);
+
+                    /* (uses legacy ::-moz pseudoelements) */
+                    &::-moz-tree-row {
+                        border-radius: calc(var(--pane-border-radius) - 8px);
+                        margin-top: 0px;
+                    }
+                }
+            }
+
+            /* task list edit input */
             & > #unifinder-task-edit-field {
                 margin: 7px 8px 8px !important;
             }
