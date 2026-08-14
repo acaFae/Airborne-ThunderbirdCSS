@@ -118,7 +118,7 @@
                             border-color: var(--pane-bg-color) !important;
                             
                             &:hover {
-                                border-color: var(--color-border-2) !important;
+                                border-color: var(--pane-border-color) !important;
                             }
                         }
                     }
