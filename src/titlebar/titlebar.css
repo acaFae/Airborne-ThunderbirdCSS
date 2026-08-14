@@ -25,6 +25,7 @@
                 box-shadow: none !important;
 
                 &[selected] {
+                    background: var(--pane-bg-color) !important;
                     border-color: var(--pane-border-color) !important;
                 }
 
