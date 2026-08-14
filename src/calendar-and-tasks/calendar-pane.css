@@ -25,11 +25,62 @@
         & > #bottom-events-box {
             overflow: hidden;
 
+            margin-bottom: calc(0px - var(--pane-margin));
+
             border: var(--pane-border-width) solid var(--pane-border-color) !important;
             border-radius: var(--pane-border-radius) !important;
-            background: var(--pane-bg-color) !important;
+            background: var(--app-bg-color) !important;
 
-            margin-bottom: calc(0px - var(--pane-margin));
+            /* tasks search bar */
+            & > #unifinder-searchBox {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+
+                margin: 0px 4px !important;
+
+                background-color: transparent !important;
+                border: none !important;
+
+                & > #unifinder-closer {
+                    content: url(chrome://global/skin/icons/close.svg);
+                    width: 20px;
+                    height: 20px;
+                    margin: 0px !important;
+                }
+            }
+
+            /* tasks table container */
+            & > #unifinder-search-results-tree {
+                padding: 8px;
+
+                background-color: transparent !important;
+
+                /* table header element */
+                & > treecols {
+                    overflow: hidden;
+                    border: var(--pane-border-width) solid var(--pane-border-color) !important;
+                    border-radius: calc(var(--pane-border-radius) - 8px);
+
+                    /* all contained header elements */
+                    & * {
+                        border-color: var(--pane-border-color) !important;
+                        box-shadow: none !important;
+                    }
+                }
+
+                /* table content */
+                & > treechildren {
+                    overflow: hidden;
+                    border-radius: calc(var(--pane-border-radius) - 8px);
+
+                    /* (uses legacy ::-moz pseudoelements) */
+                    &::-moz-tree-row {
+                        border-radius: calc(var(--pane-border-radius) - 8px);
+                        margin-top: 4px;
+                    }
+                }
+            }
         }
 
         /* header */
