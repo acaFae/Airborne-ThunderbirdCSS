@@ -33,7 +33,7 @@
 
                 border: var(--pane-border-width) solid var(--pane-border-color) !important;
                 border-radius: var(--pane-border-radius) !important;
-                background: var(--color-bg-1) !important;
+                background: light-dark(var(--pane-bg-color), var(--app-bg-color)) !important;
 
                 /* table header element */
                 & > treecols {
@@ -76,12 +76,12 @@
                 
                 border: var(--pane-border-width) solid var(--pane-border-color) !important;
                 border-radius: var(--pane-border-radius);
-                background: var(--color-bg-1) !important;
+                background: light-dark(var(--pane-bg-color), var(--app-bg-color)) !important;
 
                 /* task actions and properties */
                 & > #calendar-task-details {
                     border: none !important;
-                    background: var(--color-bg-3) !important;
+                    background: var(--pane-bg-color) !important;
 
                     /* task actions */
                     & > #other-actions-box {
@@ -89,7 +89,7 @@
                     }
                     /* task description */
                     & > #calendar-task-details-box {
-                        padding: 0px 4px !important;
+                        padding: 0px 0px !important;
                     }
                 }
             }
