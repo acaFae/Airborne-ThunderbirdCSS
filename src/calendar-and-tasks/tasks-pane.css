@@ -11,7 +11,7 @@
 
             border: var(--pane-border-width) solid var(--pane-border-color) !important;
             border-radius: var(--pane-border-radius) !important;
-            background: var(--color-bg-2) !important;
+            background: var(--pane-bg-color) !important;
         }
 
         /* hide unused children (like notification bar) */

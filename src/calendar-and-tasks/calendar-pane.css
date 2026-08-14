@@ -11,7 +11,7 @@
 
             border: var(--pane-border-width) solid var(--pane-border-color) !important;
             border-radius: var(--pane-border-radius) !important;
-            background: var(--color-bg-2) !important;
+            background: var(--color-bg-1) !important;
         }
 
         /* hide unused children (like notification bar) */
@@ -26,7 +26,7 @@
 
         /* calendar graph container */
         & > #view-box {
-            background: light-dark(var(--color-bg-2), var(--color-bg-1)) !important;
+            background: var(--color-bg-1) !important;
 
             & > #day-view,
             & > #week-view,

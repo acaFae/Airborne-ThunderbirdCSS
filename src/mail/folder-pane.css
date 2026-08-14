@@ -1,6 +1,6 @@
 /* list of mail folders */
 #folderPane {
-    background-color: var(--color-bg-2) !important;
+    background-color: var(--pane-bg-color) !important;
 
     /* header */
     & > #folderPaneHeaderBar {

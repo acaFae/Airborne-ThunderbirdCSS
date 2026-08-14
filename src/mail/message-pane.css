@@ -92,7 +92,7 @@
             
             padding: 16px 16px !important;
 
-            background-color: var(--color-bg-2);
+            background-color: var(--pane-bg-color);
 
             /* each email detail row */
             & > .message-header-row {
@@ -115,7 +115,7 @@
                         & toolbarbutton {
                             border-style: solid;
                             border-width: 1px !important;
-                            border-color: var(--color-bg-2) !important;
+                            border-color: var(--pane-bg-color) !important;
                             
                             &:hover {
                                 border-color: var(--color-border-2) !important;

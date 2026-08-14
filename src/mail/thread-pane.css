@@ -1,6 +1,6 @@
 /* list of all emails in selected inbox */
 #threadPane {
-    background-color: var(--color-bg-2) !important;
+    background-color: var(--pane-bg-color) !important;
 
     /* main header */
     & > #threadPaneHeaderBar {
