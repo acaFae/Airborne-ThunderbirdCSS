@@ -61,6 +61,11 @@
                 }
             }
 
+            /* splitter hidden when no task details */
+            &:has(#calendar-task-details-container[hidden]) > #calendar-task-view-splitter {
+                display: none !important;
+            }
+
             /* task details container (entire box) */
             & > #calendar-task-details-container {
                 overflow: hidden;
