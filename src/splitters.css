@@ -1,0 +1,32 @@
+/* || VERTICAL SPLITTERS */
+
+#folderPaneSplitter,        /* folder-threads splitter */
+#messagePaneSplitter,       /* threads-message splitter */
+#booksSplitter,             /* books-contacts splitter */
+#sharedSplitter,            /* contacts-details splitter */
+#calsidebar_splitter,       /* calendar and tasks sidebar splitter */
+#today-splitter             /* today splitter */
+{
+    block-size: 100% !important;
+    inline-size: var(--pane-splitter-width) !important;
+    margin-inline-end: calc(0px - var(--pane-splitter-width)) !important;
+    margin-inline-start: 0px !important;
+
+    background: var(--pane-splitter-color) !important;
+    border-width: 0px !important;
+}
+
+/* || HORIZONTAL SPLITTERS */
+
+#attachment-splitter,           /* email attachments splitter */
+#calendar-task-view-splitter,   /* task details splitter */
+#calendar-view-splitter         /* task list splitter */
+{
+    inline-size: 100% !important;
+    block-size: var(--pane-splitter-width) !important;
+    margin-block-end: calc(0px - var(--pane-splitter-width)) !important;
+    margin-block-start: 0px !important;
+    
+    background: var(--pane-splitter-color) !important;
+    border-width: 0px !important;
+}

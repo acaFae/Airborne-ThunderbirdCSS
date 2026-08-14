@@ -72,17 +72,3 @@
     height: calc(100dvh - 2 * var(--pane-margin)) !important;
     z-index: 1;
 }
-
-/* || PANE SPLITTERS */
-
-hr[is="pane-splitter"],
-.calendar-sidebar-splitter,
-.calendar-splitter
-{
-    inline-size: var(--pane-splitter-width) !important;
-    margin-inline-end: calc(0px - var(--pane-splitter-width)) !important;
-    margin-inline-start: 0px !important;
-
-    background: var(--pane-splitter-color) !important;
-    border-width: 0px !important;
-}

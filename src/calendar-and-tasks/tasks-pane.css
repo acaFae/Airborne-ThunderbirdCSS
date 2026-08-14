@@ -61,14 +61,6 @@
                 }
             }
 
-            /* task list and details splitter */
-            & > #calendar-task-view-splitter {
-                width: 100% !important;
-                height: var(--pane-margin) !important;
-                margin: 0px !important;
-                margin-bottom: calc(0px - var(--pane-margin)) !important;
-            }
-
             /* task details container (entire box) */
             & > #calendar-task-details-container {
                 overflow: hidden;

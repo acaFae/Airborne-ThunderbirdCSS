@@ -5,6 +5,7 @@
 @import url("./src/variables.css");
 @import url("./src/global.css");
 @import url("./src/layout.css");
+@import url("./src/splitters.css");
 
 @import url("./src/settings/thunderbird.css");
 @import url("./src/settings/extension.css");
