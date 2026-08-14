@@ -4,9 +4,25 @@
     /* calendar view container (hidden in tasks view) */
     & > #calendar-view-box {
         gap: var(--pane-margin);
+        
+        /* "calendar is deactivated" notification */
+        & > #calendar-deactivated-notification-location-events {
+            overflow: hidden;
+            
+            padding: 0px !important;
+            margin: 0px !important;
 
-        /* style used children as boxes */
-        & > *:has(*) {
+            border: var(--pane-border-width) solid var(--pane-border-color) !important;
+            border-radius: var(--pane-border-radius) !important;
+
+            /* hide if not in-use */
+            &:not(:has(*)) {
+                display: none !important;
+            }
+        }
+
+        /* list of events box */
+        & > #bottom-events-box {
             overflow: hidden;
 
             border: var(--pane-border-width) solid var(--pane-border-color) !important;
@@ -14,18 +30,21 @@
             background: var(--pane-bg-color) !important;
         }
 
-        /* hide unused children (like notification bar) */
-        & > *:not(:has(*)) {
-            display: none !important;
-        }
-
         /* header */
         & > #calendarViewHeader {
+            overflow: hidden;
 
+            border: var(--pane-border-width) solid var(--pane-border-color) !important;
+            border-radius: var(--pane-border-radius) !important;
+            background: var(--pane-bg-color) !important;
         }
 
         /* calendar graph container */
         & > #view-box {
+            overflow: hidden;
+
+            border: var(--pane-border-width) solid var(--pane-border-color) !important;
+            border-radius: var(--pane-border-radius) !important;
             background: light-dark(var(--pane-bg-color), var(--app-bg-color)) !important;
 
             & > #day-view,
