@@ -18,7 +18,7 @@
     display: flex;
     flex-flow: column nowrap;
 
-    background-color: transparent !important;
+    background-color: var(--app-bg-color) !important;
 
     & > *:not(#mail-notification-top) {
         overflow: hidden;
