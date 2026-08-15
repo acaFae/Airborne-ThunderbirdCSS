@@ -1,6 +1,6 @@
 /* not in shadow DOM so needs passthrough from tab container */
 #tabpanelcontainer {
-    background: transparent !important;
+    background-color: var(--app-bg-color) !important;
 
     & #chatTabPanel {
         background: transparent !important;

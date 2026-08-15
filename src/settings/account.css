@@ -1,3 +1,13 @@
+/* overarching container */
+body:has(#accountTreeBox) {
+    background-color: var(--app-bg-color) !important;
+}
+
+/* accounts settings main content container */
+body:has(#containerBox) {
+    background-color: var(--app-bg-color) !important;
+}
+
 /* accounts sidebar */
 #accountTreeBox {
 

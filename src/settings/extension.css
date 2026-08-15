@@ -3,6 +3,8 @@
     display: flex !important;
     flex-flow: row nowrap;
 
+    background-color: var(--app-bg-color) !important;
+
     /* extensions page sidebar */
     & > #sidebar {
         inline-size: 18em !important;

@@ -1,6 +1,6 @@
 /* container for all calendar and tasks panes */
 #calendarContent {
-    background-color: transparent !important;
+    background-color: var(--app-bg-color) !important;
 
     /* main pane (calendar/tasks) */
     & > #calendarDisplayBox {
