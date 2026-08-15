@@ -1,6 +1,8 @@
 /* overall settings */
 #prefBox {
 
+    background-color: var(--app-bg-color) !important;
+
     /* settings sidebar */
     & > #pref-category-box {
         inline-size: 18em !important;

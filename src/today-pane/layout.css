@@ -2,6 +2,8 @@
 #today-pane-panel {
     overflow: hidden;
 
+    background-color: var(--app-bg-color) !important;
+
     /* header */
     & > .sidebar-header {
         border: none !important;

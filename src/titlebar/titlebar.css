@@ -1,5 +1,6 @@
 /* entire titlebar container */
 #titlebar {
+    background-color: var(--app-bg-color) !important;
 
     /* upper title bar */
     & > .icons-beside-text {

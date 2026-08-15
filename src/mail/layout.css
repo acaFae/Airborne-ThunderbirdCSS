@@ -1,6 +1,6 @@
 /* overall inbox tab container */
-#paneLayout
-{
+#paneLayout {
+    background-color: var(--app-bg-color) !important;
 
     /* default inbox layout */
     grid-template:
