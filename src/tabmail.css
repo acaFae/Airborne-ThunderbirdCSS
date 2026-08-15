@@ -1,0 +1,7 @@
+/* overarching container containing: */
+/* - tabmail (main content) */
+/* - today splitter */
+/* - today right sidebar */
+#tabmail-container {
+    background-color: var(--app-bg-color) !important;
+}
