@@ -13,6 +13,10 @@
             padding-inline-start: 8px !important;
         }
     }
+
+    & #today-pane-splitter {
+        border-color: var(--pane-border-color) !important;
+    }
 }
 
 /* splitter for today pane */
